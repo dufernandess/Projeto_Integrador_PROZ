@@ -1,7 +1,7 @@
 # Projeto Integrador Proz Talento Cloud
 
 ## Projeto tô Grávida
-```bash
+```
 O projeto tem como objetivo auxiliar mulheres grávidas e mulheres que gostariam de planejar sua gravidez a terem uma gestação saudável e tranquila, com base em informações sobre alimentação, planejamento, curiosidade, principais cuidados, orientações gerais, nóticias/reportagens, eventos, mini cursos entre outros tópicos. O intuito é manter as usuárias informadas e conscientizadas sobre todo o mundo da gravidez, proporcionando também, uma rede de apoio entre elas.
 
 Proporcionaremos, também, uma intermediação entre médicos especialistas e as usuárias, onde poderão conseguir consultas gratuitas por não terem condições de pagar por isso.
