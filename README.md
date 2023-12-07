@@ -1,9 +1,21 @@
-# Projeto_Integrador_PROZ
-![Imagem do site Tô Gravida](./img/togravida.png)
-## Projeto tô Grávida
-## Objetivo: Este projeto tem como objetivo ajudar mulheres grávidas a terem uma gestação saudável com base em informações confiáveis sobre alimentação, cuidados, nóticias, eventos,e cursos de curto período, afim de manter a gestante informada sobre vários aspectos da gravidez. Além de fazer a ponte com médicos especialistas que de forma gratuita, podem oferecer um atendimento especializado para as mamães que não podem pagar por uma consulta. E com isso nosso projeto pode ajudar a diminuir a Taxa de Mortalidade Materna Global, que é incorporado pelo item 3(Saúde e Bem-Estar) dos Objetivos de Desenvolvimento da ONU para o Brasil.
+# Projeto Integrador Proz Talento Cloud
 
+## Projeto tô Grávida
+```bash
+O projeto tem como objetivo auxiliar mulheres grávidas e mulheres que gostariam de planejar sua gravidez a terem uma gestação saudável e tranquila, com base em informações sobre alimentação, planejamento, curiosidade, principais cuidados, orientações gerais, nóticias/reportagens, eventos, mini cursos entre outros tópicos. O intuito é manter as usuárias informadas e conscientizadas sobre todo o mundo da gravidez, proporcionando também, uma rede de apoio entre elas.
+
+Proporcionaremos, também, uma intermediação entre médicos especialistas e as usuárias, onde poderão conseguir consultas gratuitas por não terem condições de pagar por isso.
+
+O projeto será desenvolvido visando ajudar a alcançar parte dos objetivos de desenvolvimento sustentável da ONU para o Brasil, no caso, do tópico de saúde e bem-estar, atuando nos seguintes itens:
+
+- 3.1 Até 2030, reduzir a taxa de mortalidade materna global para menos de 70 mortes por 100.000 nascidos vivos.
+
+- 3.2 Até 2030, acabar com as mortes evitáveis de recém-nascidos e crianças menores de 5 anos, com todos os países objetivando reduzir a mortalidade neonatal para pelo menos 12 por 1.000 nascidos vivos e a mortalidade de crianças menores de 5 anos para pelo menos 25 por 1.000 nascidos vivos.
+```
 
 ### Desenvolvedores do projeto:
+![Static Badge](https://img.shields.io/badge/Alexandre%20Ferreira-AC0606)
+![Static Badge](https://img.shields.io/badge/Anderson%20Machado%20Moraes%20-%20verde)
+![Static Badge](https://img.shields.io/badge/Andr%C3%A9%20Felipe%20Viana%20dos%20Santos-0DDFDF)
 ![Static Badge](https://img.shields.io/badge/Carlos%20Eduardo%20Fernandes%20-%20blue)
- André Viana, Carlos Eduardo Fernandes, Alexandre Ferreira, Anderson, Nara Alencar.
+![Static Badge](https://img.shields.io/badge/Edinara%20Lima%20de%20Alencar-7E0093)
