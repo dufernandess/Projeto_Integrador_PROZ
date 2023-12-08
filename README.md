@@ -14,8 +14,8 @@ O projeto será desenvolvido visando ajudar a alcançar parte dos objetivos de d
 
 
 ### Desenvolvedores do projeto:
-![Static Badge](https://img.shields.io/badge/Alexandre%20Ferreira-AC0606)
-![Static Badge](https://img.shields.io/badge/Anderson%20Machado%20Moraes%20-%20verde)
+![Static Badge](https://img.shields.io/badge/Alexandre%20Pinto%20de%20Souza%20Ferreira-AC0606)
+![Static Badge](https://img.shields.io/badge/Anderson%20Machado%20Morais%20-%20verde)
 ![Static Badge](https://img.shields.io/badge/Andr%C3%A9%20Felipe%20Viana%20dos%20Santos-00B981)
 ![Static Badge](https://img.shields.io/badge/Carlos%20Eduardo%20Fernandes%20-%20blue)
 ![Static Badge](https://img.shields.io/badge/Edinara%20Lima%20de%20Alencar-7E0093)
