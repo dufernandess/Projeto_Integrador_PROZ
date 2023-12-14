@@ -5,53 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+    </style>
 </head>
 <body>
     <header>
         <div>
-        <img src="./img/logo_to_gravida.png" class="logo_to_gravida">
+            <img src="./img/logo_to_gravida.png" class="logo_to_gravida">
         </div>
         <nav class="nav_header">
-        <button class="button_blue"><a href="" ><strong>É um Profissional? Clique aqui!</strong></a></button>
-        <button class="button_blue"><a href=""><strong>Login / Cadastre-se</strong></a></button>
+            <div>
+                <button class="button_blue"><a href="./cadastro_profissional.html" ><strong>É um Profissional? Cadastre-se aqui!</strong></a></button>
+                <button class="button_blue"><a href="./login.html"><strong>Login / Cadastre-se</strong></a></button>
+            </div>
+            <br>
+            <div>
+                <button class="button_blue_header"><a href="Seu_acompanhamento_gravida.html"><strong>Seu acompanhamento</strong></a></button>
+                <button class="button_blue_header"><a href="Seu_acompanhamento_planejamento.html"><strong>Planejando a sua gravidez</strong></a></button>
+                <button class="button_blue_header"><a href=""><strong>Nossa comunidade</strong></a></button>
+                <button class="button_blue_header"><a href=""><strong>Dicas e Informações</strong></a></button>
+                <button class="button_blue_header"><a href=""><strong>Central de Apoio</strong></a></button>
+                <button class="button_blue_header"><a href=""><strong>Mini Cursos</strong></a></button>
+            </div>
         </nav>
     </header>
     <main>
-        <div class="nav_main">
-        <button class="button_blue_header"><a href="Seu_acompanhamento_gravida.html"><strong>Seu acompanhamento</strong></a></button>
-        <button class="button_blue_header"><a href="Seu_acompanhamento_planejamento.html"><strong>Planejando a sua gravidez</strong></a></button>
-        <button class="button_blue_header"><a href=""><strong>Nossa comunidade</strong></a></button>
-        <button class="button_blue_header"><a href=""><strong>Dicas e Informações</strong></a></button>
-        <button class="button_blue_header"><a href=""><strong>Central de Apoio</strong></a></button>
-        <button class="button_blue_header"><a href=""><strong>Mini Cursos</strong></a></button>
+       <div style="border: 2px solid #FF0096;">
+            <h1 class="titulo_rosa">Faça o seu Login</h1>
+            <label for="nome" class="titulo_blue">Nome: </label>
+            <input type="text" name="nome" id="nome">
+            <br>
+            <label for="senha" class="titulo_blue">Senha: </label>  
+            <input type="password" name="senha" id="senha">
+            <p>Esqueceu a sua senha? Clique aqui!</p>
+            <p>Ainda não é cadastrado? Cadastre-se aqui!</p>
         </div>
-    <div style="border: 2px solid #FF0096;">
-        <h1 class="titulo_rosa">Faça o seu Login</h1>
-        <label for="nome" class="titulo_blue">Nome: </label>
-        <input type="text" name="nome" id="nome">
         <br>
-        <label for="senha" class="titulo_blue">Senha: </label>
-        <input type="password" name="senha" id="senha">
-        <p>Esqueceu a sua senha? Clique aqui!</p>
-        <p>Ainda não é cadastrado? Cadastre-se aqui!</p>
-    </div>
-    <div>
-    <button type="submit">Enviar</button>
-    </div>
-</main>
-<footer>
-    <div>
-    <h2 class="titulo_blue">Acesse nossas redes sociais</h2>
-    <h2 class="titulo_footer">Sobre o Tô Grávida</h2>
-    </div>
-    <nav>
-    <a href="http://www.facebook.com"><img src="./img/logo_facebook.png" class="logo_redes_sociais"></a>
-    <a href="http://www.instagram.com"><img src="./img/logo_instagram.png" class="logo_redes_sociais"></a>
-    <a href="http://www.youtube.com/"><img src="./img/logo_youtube.png" class="logo_redes_sociais"></a>
-    <a href="Quem_somos.html">Quem somos</a>
-    <a href="Politica_privacidade_termos_uso.html">Política de Privacidade / Termos de Uso</a>
-   > <a href="Dúvidas_fale_conosco.html">Dúvidas / Fale Conosco</a>
-    </nav>
-</footer>
+        <div>
+            <button type="submit" class="button_formulario">Enviar</button>
+        </div>
+        <br>
+        <div>
+            <button class="button_blue"><a href="./index.html"><strong>Voltar a página inicial</strong></a></button>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h2 class="titulo_blue">Acesse nossas redes sociais</h2>
+            <h2 class="titulo_footer">Sobre o Tô Grávida</h2>
+        </div>
+        <nav>
+            <a href="http://www.facebook.com"><img src="./img/logo_facebook.png" class="logo_redes_sociais"></a>
+            <a href="http://www.instagram.com"><img src="./img/logo_instagram.png" class="logo_redes_sociais"></a>
+            <a href="http://www.youtube.com/"><img src="./img/logo_youtube.png" class="logo_redes_sociais"></a>
+            <a href="Quem_somos.html">Quem somos</a>
+            <a href="Politica_privacidade_termos_uso.html">Política de Privacidade / Termos de Uso</a>
+            <a href="Dúvidas_fale_conosco.html">Dúvidas / Fale Conosco</a>
+        </nav>
+    </footer>
 </body>
 </html>

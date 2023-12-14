@@ -5,14 +5,14 @@ header {
     
 }
 
-header a {
-    text-decoration: none;
-    color:white;
-}
-
-main a {
+a[href="Seu_acompanhamento_gravida.html"], a[href="Seu_acompanhamento_planejamento.html"], a[href=""] {
     text-decoration: none;
     color:#223885;
+}
+
+a[href="./cadastro_profissional.html"], a[href="./login.html"], a[href="./index.html"] {
+    text-decoration: none;
+    color:white;
 }
 
 footer a {
@@ -23,6 +23,12 @@ footer a {
 .nav_header {
     text-align: right;
     padding-top: 60px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+}
+
+.div_header{
+    border-bottom: 1px solid #223885;
 }
 
 .nav_main {
@@ -31,7 +37,7 @@ footer a {
     justify-content: center;
     padding-bottom: 20px;
     padding-right: 20px;
-    border-bottom: 1px solid #223885;
+    
 }
 
 .nav_footer {
@@ -72,13 +78,31 @@ footer a {
     margin-right: 30px;
 }
 
-
 .button_blue:hover {
     background-color: #758ad3;
 }
 
 .button_blue:active {
     background-color: #FF0096;
+    color: white;
+}
+
+.button_formulario {
+    background-color: #FF0096;
+    font-family: 'Gabriela', serif;
+    color: white;
+    transition: background 0.2s;
+    font-size: 20px;
+    border-radius: 8px;
+    margin-right: 30px;
+}
+
+.button_formulario:hover {
+    background-color: #d978b0;
+}
+
+.button_formulario:active {
+    background-color: #223885;
     color: white;
 }
 
@@ -106,6 +130,16 @@ p {
     font-size: 17px;
     text-indent: 10px;
     text-align: justify;
+}
+
+label {
+    color: #223885;
+    font-family: 'Gabriela', serif;
+}
+
+input {
+    color: #223885;
+    font-family: 'Gabriela', serif;
 }
 
 .logo_redes_sociais {
