@@ -35,23 +35,29 @@
         <section>
             <div>
                 <h1 class="titulo_rosa">Fale conosco!</h1>
-                <h3 class="titulo_blue">Entre em contato conosco preenchendo as informações abaixo:</h3>
             </div>
 
-            <div style="border: 2px solid #FF0096;">
-                <label for="nome" class="titulo_blue">Nome: </label>
-                <input type="text" name="nome" id="nome">
-                <br>
-                <label for="email" class="titulo_blue">E-mail: </label>
-                <input type="email" name="email" id="email">
-                <br>
-                <label for="necessidade" class="titulo_blue">Digite sua Necessidade aqui: </label>
-                <input type="text" name="necessidade" id="necessidade">
-            </div>
-            <br>
-            <div>
-                <button type="submit" class="button_formulario">Enviar</button>
-            </div>
+            <fieldset style="border: 2px solid #FF0096; width: 700px;">
+                <form action="">
+                    <legend><h3 class="titulo_blue">Entre em contato conosco preenchendo as informações abaixo:</h3></legend>
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="Nome" id="nome" required placeholder="Nome Completo" autocomplete="nome" required>
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" autocomplete="email" required>
+                    </div>
+                    <div>
+                        <label for="necessidade">Digite sua Necessidade aqui: </label>
+                        <input type="text" name="necessidade" id="necessidade">
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit" value="Enviar!" class="button_formulario">
+                    </div>
+             </form>
+            </fieldset>
         </section>
         <br>
     </main>
