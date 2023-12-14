@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./img/logo_to_gravida.png" class="logo_to_gravida">
+        </div>
+        <nav class="nav_header">
+            <div>
+                <button class="button_blue"><a href="./cadastro_profissional.html" ><strong>É um Profissional? Cadastre-se aqui!</strong></a></button>
+                <button class="button_blue"><a href="./login.html"><strong>Login / Cadastre-se</strong></a></button>
+            </div>
+            <br>
+            <div>
+                <button class="button_blue_header"><a href="Seu_acompanhamento_gravida.html"><strong>Seu acompanhamento</strong></a></button>
+                <button class="button_blue_header"><a href="Seu_acompanhamento_planejamento.html"><strong>Planejando a sua gravidez</strong></a></button>
+                <button class="button_blue_header"><a href=""><strong>Nossa comunidade</strong></a></button>
+                <button class="button_blue_header"><a href=""><strong>Dicas e Informações</strong></a></button>
+                <button class="button_blue_header"><a href=""><strong>Central de Apoio</strong></a></button>
+                <button class="button_blue_header"><a href=""><strong>Mini Cursos</strong></a></button>
+            </div>
+        </nav>
+    </header>
+    <h4>Vamos fazer o seu cadastro!</h4>
+    <form action="" method="post" autocomplete="on">
+        <fieldset>
+            <div><label for="nome">Nome:</label>
+                <input type="text" name="Nome" id="nome" required placeholder="Nome Completo" autocomplete="nome"></div>
+            <div><label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" autocomplete="email" required></div>
+            <div><label for="Endereço">Endereço:</label>
+                <input type="text" name="Endereço" id="Endereço" required></div>
+            <div><label for="tel">Telefone:</label>
+                <input type="tel" name="tel" id="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx"></div>
+            <div><label for="Area">Area de atuação:</label>
+                <input type="text" name="Area" id="Area" required></div>
+            <div><label for="crm">crm:</label>
+                <input type="number" name="crm" id="crm" required></div>
+            <div><label for="arquivo">Declaração de matrícula:</label> 
+                <input type="file" name="arquivo" id="arquivo"  required accept="image/png, application/pdf"></div>
+            <div><label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" required minlength="8" placeholder="Mínimo de 8 catacter"></div>
+            <div><label for="isenha">Confirme sua senha:</label>
+                <input type="password" name="senha" id="isenha" required minlength="8" placeholder="Mínimo de 8 caracter"></div>
+            <div><input type="submit" value="Cadastrar agora"></div>
+        </fieldset>
+    </form>
+    <footer>
+        <div>
+            <h2 class="titulo_blue">Acesse nossas redes sociais</h2>
+            <h2 class="titulo_footer">Sobre o Tô Grávida</h2>
+        </div>
+            <nav>
+                <a href="http://www.facebook.com"><img src="./img/logo_facebook.png" class="logo_redes_sociais"></a>
+                <a href="http://www.instagram.com"><img src="./img/logo_instagram.png" class="logo_redes_sociais"></a>
+                <a href="http://www.youtube.com/"><img src="./img/logo_youtube.png" class="logo_redes_sociais"></a>
+                <a href="Quem_somos.html">Quem somos</a>
+                <a href="Politica_privacidade_termos_uso.html">Política de Privacidade / Termos de Uso</a>
+                <a href="Dúvidas_fale_conosco.html">Dúvidas / Fale Conosco</a>
+            </nav>
+    </footer>
+</body>
+</html>
