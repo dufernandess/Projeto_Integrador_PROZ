@@ -26,9 +26,9 @@
             </div>
         </nav>
     </header>
-    <h4>Vamos fazer o seu cadastro!</h4>
     <form action="" method="post" autocomplete="on">
         <fieldset>
+            <legend><h4>Vamos fazer o seu cadastro!</h4></legend>
             <div><label for="nome">Nome:</label>
                 <input type="text" name="Nome" id="nome" required placeholder="Nome Completo" autocomplete="nome"></div>
             <div><label for="email">E-mail:</label>
@@ -42,13 +42,13 @@
             <div><label for="crm">crm:</label>
                 <input type="number" name="crm" id="crm" required></div>
             <div><label for="arquivo">Declaração de matrícula:</label> 
-                <input type="file" name="arquivo" id="arquivo"  required accept="image/png, application/pdf"></div>
+                <input type="file" name="arquivo" id="arquivo" placeholder="Arquivo PDF/PNG" required accept="image/png, application/pdf"></div>
             <div><label for="senha">Senha:</label>
-                <input type="password" name="senha" id="senha" required minlength="8" placeholder="Mínimo de 8 catacter"></div>
+                <input type="password" name="senha" id="senha" required minlength="8" placeholder="Mínimo de 8 catacteres"></div>
             <div><label for="isenha">Confirme sua senha:</label>
-                <input type="password" name="senha" id="isenha" required minlength="8" placeholder="Mínimo de 8 caracter"></div>
-            <div><input type="submit" value="Cadastrar agora"></div>
+                <input type="password" name="senha" id="isenha" required minlength="8" placeholder="Mínimo de 8 caracteres"></div>
         </fieldset>
+        <div><input type="submit" value="Cadastrar agora"></div>
     </form>
     <footer>
         <div>
