@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>cadastro</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
@@ -12,7 +12,7 @@
 <body>
     <header>
         <div>
-            <img src="./img/logo_to_gravida.png" class="logo_to_gravida">
+            <a href="index.html"><img src="./img/logo_to_gravida.png" class="logo_to_gravida"></a>
         </div>
         <nav class="nav_header">
             <div>
@@ -30,66 +30,48 @@
             </div>
         </nav>
     </header>
-    <main>
-       <div>
-            <h1 class="titulo_rosa">Vamos fazer o seu cadastro!</h1>
-        </div>
-        <form action="">
-            <div style="border: 2px solid #FF0096;">
-                <label for="nome" class="titulo_blue">Nome: </label>
-                <input type="text" name="nome" id="nome">
-                <br>
-                <label for="email" class="titulo_blue">E-mail: </label>
-                <input type="email" name="email" id="email">
-                <br>
-                <label for="endereco" class="titulo_blue">Endereço: </label>
-                <input type="text" name="endereco" id="endereco">
-                <br>
-                <label for="telefone" class="titulo_blue">Telefone: </label>
-                <input type="tel" name="telefone" id="telefone">
-                <br>
-                <label for="area_atuacao" class="titulo_blue">Área de atuação: </label>
-                <input type="text" name="area_atuacao" id="area_atuacao">
-                <br>
-                <label for="CRM" class="titulo_blue">CRM: </label>
-                <input type="number" name="CRM" id="CRM">
-                <br>
-                <label for="declaracao_matricula" class="titulo_blue">Declaração de Matrícula: </label>
-                <input type="file" name="declaracao_matricula" id="declaracao_matricula">
-                <br>
-                <label for="senha" class="titulo_blue">Senha: </label>
-                <input type="password" name="senha" id="senha">
-                <br>
-                <label for="senha_2" class="titulo_blue">Confirme a sua senha: </label>
-                <input type="password" name="senha_2" id="senha_2">
-            </div>
-            <div>
-                <input type="checkbox" name="termo_ok" id="termo_ok" value="aceite_ok">
-                <label for="aceite_ok">Li e concordo com a Política de Privacidade e Termos de Uso do Tô Grávida.</label>
-            </div>
-            <br>
-            <div>
-                <button type="submit" class="button_formulario">Enviar</button>
-            </div>
-        </form>
-        <br>
+    <form action="" method="post" autocomplete="on">
+        <fieldset>
+            <legend><h4 class="titulo_rosa">Vamos fazer o seu cadastro!</h4></legend>
+            <div><label for="nome">Nome:</label>
+                <input type="text" name="Nome" id="nome" required placeholder="Nome Completo" autocomplete="nome"></div>
+            <div><label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" autocomplete="email" required></div>
+            <div><label for="Endereço">Endereço:</label>
+                <input type="text" name="Endereço" id="Endereço" required></div>
+            <div><label for="tel">Telefone:</label>
+                <input type="tel" name="tel" id="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx"></div>
+            <div><label for="Area">Area de atuação:</label>
+                <input type="text" name="Area" id="Area" required></div>
+            <div><label for="crm">CRM:</label>
+                <input type="number" name="crm" id="crm" required></div>
+            <div><label for="arquivo">Declaração de matrícula:</label> 
+                <input type="file" name="arquivo" id="arquivo" placeholder="Arquivo PDF/PNG" required accept="image/png, application/pdf"></div>
+            <div><label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" required minlength="8" placeholder="Mínimo de 8 catacteres"></div>
+            <div><label for="isenha">Confirme sua senha:</label>
+                <input type="password" name="senha" id="isenha" required minlength="8" placeholder="Mínimo de 8 caracteres"></div>
+        </fieldset>
         <div>
-            <button class="button_blue"><a href="./index.html"><strong>Voltar a página inicial</strong></a></button>
+            <input type="checkbox" name="termo_ok" id="termo_ok" value="aceite_ok">
+            <label for="aceite_ok">Li e concordo com a Política de Privacidade e Termos de Uso do Tô Grávida.</label>
         </div>
-    </main>
+        <br>
+        <div><input type="submit" value="Cadastrar agora" class="button_formulario"></div>
+    </form>
     <footer>
         <div>
-            <h2 class="titulo_blue">Acesse nossas redes sociais</h2>
-            <h2 class="titulo_footer">Sobre o Tô Grávida</h2>
+        <h2 class="titulo_blue">Acesse nossas redes sociais</h2>
+        <a href="http://www.facebook.com"><img src="./img/logo_facebook.png" class="logo_redes_sociais"></a>
+        <a href="http://www.instagram.com"><img src="./img/logo_instagram.png" class="logo_redes_sociais"></a>
+        <a href="http://www.youtube.com/"><img src="./img/logo_youtube.png" class="logo_redes_sociais"></a>
         </div>
-            <nav>
-                <a href="http://www.facebook.com"><img src="./img/logo_facebook.png" class="logo_redes_sociais"></a>
-                <a href="http://www.instagram.com"><img src="./img/logo_instagram.png" class="logo_redes_sociais"></a>
-                <a href="http://www.youtube.com/"><img src="./img/logo_youtube.png" class="logo_redes_sociais"></a>
-                <a href="Quem_somos.html">Quem somos</a>
-                <a href="Politica_privacidade_termos_uso.html">Política de Privacidade / Termos de Uso</a>
-                <a href="Dúvidas_fale_conosco.html">Dúvidas / Fale Conosco</a>
-            </nav>
+        <div>
+        <h2 class="titulo_footer">Sobre o Tô Grávida</h2>   
+        <button class="item_footer"><a href="Quem_somos.html"><strong>Quem somos</strong></a></button>
+        <button class="item_footer"><a href="Politica_privacidade_termos_uso.html"><strong>Política de Privacidade / Termos de Uso</strong></a></button>
+        <button class="item_footer"><a href="Dúvidas_fale_conosco.html"><strong>Dúvidas / Fale Conosco</strong></a></button>
+        </div>
     </footer>
 </body>
 </html>

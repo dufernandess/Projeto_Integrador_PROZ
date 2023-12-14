@@ -2,10 +2,16 @@ header {
     display: flex;
     background-color: #FFE9F6;
     justify-content: space-between;
+    border-bottom: 1px solid #223885;
     
 }
+footer {
+   border-top: 4px solid #FF0096;
+   display: flex;
+   height: 100px;
+}
 
-a[href="Seu_acompanhamento_gravida.html"], a[href="Seu_acompanhamento_planejamento.html"], a[href=""] {
+a[href="Seu_acompanhamento_gravida.html"], a[href="Seu_acompanhamento_planejamento.html"], a[href=""], a[href="./cadastro_mãe.html"] {
     text-decoration: none;
     color:#223885;
 }
@@ -15,9 +21,13 @@ a[href="./cadastro_profissional.html"], a[href="./login.html"], a[href="./index.
     color:white;
 }
 
-footer a {
+a[href="Dúvidas_fale_conosco.html"], a[href="Politica_privacidade_termos_uso.html"], a[href="Quem_somos.html"]{
+    text-align: right;
     text-decoration: none;
-    color:#223885;
+}
+
+fieldset {
+    border: 2px solid #FF0096;
 }
 
 .nav_header {
@@ -27,33 +37,10 @@ footer a {
     padding-right: 20px;
 }
 
-.div_header{
-    border-bottom: 1px solid #223885;
-}
-
-.nav_main {
-    background-color: #FFE9F6;
-    text-align: right;
-    justify-content: center;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    
-}
-
-.nav_footer {
-    background-color: #FFE9F6;
-    text-align: right;
-    justify-content: center;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    border-bottom: 1px solid #223885;
-}
-
 .button_blue_header {
     background-color: #FFE9F6;
     font-family: 'Gabriela', serif;
     transition: background 0.2s;
-    color:white;
     font-size: 15px;
     border-radius: 8px;
     border: none;
@@ -72,7 +59,6 @@ footer a {
 .button_blue {
     background-color: #223885;
     font-family: 'Gabriela', serif;
-    color: white;
     transition: background 0.2s;
     border-radius: 8px;
     margin-right: 30px;
@@ -142,6 +128,12 @@ input {
     font-family: 'Gabriela', serif;
 }
 
+.observacao{
+    color: #223885;
+    font-family: 'Gabriela', serif;
+    font-size: 12px;
+}
+
 .logo_redes_sociais {
     width: 50px;
     margin-left: 20px;
@@ -156,6 +148,8 @@ input {
 
 .item_footer {
     text-align: center;
+    background-color: white;
+    border: none;
     font-family: 'Gabriela', serif;
     color: #223885;
 }
