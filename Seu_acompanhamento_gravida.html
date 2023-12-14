@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+    </style>
 </head>
 <body>
     <header>
         <img src="./img/logo_to_gravida.png" alt="Logo Tô Grávida" width="250">
-        <nav>
             <ui>
                 <li>É um Profissional? Clique aqui!</li>
                 <li>Login / Cadastre-se</li>
@@ -24,13 +27,13 @@
     <main>
         <section>
             <div>
-                <h2>Seu acompanhamento</h2>
-                <h3>Você está de X semanas!</h3>
-                <h2>Ainda não está grávida? Vamos planejar a sua gestação! <a href="Seu_acompanhamento_planejamento.html">Clique aqui!</a></h2>
+                <h2 class="titulo_rosa">Seu acompanhamento</h2>
+                <h3 class="titulo_blue">Você está de X semanas!</h3>
+                <h2 class="titulo_rosa">Ainda não está grávida? Vamos planejar a sua gestação! <a href="Seu_acompanhamento_planejamento.html">Clique aqui!</a></h2>
             </div>
 
             <div>
-                <img src="https://source.unsplash.com/random/250x250/?baby" alt="Imagem de bebês" class="item current-item">
+                <img src="https://source.unsplash.com/random/250x250/?baby" alt="Imagem de bebês" style="border: 2px solid #FF0096;">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Nihil eligendi eum cupiditate molestiae tempore, eveniet omnis at hic,
                 ipsam minima expedita numquam. Est temporibus iusto obcaecati provident vero 
@@ -41,7 +44,7 @@
             </div>
 
             <div>
-                <img src="https://source.unsplash.com/random/250x250/?pregnant" alt="Imagem de bebês" class="item current-item">
+                <img src="https://source.unsplash.com/random/250x250/?pregnant" alt="Imagem de bebês" style="border: 2px solid #FF0096;">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Nihil eligendi eum cupiditate molestiae tempore, eveniet omnis at hic,
                 ipsam minima expedita numquam. Est temporibus iusto obcaecati provident vero 
@@ -52,7 +55,7 @@
             </div>
 
             <div>
-                <img src="https://source.unsplash.com/random/250x250/?cuidados baby" alt="Imagem de bebês" class="item current-item">
+                <img src="https://source.unsplash.com/random/250x250/?cuidados baby" alt="Imagem de bebês" style="border: 2px solid #FF0096;">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Nihil eligendi eum cupiditate molestiae tempore, eveniet omnis at hic,
                 ipsam minima expedita numquam. Est temporibus iusto obcaecati provident vero 
@@ -63,7 +66,7 @@
             </div>
 
             <div>
-                <img src="https://source.unsplash.com/random/250x250/?gestacao" alt="Imagem de bebês" class="item current-item">
+                <img src="https://source.unsplash.com/random/250x250/?gestacao" alt="Imagem de bebês" style="border: 2px solid #FF0096;">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Nihil eligendi eum cupiditate molestiae tempore, eveniet omnis at hic,
                 ipsam minima expedita numquam. Est temporibus iusto obcaecati provident vero 
@@ -74,17 +77,18 @@
             </div>
         </section>
         <div>
-            <button><a href="./Página_inicial.html">Voltar a página inicial</a></button>
+            <button class="button_blue"><a href="./index.html" class="button_blue">Voltar a página inicial</a></button>
         </div>
     </main>
     <footer>
+        <h2 class="titulo_blue">Acesse nossas redes sociais</h2>
         <ul>
-            <li><a href="http://www.facebook.com"><img src="./img/logo_facebook.png" alt="Logo facebook" width="50"></a></li>
-            <li><a href="http://www.instagram.com"><img src="./img/logo_instagram.png" alt="Logo instagram" width="50"></a></li>
-            <li><a href="https://br.linkedin.com/"><img src="./img/logo_youtube.png" alt="Logo youtube" width="50"></a></li>
+            <li style="display: inline-block;"><a href="http://www.facebook.com"><img src="./img/logo_facebook.png" alt="Logo facebook" width="50"></a></li>
+            <li style="display: inline-block;"><a href="http://www.instagram.com"><img src="./img/logo_instagram.png" alt="Logo instagram" width="50"></a></li>
+            <li style="display: inline-block;"><a href="https://br.linkedin.com/"><img src="./img/logo_youtube.png" alt="Logo youtube" width="50"></a></li>
         </ul>
         <section>
-            <h2>Sobre o Tô Grávida</h2>
+            <h2 class="titulo_blue">Sobre o Tô Grávida</h2>
             <h3><a href="Quem_somos.html">Quem somos</a></h3>
             <h3><a href="Politica_privacidade_termos_uso.html">Política de Privacidade / Termos de Uso</a></h3>
             <h3><a href="Dúvidas_fale_conosco.html">Dúvidas / Fale Conosco</a></h3>
