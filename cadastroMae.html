@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cadastro do Profissional</title>
+    <title>Cadastro Mãe</title>
 </head>
 <body>
     <header>
@@ -26,29 +26,25 @@
             </div>
         </nav>
     </header>
-    <form action="" method="post" autocomplete="on">
-        <p><h3>Cadastro do Profissional.</h3></p>
+    <form action="" autocomplete="on">
+        <p><h3>Cadastro da Mamãe!</h3></p>
         <fieldset>
             <legend><h4>Vamos fazer o seu cadastro!</h4></legend>
-            <div><label for="nome">Nome:</label>
-                <input type="text" name="Nome" id="nome" required placeholder="Nome Completo" autocomplete="nome"></div>
-            <div><label for="email">E-mail:</label>
-                <input type="email" name="email" id="email" autocomplete="email" required></div>
-            <div><label for="Endereço">Endereço:</label>
-                <input type="text" name="Endereço" id="Endereço" required></div>
-            <div><label for="tel">Telefone:</label>
-                <input type="tel" name="tel" id="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx"></div>
-            <div><label for="Area">Area de atuação:</label>
-                <input type="text" name="Area" id="Area" required></div>
-            <div><label for="crm">crm:</label>
-                <input type="number" name="crm" id="crm" required></div>
-            <div><label for="arquivo">Declaração de matrícula:</label> 
-                <input type="file" name="arquivo" id="arquivo" placeholder="Arquivo PDF/PNG" required accept="image/png, application/pdf"></div>
-            <div><label for="senha">Senha:</label>
-                <input type="password" name="senha" id="senha" required minlength="8" placeholder="Mínimo de 8 catacteres"></div>
-            <div><label for="isenha">Confirme sua senha:</label>
-                <input type="password" name="senha" id="isenha" required minlength="8" placeholder="Mínimo de 8 caracteres"></div>
+            <div><label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" autocomplete="on" placeholder="Nome Completo" required></div>
+            <div><label for="email">E-mail: </label>
+            <input type="email" name="email" id="email" required></div>
+            <div><label for="texto">Você está grávida? (Sim/Não) </label>
+            <input type="text" name="texto" id="texto" placeholder="Digite Sim ou Não" required></div>
+            <div><label for="data">DPP: </label>
+            <input type="date" name="data" id="data" required></div>
+            <div><label for="senha">Senha: </label>
+            <input type="password" name="senha" id="senha" placeholder="Mínimo de 8 caracteres" required></div>
+            <div><label for="isenha">Confirmar Senha: </label>
+            <input type="password" name="senha" id="isenha" placeholder="Mínimo de 8 caracteres" required></div>
         </fieldset>
+        <input type="checkbox" name="li" id="li" required>
+        <label for="li">Li e concordo com a Política de Privacidade e Termos de Uso do Tô Grávida.</label>
         <div><input type="submit" value="Cadastrar agora"></div>
     </form>
     <footer>
