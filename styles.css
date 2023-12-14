@@ -12,12 +12,19 @@ footer {
 }
 
 a[href="Seu_acompanhamento_gravida.html"], a[href="Seu_acompanhamento_planejamento.html"], 
-a[href=""], a[href="cadastro_mãe.html"], a[href="dicas_e_informacoes.html"], a[href="central_de_eventos.html"]{
+a[href=""], a[href="cadastro_mãe.html"], a[href="dicas_e_informacoes.html"], a[href="central_de_eventos.html"], 
+a[href="Mini_Cursos.html"], a[href="Nossa_Comunidade.html"]{
     text-decoration: none;
     color:#223885;
 }
 
-a[href="cadastro_profissional.html"], a[href="login.html"], a[href="index.html"], a[href="profissionais_disponiveis.html"] {
+a[href="cadastro_profissional.html"], a[href="login.html"], a[href="index.html"], a[href="profissionais_disponiveis.html"], 
+a[href="Quiz.html"] {
+    text-decoration: none;
+    color:white;
+}
+
+a[href="Curso-1.html"], a[href="Curso-2.html"], a[href="Curso-3.html"], a[href="Criar_Topico_Comunidade.html"]{
     text-decoration: none;
     color:white;
 }
