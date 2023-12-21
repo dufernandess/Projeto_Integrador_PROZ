@@ -118,7 +118,7 @@ footer div ul a {
 
 footer div h2 {
     text-align: center;
-    margin-right: 180px;
+    margin-right: 150px;
     margin-bottom: 0;
 }
 
@@ -126,7 +126,7 @@ footer ul li {
     text-align: center;
     color:#FF0096;
     margin-bottom: 15px;
-    margin-right: 180px;
+    margin-right: 150px;
     
 }
 
@@ -145,8 +145,8 @@ h3 {
 /* CSS PARA O MAIN: */
 
 main {
-    margin-left: 180px;
-    margin-right: 180px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 main section div {
     display: flex;
