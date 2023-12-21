@@ -30,14 +30,12 @@ header nav div a {
 header nav div {
     display: flex;
     justify-content: right;
-    padding-right: 30px;
     margin-right: 150px;
 }
 header nav ul {
     display: flex;
     padding-top: 30px;
     margin-right: 150px;
-    margin-left: auto;
 }
 
 a {
@@ -50,8 +48,8 @@ li {
 
 header nav ul li a {
     color: #223885;
-    margin-right: 50px;
-    font-size: 18px;
+    margin-left: 25px;
+    font-size: 15px;
     padding: 5px;
     border-radius: 10px;
 }
@@ -66,7 +64,6 @@ header nav ul li a:active {
     background-color: #223885;
     border-radius: 10px;
     font-size: 15px;
-    margin-right: 18px;
     padding: 5px;
 }
 
@@ -98,14 +95,14 @@ footer div h2 {
 }
 
 .logo_redes_sociais {
-    width: 50px;
+    width: 60px;
     padding-left: 20px;
     margin-left: 20px;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .redes_sociais {
-    margin-left: 200px;
+    margin-left: 180px;
 }
 
 footer div ul{
@@ -114,15 +111,27 @@ footer div ul{
 }
 
 footer div ul a {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
     color: #223885;
     text-decoration: none;
 }
 
-.footer_sobre {
-    text-align: center; 
-    margin: 0 auto;
+footer div h2 {
+    text-align: center;
+    margin-right: 180px;
+    margin-bottom: 0;
+}
+
+footer ul li {
+    text-align: center;
+    color:#FF0096;
+    margin-bottom: 15px;
+    margin-right: 180px;
+    
+}
+
+footer ul li a{
+    color:#FF0096;
 }
 
 h2 {
@@ -136,7 +145,21 @@ h3 {
 /* CSS PARA O MAIN: */
 
 main {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+main section div {
+    display: flex;
+}
+.mamae_do_mes {
+    justify-content: center;
+    
 }
 
+.post_index_1 {
+    justify-content: left;
+}
+
+.post_index_2 {
+    justify-content: right;
+}
