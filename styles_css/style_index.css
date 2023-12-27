@@ -1,0 +1,261 @@
+/* CSS PARA O HEADER: */
+
+* {
+    font-family: 'Gabriela', serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #FFE9F6;
+    background-image: linear-gradient(to bottom, #fcc5e5, #ffedf7);
+    align-items: center;
+    box-shadow: 0px 0px 5px 2px #d0d3e0;
+}
+
+header div img{
+    width: 400px;
+    padding-top: 20px;
+    margin-left: 120px;
+    margin-right: auto;
+}
+
+header nav div a {
+    color: white;
+}
+
+header nav div {
+    display: flex;
+    justify-content: right;
+    margin-right: 150px;
+}
+
+header nav ul {
+    display: flex;
+    padding-top: 30px;
+    margin-right: 150px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+header nav ul li a {
+    color: #223885;
+    margin-left: 20px;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+
+header nav ul li a:active {
+    background-color: #758ad3;
+    transition: background 0.15s;
+    color: white;
+}
+
+.button_login {
+    background-color: #223885;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px;
+    
+}
+
+.button_login:hover {
+    background-color: #758ad3;
+}
+
+.button_login:active {
+    background-color: #FF0096;
+    transition: background 0.2s;
+    color: white;
+}
+
+
+/* CSS PARA O FOOTER: */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom, white, #FFE9F6);
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: solid 1px #FF0096;
+    box-shadow: 0px 0px 3px 1px #FF0096;
+}
+
+footer div h2 {
+    padding-left: 20px;
+}
+
+.logo_redes_sociais {
+    width: 60px;
+    padding-left: 20px;
+    margin-left: 20px;
+    padding-top: 30px;
+}
+
+.redes_sociais {
+    margin-left: 180px;
+}
+
+footer div ul{
+    padding-top: 20px;
+}
+
+footer div ul a {
+    margin-left: 20px;
+    color: #223885;
+    text-decoration: none;
+}
+
+footer div h2 {
+    text-align: center;
+    margin-right: 150px;
+    margin-bottom: 0;
+}
+
+footer ul li {
+    text-align: center;
+    color:#FF0096;
+    margin-bottom: 15px;
+    margin-right: 150px;
+}
+
+footer nav ul li a{
+    color:#FF0096;
+    margin-left: 20px;
+    font-size: 15px;
+    padding: 5px;  
+    border-radius: 10px;
+}
+
+footer nav ul li a:active {
+    background-color: #fcc5e5;
+    transition: background 0.15s;
+    color: white;
+}
+
+h2 {
+    color: #223885;
+}
+
+h3 {
+    color: #223885;
+}
+
+/* CSS PARA O MAIN: */
+
+body {
+    background-color: #f4f7ff;
+}
+
+main {
+    margin-left: 180px;
+    margin-right: 180px;
+    
+}
+
+main section {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-top: solid 1px #FF0096;
+}
+
+h1 {
+    font-size: 25px;
+    margin-top:50px;
+    margin-bottom: 50px;
+    color: #FF0096;
+}
+
+.borda_rosa {
+    border: solid 2px #FF0096;
+    box-shadow: 0px 0px 3px 1px #FF0096;
+    padding: 5px;
+}
+
+.section_carrossel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+figure {
+    position: relative;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 15px;
+    font-size: 18px;
+    left: 10px;
+    color: white;
+    background-color: rgba(218, 14, 106, 0.7);
+    padding: 5px;
+}
+
+.mamae_do_mes {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.mamae_do_mes img {
+    width: 900px;
+}
+
+.post_index_1 {
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.post_index_1 img {
+    width: 600px;
+}
+
+.post_index_2 {
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.post_index_2 img {
+    width: 600px;
+}
+
+.titulo_post_main_1{
+    font-size: 25px;
+    color: #FF0096;
+}
+
+.conteudo_post_main_1{
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #223885;   
+    text-align: justify;
+}
+
+.titulo_post_main_2{
+    font-size: 25px;
+    color: #FF0096;    
+}
+
+.conteudo_post_main_2{
+    margin-right: 30px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #223885;  
+    text-align: justify;  
+}
