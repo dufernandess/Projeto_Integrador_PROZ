@@ -192,6 +192,10 @@ h1 {
     align-items: center;
 }
 
+.section_carrossel img {
+    width: 400px;
+}
+
 figure {
     position: relative;
 }

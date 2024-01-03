@@ -41,6 +41,7 @@ header nav ul {
 
 a {
     text-decoration: none;
+    color: #FF0096;
 }
 
 li {
@@ -188,20 +189,6 @@ h1 {
     padding: 5px;
 }
 
-figure {
-    position: relative;
-}
-
-figcaption {
-    position: absolute;
-    bottom: 15px;
-    font-size: 18px;
-    left: 10px;
-    color: white;
-    background-color: rgba(218, 14, 106, 0.7);
-    padding: 5px;
-}
-
 .conteudo_info_main_1{
     margin-right: 30px;
     margin-top: 20px;
@@ -216,4 +203,8 @@ figcaption {
     font-size: 18px;
     color: #223885;   
     text-align: justify; 
+}
+
+main section div p{
+    text-decoration: none;
 }
