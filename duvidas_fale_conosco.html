@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale conosco</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles_css/style_duvidas_fale_conosco.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
     </style>
@@ -42,30 +42,34 @@
             <div>
                 <h1 class="titulo_rosa">Fale conosco!</h1>
             </div>
-
-            <fieldset style="border: 2px solid #FF0096; width: 700px;">
-                <form action="">
-                    <legend><h3 class="titulo_blue">Entre em contato conosco preenchendo as informações abaixo:</h3></legend>
-                    <div>
-                        <label for="nome">Nome:</label>
-                        <input type="text" name="Nome" id="nome" required placeholder="Nome Completo" autocomplete="nome" required>
-                    </div>
-                    <div>
-                        <label for="email">E-mail:</label>
-                        <input type="email" name="email" id="email" autocomplete="email" required>
-                    </div>
-                    <div>
-                        <label for="necessidade">Digite sua Necessidade aqui: </label>
-                        <input type="text" name="necessidade" id="necessidade">
-                    </div>
-                    <br>
-                    <div>
-                        <input type="submit" value="Enviar!" class="button_formulario">
-                    </div>
-             </form>
-            </fieldset>
         </section>
-        <br>
+        <section>
+            <div class="formulario">
+                <form action="" autocomplete="on">
+                    <fieldset>
+                        <legend><b>Entre em contato conosco preenchendo as informações abaixo:</b></legend>
+                        <div>
+                            <label for="nome" class="label_input"><b>Nome:</b></label>
+                            <input type="text" name="Nome" id="nome" required placeholder="Digite seu nome completo" required class="input_usuario">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="email" class="label_input"><b>E-mail:</b></label>
+                            <input type="email" name="Email" id="email" required placeholder="Digite seu e-mail" size="auto" class="input_usuario">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="necessidade" class="label_texto"><b>Digite sua Necessidade aqui:</b></label>
+                            <textarea name="necessidade" id="necessidade"></textarea>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="submit" value="Enviar!" class="submit">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="redes_sociais">
