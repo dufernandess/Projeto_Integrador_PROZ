@@ -15,8 +15,17 @@ body {
 }
 
 main {
-    margin-left: 180px;
-    margin-right: 180px;
+    min-width: 300px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1250px){
+   main{
+        padding-left: 30px;
+        padding-right: 30px;               
+    }
 }
 
 main section div h1 {
@@ -26,14 +35,50 @@ main section div h1 {
     color: #FF0096;
 }
 
+@media (max-width: 1250px){
+    main section div h1{
+         font-size: 27px;             
+    }
+}
+
+@media (max-width: 800px){
+main section div h1{
+        font-size: 20px;             
+    }
+} 
+
 main section div h2 {
     font-size: 22px;
     margin-bottom: 15px;
 }
 
+@media (max-width: 1250px){
+    main section div h2{
+        font-size: 18px;             
+    }
+}
+
+@media (max-width: 800px){
+    main section div h2{
+        font-size: 13px;             
+    }
+}
+
 main section div h3 {
     font-size: 20px;
     margin-bottom: 20px;
+}
+
+@media (max-width: 1250px){
+    main section div h3{
+        font-size: 16px;             
+    }
+}
+
+@media (max-width: 800px){
+    main section div h3{
+        font-size: 11px;             
+    }
 }
 
 main section div a {
@@ -46,9 +91,31 @@ section div img {
     margin-top: 20px;
 }
 
+@media (max-width: 1080px){
+    section div img {
+    width: 400px;
+    }
+}
+
+@media (max-width: 800px){
+    section div img {
+       width: 250px;
+    }
+}
+
 .section_posicao_1{
     display: flex;
     margin-bottom: 30px;
+}
+
+@media (max-width: 1080px){
+    .section_posicao_1 {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        align-items: center;
+    }
 }
 
 .section_posicao_1 h3{
@@ -64,14 +131,40 @@ section div img {
     margin-bottom: 10px;
 }
 
+@media (max-width: 1250px){
+    .section_posicao_1 p {
+        font-size: 16px;       
+    }
+}
+
+@media (max-width: 1080px){
+    .section_posicao_1 p {
+        font-size: 14px;       
+    }
+}
+
 .section_posicao_2{
     display: flex;
     margin-bottom: 30px;
 }
 
+@media (max-width: 1080px){
+    .section_posicao_2 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .section_posicao_2 h3{
     margin-top: 20px;
     margin-left: 30px;
+}
+
+@media (max-width: 1080px){
+    .section_posicao_2 h3 {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .section_posicao_2 p{
@@ -81,4 +174,18 @@ section div img {
     margin-left: 30px;
     margin-bottom: 10px;
     margin-top: 20px;
+}
+
+@media (max-width: 1250px){
+    .section_posicao_2 p {
+        font-size: 16px;    
+    }
+}
+
+@media (max-width: 1080px){
+    .section_posicao_2 p {
+        font-size: 14px; 
+        margin-left: auto;
+        margin-right: auto;   
+    }
 }

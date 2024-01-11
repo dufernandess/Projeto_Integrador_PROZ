@@ -1,11 +1,25 @@
 footer {
+    height: 170px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-image: linear-gradient(to bottom, white, #FFE9F6);
     margin-top: 20px;
     padding-top: 20px;
     border-top: solid 1px #FF0096;
     box-shadow: 0px 0px 3px 1px #FF0096;
+    
+}
+
+@media (max-width: 1060px){
+    footer{
+        height: 150px;
+    }
+}
+
+@media (max-width: 800px){
+    footer{
+        height: 125px;
+    }
 }
 
 footer div h2 {
@@ -14,13 +28,44 @@ footer div h2 {
 
 .logo_redes_sociais {
     width: 60px;
-    padding-left: 20px;
-    margin-left: 20px;
+    padding-left: 20px;   
     padding-top: 30px;
 }
 
+@media (max-width: 1320px){
+    .logo_redes_sociais{
+        width: 50px;
+        
+    }
+}
+
+@media (max-width: 1060px){
+    .logo_redes_sociais{
+        width: 40px;
+        
+    }
+}
+
+@media (max-width: 800px){
+    .logo_redes_sociais{
+        width: 30px;
+        
+    }
+}
+
 .redes_sociais {
-    margin-left: 180px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+}
+
+.footer_sobre{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer_sobre h2{
+    padding-right: 20px;
 }
 
 footer div ul{
@@ -28,29 +73,56 @@ footer div ul{
 }
 
 footer div ul a {
-    margin-left: 20px;
     color: #223885;
     text-decoration: none;
 }
 
 footer div h2 {
     text-align: center;
-    margin-right: 150px;
     margin-bottom: 0;
 }
 
-footer ul li {
+footer nav ul li {
     text-align: center;
     color:#FF0096;
     margin-bottom: 15px;
-    margin-right: 150px;
 }
+
+@media (max-width: 1060px){
+    footer nav ul li{
+        margin-bottom: 8px;       
+    }
+}
+
+@media (max-width: 800px){
+    footer nav ul li{
+        margin-bottom: 5px;       
+    }
+}
+
 
 footer nav ul li a{
     color:#FF0096;
-    margin-left: 20px;
     font-size: 15px;
-    
+       
+}
+
+@media (max-width: 1320px){
+    footer nav ul li a {
+        font-size: 13px;       
+    }
+}
+
+@media (max-width: 1060px){
+    footer nav ul li a {
+        font-size: 11px;        
+    }
+}
+
+@media (max-width: 800px){
+    footer nav ul li a {
+        font-size: 9px;        
+    }
 }
 
 footer nav ul li a:active {
@@ -63,8 +135,28 @@ footer nav ul li a:active {
 
 h2 {
     color: #223885;
+    
+}
+
+@media (max-width: 1320px){
+    h2 {
+        font-size: 20px;        
+    }
+}
+
+@media (max-width: 1060px){
+    h2 {
+        font-size: 18px;        
+    }
+}
+
+@media (max-width: 800px){
+    h2 {
+        font-size: 13px;        
+    }
 }
 
 h3 {
     color: #223885;
 }
+
