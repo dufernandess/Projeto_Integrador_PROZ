@@ -133,3 +133,29 @@ figcaption {
     padding-bottom: 50px;
 }
 
+.button_enviar {
+    background-color: #223885;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px; 
+    color: white;
+}
+
+.button_center {
+    text-align: center;
+}
+
+.borda_rosa_ajuda {
+    padding: 10px 50px;
+    border: solid 2px #FF0096;
+    box-shadow: 0px 0px 3px 1px #FF0096;
+}
+.input {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+}
+
+
+/*style="border: 2px solid #FF0096"*/
