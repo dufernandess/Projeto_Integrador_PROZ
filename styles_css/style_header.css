@@ -15,6 +15,36 @@ header {
     }
 }
 
+.menu-toggle {
+    cursor: pointer;
+    display: none;
+    order: 2;
+  }
+
+.bar {
+    display: block;    
+    width: 25px;
+    height: 3px;
+    background-color: #FF0096;
+    margin: 5px 0;
+}
+
+@media (max-width: 800px) {
+    header {
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+    }    
+}
+
 header div img{
     width: 400px;
     padding-top: 20px;
@@ -138,7 +168,7 @@ header nav ul li a:active {
     border-radius: 10px;
     font-size: 15px;
     padding: 5px;
-    
+    cursor: pointer;
 }
 
 @media (max-width: 1370px){

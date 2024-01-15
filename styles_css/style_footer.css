@@ -49,7 +49,8 @@ footer div h2 {
 @media (max-width: 800px){
     .logo_redes_sociais{
         width: 30px;
-        
+        padding-left: 10px;
+        padding-top: 20px;
     }
 }
 
@@ -68,8 +69,14 @@ footer div h2 {
     padding-right: 20px;
 }
 
-footer div ul{
+footer div nav{
     padding-top: 20px;
+}
+
+@media (max-width: 800px){
+    footer div nav {
+        padding-top: 5px;
+    }
 }
 
 footer div ul a {
@@ -85,7 +92,7 @@ footer div h2 {
 footer nav ul li {
     text-align: center;
     color:#FF0096;
-    margin-bottom: 15px;
+    
 }
 
 @media (max-width: 1060px){
@@ -96,7 +103,8 @@ footer nav ul li {
 
 @media (max-width: 800px){
     footer nav ul li{
-        margin-bottom: 5px;       
+        margin-top: 5px;
+        margin-bottom: 3px;       
     }
 }
 

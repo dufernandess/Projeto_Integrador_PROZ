@@ -89,6 +89,7 @@ main section div a {
 section div img {
     width: 500px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 1080px){
@@ -105,16 +106,16 @@ section div img {
 
 .section_posicao_1{
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 1080px){
     .section_posicao_1 {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        align-items: center;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 20px;
-        align-items: center;
+        margin-bottom: 0px;
     }
 }
 
@@ -152,6 +153,9 @@ section div img {
     .section_posicao_2 {
         flex-direction: column;
         align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;
     }
 }
 
