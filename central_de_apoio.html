@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Central de apoio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="central_de_apoio.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
     </style>
@@ -33,43 +33,56 @@
     </header>
 
     <main>
+        
+        <div class="precisa_de_ajuda">
+            <h1 class="titulo_rosa" tabindex="0">Precisa de Ajuda?</h1>
+        </div>
+       
+        
         <section>
-            <div>
-                <h1 class="titulo_rosa">Precisa de Ajuda?</h1>
+            <div class="direcionamentos">
+                <h3 class="titulo_blue_caixa" tabindex="1">Direcionamento Sobre:</h3>
+
+                <span class="lista-direcionamentos">
+                    <ul>
+                        <li><strong>Tento Engravidar e Não consigo</strong></li>
+                        <li><strong>Glicemia alterada</strong></li>
+                        <li><strong>Transvaginal</strong></li>
+                        <li><strong>Morfológica</strong></li>
+                    </ul>
+                </span>
+
             </div>
 
-            <div>
-                <h3 class="titulo_blue">Direcionamentos</h3>
-                <a href="Direcionamentos.html"><img src="./img/direcionamento.png" alt="Direcionamentos" width="220" height="220" style="border: 2px solid #FF0096;"/></a>
-            </div>
-
-            <div>
-                <h3 class="titulo_blue">Suporte emocional</h3>
-                <a href="suporteemocional.html"><img src="./img/suporte emocional.png" alt="Suporte emocional" width="220" height="220" style="border: 2px solid #FF0096;"/></a>
+            <div class="suporte_emocional">
+                <h3 class="titulo_blue_caixa" tabindex="2">Suporte emocional</h3>
+                
+                <p>
+                    Olá, grávida!
+                    
+                    Parabéns pela sua gravidez! Essa é uma fase de muitas mudanças e descobertas, e é natural que você se sinta ansiosa, feliz, preocupada ou até mesmo assustada.
+                    
+                    É importante que você tenha um suporte emocional durante a gravidez, pois isso pode ajudar a aliviar o estresse, a ansiedade e a depressão.
+                    
+                    No nosso site, você encontrará recursos que podem te ajudar a encontrar suporte emocional, como:
+                    
+                    Artigos e vídeos sobre saúde mental na gravidez
+                    Listas de grupos de apoio para gestantes
+                    Guias sobre como lidar com emoções difíceis
+                    Informações sobre profissionais de saúde mental que podem te ajudar
+                    
+                    Se você estiver sentindo algum tipo de dificuldade emocional durante a gravidez, não hesite em nos procurar. Estamos aqui para te ajudar!
+                    
+                    Boa gravidez!
+                    </p>
             </div>
         </section>
         <br>
-        <section>
-            <div style="border: 2px solid #FF0096; width: 500px;">
-                <h1 class="titulo_rosa">Voce está precisando de algum apoio?</h1>
-                <h3 class="titulo_blue">Nos conte sua história!</h3>
-                <label>Nome:</label>
-                <textarea placeholder="Digite o seu nome" style="border: 2px solid #FF0096"></textarea></br>        
-                <label>E-mail:</label>
-                <textarea placeholder="Digite o seu e-mail" style="border: 2px solid #FF0096"></textarea></br>       
-                <label>Nos conte sua história:</label>
-                <textarea placeholder="Digite a sua historia aqui" style="border: 2px solid #FF0096"></textarea></br>
-                <br>
-                <div>
-                    <button type="submit" class="button_formulario">Enviar</a></button>
-                </div>
-                <br>
-            </div>
-        </section>
         <br>
-        <section>
-            <div style="border: 2px solid #FF0096; width: 500px;">
-                <h2 class="titulo_rosa">Não encontrou a informação que você procurava?</h2>
+        <section class="caixa_ajuda">
+            <div class="input_ajuda">
+                <h2 class="titulo_rosa" tabindex="4">Não encontrou a informação que você procurava?</h2>
+                <img src="./img/mulher_duvida.jpg" alt="mulher com duvida"width="100px" />
                 <h2 class="titulo_blue">Nos de mais detalhes para podermos lhe ajudar</h2>
                 <label>Nome:</label>
                 <textarea placeholder="Digite o seu nome" style="border: 2px solid #FF0096"></textarea></br>        
@@ -81,23 +94,26 @@
                 <div>
                     <button type="submit" class="button_formulario">Enviar</a></button>
                 </div>
+                
                 <br>
+                
             </div>
+            
         </section>
     </main>
 
     <footer>
         <div>
-            <h2 class="titulo_blue">Acesse nossas redes sociais</h2>
-            <a href="http://www.facebook.com"><img src="./img/logo_facebook.png" class="logo_redes_sociais"></a>
-            <a href="http://www.instagram.com"><img src="./img/logo_instagram.png" class="logo_redes_sociais"></a>
-            <a href="http://www.youtube.com/"><img src="./img/logo_youtube.png" class="logo_redes_sociais"></a>
+            <h2 class="titulo_blue" tabindex="5">Acesse nossas redes sociais</h2>
+            <a href="http://www.facebook.com" tabindex="6"><img src="./img/logo_facebook.png" class="logo_redes_sociais"></a>
+            <a href="http://www.instagram.com" tabindex="7"><img src="./img/logo_instagram.png" class="logo_redes_sociais"></a>
+            <a href="http://www.youtube.com/" tabindex="8"><img src="./img/logo_youtube.png" class="logo_redes_sociais"></a>
         </div>
         <div>
-            <h2 class="titulo_footer">Sobre o Tô Grávida</h2>   
-            <button class="item_footer"><a href="quem_somos.html"><strong>Quem somos</strong></a></button>
-            <button class="item_footer"><a href="politica_privacidade_termos_uso.html"><strong>Política de Privacidade / Termos de Uso</strong></a></button>
-            <button class="item_footer"><a href="duvidas_fale_conosco.html"><strong>Dúvidas / Fale Conosco</strong></a></button>
+            <h2 class="titulo_footer" tabindex="9">Sobre o Tô Grávida</h2>   
+            <button class="item_footer" tabindex="10"><a href="quem_somos.html"><strong>Quem somos</strong></a></button>
+            <button class="item_footer" tabindex="11"><a href="politica_privacidade_termos_uso.html"><strong>Política de Privacidade / Termos de Uso</strong></a></button>
+            <button class="item_footer" tabindex="12"><a href="duvidas_fale_conosco.html"><strong>Dúvidas / Fale Conosco</strong></a></button>
         </div>
     </footer>
 </body>

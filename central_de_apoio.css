@@ -1,0 +1,240 @@
+
+header {
+    display: flex;
+    background-color: #FFE9F6;
+    justify-content: space-between;
+    border-bottom: 1px solid #223885;
+    /*adicionei border-radius*/
+    border-radius: 8px;
+    
+}
+footer {
+    /*adicionei a mesma cor de fundo do header ao footer*/
+    background-color: #FFE9F6;
+   border-top: 4px solid #FF0096;
+   display: flex;
+   /*alterei a unidade de medida para porcentagem*/
+   height: 90%;
+   /*centralizei o footer*/
+   justify-content:center;
+   /*adicionei border radius*/
+   border-radius: 8px;
+}
+
+a[href="seu_acompanhamento_gravida.html"], a[href="seu_acompanhamento_planejamento.html"], 
+a[href=""], a[href="cadastro_mae.html"], a[href="dicas_e_informacoes.html"], a[href="central_de_eventos.html"], 
+a[href="mini_cursos.html"], a[href="nossa_comunidade.html"], a[href="central_de_apoio.html"] {
+    text-decoration: none;
+    color:#223885;
+}
+
+a[href="cadastro_profissional.html"], a[href="login.html"], a[href="index.html"], a[href="profissionais_disponiveis.html"], 
+a[href="quiz.html"] {
+    text-decoration: none;
+    color:white;
+}
+
+a[href="curso_1.html"], a[href="curso_2.html"], a[href="curso_3.html"], a[href="criar_topico_comunidade.html"] {
+    text-decoration: none;
+    color:white;
+}
+
+a[href="duvidas_fale_conosco.html"], a[href="politica_privacidade_termos_uso.html"], a[href="quem_somos.html"] {
+    text-decoration: none;
+    color:#223885;
+}
+
+fieldset {
+    border: 2px solid #FF0096;
+}
+
+.nav_header {
+    text-align: right;
+    padding-top: 60px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+}
+
+.button_blue_header {
+    background-color: #FFE9F6;
+    font-family: 'Gabriela', serif;
+    transition: background 0.2s;
+    font-size: 15px;
+    border-radius: 8px;
+    border: none;
+    margin-right: 30px;
+}
+
+.button_blue_header:hover {
+    background-color: #758ad3;
+}
+
+.button_blue_header:active {
+    background-color: #FF0096;
+    color: white;
+}
+
+.button_blue {
+    background-color: #223885;
+    font-family: 'Gabriela', serif;
+    transition: background 0.2s;
+    color: white;
+    border-radius: 8px;
+    margin-right: 30px;
+}
+
+.button_blue:hover {
+    background-color: #758ad3;
+}
+
+.button_blue:active {
+    background-color: #FF0096;
+    color: white;
+}
+
+.button_formulario {
+    background-color: #FF0096;
+    font-family: 'Gabriela', serif;
+    color: white;
+    transition: background 0.2s;
+    font-size: 20px;
+    border-radius: 8px;
+    margin-right: 30px;
+}
+
+.button_formulario:hover {
+    background-color: #d978b0;
+}
+
+.button_formulario:active {
+    background-color: #223885;
+    color: white;
+}
+
+
+
+label {
+    color: #223885;
+    font-family: 'Gabriela', serif;
+}
+
+input {
+    color: #223885;
+    font-family: 'Gabriela', serif;
+}
+
+.logo_redes_sociais {
+    width: 50px;
+    margin-left: 20px;
+}
+
+.titulo_footer {
+    text-align: center;
+    font-family: 'Gabriela', serif;
+    color: #223885;
+    font-size: 20px;
+}
+
+.item_footer {
+    text-align: center;
+    background-color: white;
+    border: none;
+    font-family: 'Gabriela', serif;
+    color: #223885;
+}
+
+.logo_to_gravida{
+    width: 250px;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+main{
+    margin:100px;
+    margin-top: 20px;;
+}
+/*Main> título em azul de: direcionamentos, suporte emocional"*/
+.titulo_blue_caixa{
+   width:300px;
+   height:160px;
+    color: #223885;
+    font-family: 'Gabriela', serif;
+    font-size: 20px;
+    margin:5px;
+    margin-top:10px;
+    text-align: center;
+    
+   
+}
+/*Main> título em azul das seções: Apoio, e Informação*/
+.titulo_blue{
+    color: #223885;
+    font-family: 'Gabriela', serif;
+    font-size: 20px;
+}
+
+/*Main> títulos em rosa*/
+.titulo_rosa{
+    font-family: 'Gabriela', serif;
+    color: #FF0096;
+    font-size: 25px;
+    margin:5px;
+    
+
+}
+/*Main> título rosa*/
+.precisa_de_ajuda {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:5px;
+    margin-bottom:20px;
+    
+
+  }
+  /*Main>  esse espaço altera: caixas de direcionamento e suporte emocional, e seus títulos em azul*/
+  .direcionamentos , .suporte_emocional{
+    
+    background-color: rgba(325, 138, 211, 0.5);
+    background-image:  
+       url(./img/mulheres_felizes_andre.jpg) ;
+    display: grid;
+    justify-content: center;
+    /*flex-wrap: wrap;*/
+    border: 2px solid hsla(325, 100%, 50%, 0.938);
+    width: 450px;
+    height:400px;
+    padding: 5px ;
+    margin:8px;
+    border-radius: 5px;
+    box-shadow: 3px 3px rgba(12, 15, 24,0.5);
+  }
+  /*itens da lista da caixa 'Direcionamento Sobre:'*/
+.lista-direcionamentos li{
+    display: flex;
+    border: 2px solid #FF0096 ;
+    background-color: rgba(325, 138, 211, 0.9);
+    width: 200px;
+    margin:8px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 3px 3px rgba(12, 15, 24,0.5);
+    font-family: 'Gabriela', serif;
+    color: #223885;
+  }
+  .lista-direcionamentos{
+    display: flex;
+    align-items: center;
+  }
+  .input_apoio , .input_ajuda{
+    border: 2px solid #FF0096 ;
+    background-color: rgba(325, 138, 211, 0.5);
+    width: 90%;
+    margin:5px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 3px 3px rgba(12, 15, 24,0.5);
+  }
+  
+ 
