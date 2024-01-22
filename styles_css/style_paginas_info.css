@@ -9,27 +9,62 @@ body {
 }
 
 main {
-    margin-left: 180px;
-    margin-right: 180px;
-    
+    min-width: 300px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1250px){
+    main{
+        padding-left: 30px;
+        padding-right: 30px;               
+    }
 }
 
 main section {
     display: flex;
     text-align: justify;
-    margin-bottom: 30px;
+    
 }
 
 main section img {
     width: 500px;
     margin-top: 20px;
 }
+@media (max-width: 1080px){
+    section div img {
+    width: 400px;
+    }
+}
+
+@media (max-width: 800px){
+    section div img {
+       width: 250px;
+    }
+}
 
 h1 {
-    font-size: 35px;
+    font-size: 30px;
     margin-top:50px;
     margin-bottom: 40px;
     color: #FF0096;
+}
+
+@media (max-width: 1150px){
+    h1{
+         font-size: 25px;             
+    }
+}
+
+@media (max-width: 800px){
+    h1{
+        font-size: 20px;             
+    }
+} 
+
+p {
+    margin-bottom: 20px;
 }
 
 .borda_rosa {
@@ -38,22 +73,73 @@ h1 {
     padding: 5px;
 }
 
-.conteudo_info_main_1{
-    margin-right: 30px;
+.conteudo_info_main_2{
+    display: flex; 
+}
+
+@media (max-width: 1080px){
+    .conteudo_info_main_2 {
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;   
+    }
+}
+
+.conteudo_info_main_2 p{
+    margin-left: 30px;
     margin-top: 20px;
     font-size: 18px;
     color: #223885;  
     text-align: justify;  
 }
 
-.conteudo_info_main_2{
-    margin-left: 30px;
+@media (max-width: 1250px){
+    .conteudo_info_main_2 p{
+        font-size: 16px;    
+    }
+}
+
+@media (max-width: 1080px){
+    .conteudo_info_main_2 p{
+        margin-left: auto;
+        margin-right: auto; 
+        font-size: 14px;    
+    }
+}
+
+.conteudo_info_main_1{
+    display: flex; 
+}
+
+@media (max-width: 1080px){
+    .conteudo_info_main_1 {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;   
+    }
+}
+
+.conteudo_info_main_1 p{
+    margin-right: 30px;
     margin-top: 20px;
     font-size: 18px;
     color: #223885;   
     text-align: justify; 
 }
 
-main section div p{
-    text-decoration: none;
+@media (max-width: 1250px){
+    .conteudo_info_main_1 p{
+        font-size: 16px;    
+    }
+}
+
+@media (max-width: 1080px){
+    .conteudo_info_main_1 p{
+        margin-left: auto;
+        margin-right: auto; 
+        font-size: 14px;    
+    }
 }

@@ -9,9 +9,17 @@ body {
 }
 
 main {
-    margin-left: 180px;
-    margin-right: 180px;
-    
+    min-width: 300px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1250px){
+    main{
+         padding-left: 50px;
+         padding-right: 50px;               
+     }
 }
 
 main section {
@@ -19,32 +27,87 @@ main section {
     margin-bottom: 50px;
 }
 
-main section div p {
+p {
     color:#223885;
-    font-size: 18px;
+    font-size: 17px;
     margin-bottom: 8px;
 }
 
-main section div h2 {
+@media (max-width: 1150px){
+    p {
+        font-size: 15px;       
+    }
+}
+
+@media (max-width: 1080px){
+    p {
+        font-size: 13px;       
+    }
+}
+
+h1 {
+    font-size: 32px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    color: #FF0096;
+}
+
+@media (max-width: 1150px){
+    h1 {
+         font-size: 27px;             
+    }
+}
+
+@media (max-width: 800px){
+    h1 {
+        font-size: 22px;             
+    }
+} 
+
+h2 {
     font-size: 25px;
+    color: #223885;
     margin-bottom: 10px;
 }
 
-main section div h3 {
-    font-size: 20px;
-    margin-bottom: 50px;
+@media (max-width: 1150px){
+    h2 {
+         font-size: 22px;             
+    }
 }
+
+@media (max-width: 800px){
+    h2 {
+        font-size: 18px;             
+    }
+} 
+
+h3 {
+    color: #223885;
+    font-size: 20px;
+}
+
+@media (max-width: 1150px){
+    h3 {
+         font-size: 18px;             
+    }
+}
+
+@media (max-width: 800px){
+    h3 {
+        font-size: 15px;             
+    }
+} 
 
 main section div img {
     margin-bottom: 50px;
     width: 250px;
 }
 
-h1 {
-    font-size: 35px;
-    margin-top:50px;
-    margin-bottom: 40px;
-    color: #FF0096;
+@media (max-width: 900px){
+    main section div img {
+        margin-bottom: 20px;             
+    }
 }
 
 .borda_rosa {
@@ -55,6 +118,16 @@ h1 {
 
 .idealizadores {
     display: flex;
+}
+
+@media (max-width: 900px) {
+    .idealizadores{
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
 }
 
 .idealizadores h3 {

@@ -92,7 +92,7 @@ footer div h2 {
 footer nav ul li {
     text-align: center;
     color:#FF0096;
-    
+    margin-bottom: 15px;  
 }
 
 @media (max-width: 1060px){
@@ -141,30 +141,30 @@ footer nav ul li a:active {
     padding: 5px;
 }
 
-h2 {
+footer h2 {
     color: #223885;
     
 }
 
 @media (max-width: 1320px){
-    h2 {
+    footer h2 {
         font-size: 20px;        
     }
 }
 
 @media (max-width: 1060px){
-    h2 {
+    footer h2 {
         font-size: 18px;        
     }
 }
 
 @media (max-width: 800px){
-    h2 {
+    footer h2 {
         font-size: 13px;        
     }
 }
 
-h3 {
+footer h3 {
     color: #223885;
 }
 
