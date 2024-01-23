@@ -106,6 +106,16 @@ section div img {
     }
 }
 
+#chamada_outros_tópicos{
+    color: #223885;
+    font-size: 20px;
+}
+
+#chamada_outros_tópicos a{
+    color: #FF0096;
+    font-size: 20px;
+}
+
 .section_posicao_1{
     display: flex;
     
