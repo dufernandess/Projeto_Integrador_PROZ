@@ -152,8 +152,22 @@ input {
 
 main{
     margin:100px;
-    margin-top: 20px;;
+    margin-top: 20px;
+    width:95%;
 }
+.conteiner{
+display: flex;
+}
+
+/*caixa para transição de conteiner*/
+.transicao-de-conteiner{
+width:95%;
+height: 100px;
+background-color: #d978b0;
+
+
+}
+
 /*Main> título em azul de: direcionamentos, suporte emocional"*/
 .titulo_blue_caixa{
    width:300px;
@@ -188,11 +202,21 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width:90%;
     padding:5px;
     margin-bottom:20px;
     
 
   }
+  /*usando a propriedade nth-child para alterar um elemento*/
+  .conteiner-2 .direcionamentos:nth-child(odd) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width:90%;
+
+  }
+ 
   /*Main>  esse espaço altera: caixas de direcionamento e suporte emocional, e seus títulos em azul*/
   .direcionamentos , .suporte_emocional{
     
@@ -201,7 +225,6 @@ main{
        url(./img/mulheres_felizes_andre.jpg) ;
     display: grid;
     justify-content: center;
-    /*flex-wrap: wrap;*/
     border: 2px solid hsla(325, 100%, 50%, 0.938);
     width: 450px;
     height:400px;
