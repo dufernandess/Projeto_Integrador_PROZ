@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dicas e Informações</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./style-eduardo/style_index.css">
+    <link rel="stylesheet" href="./style-eduardo/style_header.css">
+    <link rel="stylesheet" href="./style-eduardo/style_footer.css">
+    <link rel="stylesheet" href="./style_dicas_informacoes.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
     </style>
@@ -12,66 +15,74 @@
 <body>
     <header>
         <div>
-            <a href="index.html"><img src="./img/logo_to_gravida.png" class="logo_to_gravida"></a>
+            <a href="index.html"><img src="./img/logo_to_gravida.png"></a>
         </div>
-        <nav class="nav_header">
+        <nav>
             <div>
-                <button class="button_blue"><a href="cadastro_profissional.html" ><strong>É um Profissional? Cadastre-se aqui!</strong></a></button>
-                <button class="button_blue"><a href="profissionais_disponiveis.html" ><strong>Confira os profissionais parceiros</strong></a></button>
-                <button class="button_blue"><a href="login.html"><strong>Login / Cadastre-se</strong></a></button>
+                <button class="button_login"><a href="login.html"><strong>Login / Cadastre-se</strong></a></button>
             </div>
-            <br>
-            <div>
-                <button class="button_blue_header"><a href="seu_acompanhamento_gravida.html"><strong>Seu acompanhamento</strong></a></button>
-                <button class="button_blue_header"><a href="seu_acompanhamento_planejamento.html"><strong>Planejando a sua gravidez</strong></a></button>
-                <button class="button_blue_header"><a href="nossa_comunidade.html"><strong>Nossa comunidade</strong></a></button>
-                <button class="button_blue_header"><a href="dicas_e_informacoes.html"><strong>Dicas e Informações</strong></a></button>
-                <button class="button_blue_header"><a href="central_de_apoio.html"><strong>Central de Apoio</strong></a></button>
-                <button class="button_blue_header"><a href="mini_cursos.html"><strong>Mini Cursos</strong></a></button>
-            </div>
+            <ul>
+                <li>
+                    <a href="seu_acompanhamento_gravida.html"><strong>Seu acompanhamento</strong></a>
+                </li>
+                <li>
+                    <a href="seu_acompanhamento_planejamento.html"><strong>Planejando a sua gravidez</strong></a>
+                </li>
+                <li>
+                    <a href="nossa_comunidade.html"><strong>Nossa comunidade</strong></a>
+                </li>
+                <li>
+                    <a href="dicas_e_informacoes.html"><strong>Dicas e Informações</strong></a>
+                </li>
+                <li>
+                    <a href="central_de_apoio.html"><strong>Central de Apoio</strong></a>
+                </li>
+            </ul>
         </nav>
     </header>
 <main>
-    <div>
-        <h1 class="titulo_rosa">Dicas e Informações</h1>
+    <div class="cabecalho"> 
+        <h1>Dicas e Informações</h1>
     </div>
-            <h3 class="titulo_blue"><a href="central_de_eventos.html">Central de Eventos</a></h3>
-            <a href="central_de_eventos.html"><img src="https://source.unsplash.com/random/1000x500/?palestras" alt="eventos" style="border: 2px solid #FF0096;">
+    
+    <section class="posts">
+        <div>
+            <h2 class="titulo_blue">Saude psicologica</h2>
+            <img class="borda_rosa" src="https://source.unsplash.com/random/400x480/?gravidez" alt="Imagem da gravidez">
         </div>
         <div>
-            <h3 class="titulo_blue">Devo tomar alguma vitamina durante a gravidez?</h3>
-            <img src="https://source.unsplash.com/random/250x250/?gravidez" alt="Imagem da gravidez" style="border: 2px solid #FF0096;">
+            <h2 class="titulo_blue">Sexo na gravidez</h2>
+            <img class="borda_rosa" src="https://source.unsplash.com/random/400x480/?grávida" alt="Imagem da gravida">
+        </div>
+    </section>
+    <section class="posts">
+        <div>
+            <h2 class="titulo_blue">Papel do pai</h2>
+            <img class="borda_rosa" src="https://source.unsplash.com/random/400x480/?bebê" alt="Imagem bebe">
         </div>
         <div>
-            <h3 class="titulo_blue">Devo tomar alguma vitamina durante a gravidez?</h3>
-            <img src="https://source.unsplash.com/random/250x250/?grávida" alt="Imagem da gravida" style="border: 2px solid #FF0096;">
+            <h2 class="titulo_blue">Duvidas gerais</h2>
+            <img class="borda_rosa" src="https://source.unsplash.com/random/400x480/?baby" alt="Imagem baby">
         </div>
-        <div>
-            <h3 class="titulo_blue">Devo tomar alguma vitamina durante a gravidez?</h3>
-            <img src="https://source.unsplash.com/random/250x250/?bebê" alt="Imagem bebe" style="border: 2px solid #FF0096;">
-        </div>
-        <div>
-            <h3 class="titulo_blue">Devo tomar alguma vitamina durante a gravidez?</h3>
-            <img src="https://source.unsplash.com/random/250x250/?baby" alt="Imagem baby" style="border: 2px solid #FF0096;">
-        </div>
-        <div>
-            <h3 class="titulo_blue">Devo tomar alguma vitamina durante a gravidez?</h3>
-            <img src="https://source.unsplash.com/random/250x250/?gravidez" alt="Imagem da gravidez" style="border: 2px solid #FF0096;">
-        </div>
+    </section>
 </main>
 
 <footer>
-    <div>
-        <h2 class="titulo_blue">Acesse nossas redes sociais</h2>
+    <div class="redes_sociais">
+        <h2>Acesse nossas redes sociais</h2>
         <a href="http://www.facebook.com"><img src="./img/logo_facebook.png" class="logo_redes_sociais"></a>
         <a href="http://www.instagram.com"><img src="./img/logo_instagram.png" class="logo_redes_sociais"></a>
         <a href="http://www.youtube.com/"><img src="./img/logo_youtube.png" class="logo_redes_sociais"></a>
     </div>
-    <div>
-        <h2 class="titulo_footer">Sobre o Tô Grávida</h2>   
-        <button class="item_footer"><a href="quem_somos.html"><strong>Quem somos</strong></a></button>
-        <button class="item_footer"><a href="politica_privacidade_termos_uso.html"><strong>Política de Privacidade / Termos de Uso</strong></a></button>
-        <button class="item_footer"><a href="duvidas_fale_conosco.html"><strong>Dúvidas / Fale Conosco</strong></a></button>
+    <div class="footer_sobre">
+        <h2>Sobre o Tô Grávida</h2>
+        <nav>
+            <ul>   
+                <li><a href="quem_somos.html"><strong>Quem somos</strong></a></li>
+                <li><a href="politica_privacidade_termos_uso.html"><strong>Política de Privacidade / Termos de Uso</strong></a></li>
+                <li><a href="duvidas_fale_conosco.html"><strong>Dúvidas / Fale Conosco</strong></a></li>
+            </ul>
+        </nav>
     </div>
 </footer>
 </body>
