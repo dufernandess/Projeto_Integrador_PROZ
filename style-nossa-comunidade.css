@@ -14,6 +14,22 @@ main {
     text-align: center;
 }
 
+.div-mobile {
+    padding: 0;
+}
+.mobile img {
+    height: 30px;
+    width: 30px;
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .mobile img {
+        display: block;
+        align-items: end;
+    }
+}
+
 @media (max-width: 1250px){
     main{
          padding-left: 30px;
@@ -27,6 +43,16 @@ main section {
     padding-top: 50px;
     padding-bottom: 50px;
     border-top: solid 1px #FF0096;
+}
+
+@media(max-width: 800px) {
+    body nav ul {
+        padding: 0;
+    }
+}
+
+a {
+    color: white;
 }
 
 @media (max-width: 1250px) {
