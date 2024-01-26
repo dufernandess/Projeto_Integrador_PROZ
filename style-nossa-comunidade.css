@@ -14,13 +14,11 @@ main {
     text-align: center;
 }
 
-.div-mobile {
-    padding: 0;
-}
 .mobile img {
     height: 30px;
     width: 30px;
     display: none;
+    background: transparent;
 }
 
 @media (max-width: 800px) {
