@@ -118,7 +118,8 @@ legend {
 
 @media (max-width: 800px){
     .submit{
-        font-size: 18px;          
+        font-size: 18px;   
+        padding-left: 90px;    
      }
 }
 
@@ -147,6 +148,7 @@ legend {
 .label_texto {
     display: flex;
     margin-left: 25px;
+    margin-right: 25px;
     margin-bottom: 10px;
 }
 
