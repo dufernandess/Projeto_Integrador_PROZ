@@ -43,20 +43,20 @@ h1 {
 
 @media (max-width: 800px){
     h1 {
-        font-size: 22px; 
+        font-size: 20px; 
         margin-bottom: 20px;              
     }
 }
 
-main h2 {
+main div h2 {
     display: none;
 }
 
 @media (max-width: 800px){
-    h2 {
+    main div h2 {
         display: block;            
         color: #223885;
-        font-size: 18px;
+        font-size: 15px;
         margin-bottom: 20px;
     }
 }

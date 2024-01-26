@@ -15,12 +15,6 @@ main {
     margin-right: auto;
 }
 
-@media (max-width: 1250px){
-    main{
-                     
-    }
-}
-
 main section {
     margin-bottom: 50px;
 }
