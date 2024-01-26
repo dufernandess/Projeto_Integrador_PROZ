@@ -27,6 +27,11 @@ main section {
     margin-bottom: 50px;
 }
 
+span {
+    color: #FF0096;
+    font-weight: bold;
+}
+
 p {
     color:#223885;
     font-size: 17px;

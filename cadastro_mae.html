@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cadastro_mãe</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles_css/style_cadastro.css">
+    <link rel="stylesheet" href="./styles_css/style_header.css">
+    <link rel="stylesheet" href="./styles_css/style_footer.css">    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
     </style>
@@ -26,7 +28,7 @@
             <nav class="nav">
                 <ul>
                 <li>
-                    <a href="seu_acompanhamento_gravida.html"><strong>Seu acompanhamento</strong></a>
+                    <a href="semana_1_a_4.html"><strong>Seu acompanhamento</strong></a>
                 </li>
                 <li>
                     <a href="seu_acompanhamento_planejamento.html"><strong>Planejando a sua gravidez</strong></a>
@@ -43,62 +45,96 @@
             </ul>
         </nav>
     </header>
-    <form action="">
-        <fieldset>
-            <legend><h4 class="titulo_rosa">Vamos fazer o seu cadastro!</h4></legend>
-            <div>
-                <label for="nome">Nome:</label>
-                <input type="text" name="Nome" id="nome" required placeholder="Nome Completo" autocomplete="nome">
-            </div>
-            <div>
-                <label for="email">E-mail:</label>
-                <input type="email" name="email" id="email" autocomplete="email" required>
-            </div>
-            <div>
-                <label for="gravida_sn">Você está grávida?</label>
-                <input type="radio" name="gravida_sn" id="gravida_sn" value="sim">
-                <label for="sim">Sim</label>
-                <input type="radio" name="gravida_sn" id="gravida_sn" value="não">
-                <label for="não">Não</label>
-            </div>
-            <div>
-                <label for="DPP">DPP:</label>
-                <input type="date" name="DPP" id="DPP">
-            </div>
-                <label class="observacao">(Data Prevista do Parto)</label>
-                <br>
-                <label class="observacao">*Caso ainda não esteja grávida, deixe em branco</label>
-                <br>
-                <label class="observacao"><a href="">*Não sabe a sua data provável do parto? Clique aqui!</a></label>
-                <br>
-            <div>
-                <label for="senha">Senha:</label>
-                <input type="password" name="senha" id="senha" required minlength="8" placeholder="Mínimo de 8 catacteres">
-            </div>
-            <div>
-                <label for="isenha">Confirme sua senha:</label>
-                <input type="password" name="senha" id="isenha" required minlength="8" placeholder="Mínimo de 8 caracteres">
-            </div>
-        </fieldset>
+    <main>
         <div>
-            <input type="checkbox" name="termo_ok" id="termo_ok" value="aceite_ok" required>
-            <label for="aceite_ok">Li e concordo com a Política de Privacidade e Termos de Uso do Tô Grávida.</label>
+            <h2>Vamos fazer o seu cadastro!</h2>
         </div>
-        <br>
-        <div><input type="submit" value="Cadastrar agora" class="button_formulario"></div>
-    </form>
+        <section>
+            <div class="formulario">
+                <form action="">
+                    <fieldset>
+                        <legend><b>Vamos fazer o seu cadastro!</b></legend>
+                        <div class="campos_input">
+                            <label for="nome" class="label_input">Nome:</label>
+                            <input type="text" name="Nome" id="nome" required placeholder="Nome Completo" autocomplete="nome" class="input_cadastro">
+                        </div>
+
+                        <div class="campos_input">
+                            <label for="email" class="label_input">E-mail:</label>
+                            <input type="email" name="email" id="email" autocomplete="email" required placeholder="Seu Email" class="input_cadastro">
+                        </div>
+
+                        <div class="campos_input">
+                            <label for="gravida_sn" class="label_input">Você está grávida?</label>
+                            <input type="radio" name="gravida_sn" id="gravida_sn" value="sim">
+                            <label for="sim" id="sim_nao">Sim</label>
+                            <input type="radio" name="gravida_sn" id="gravida_sn" value="não">
+                            <label for="não" id="sim_nao">Não</label>
+                        </div>
+
+                        <div class="campos_input">
+                            <label for="DPP" class="label_input">DPP:</label>
+                            <input type="date" name="DPP" id="DPP">
+                            <div class="texto_auxiliar">
+                                <label>(Data Prevista do Parto)</label>
+                            </div>
+                        </div>                        
+
+                        <div class="opcao_auxiliar"> 
+                            <div>                   
+                                <label>*Caso ainda não esteja grávida, deixe em branco</label>
+                            </div>
+
+                            <div>                   
+                                <label>*Não sabe a sua data provável do parto? <a href=""><span>Clique aqui!</span></a></label>
+                            </div>
+                        </div>
+
+                        <div class="campos_input">
+                            <label for="senha" class="label_input">Senha:</label>
+                            <input type="password" name="senha" id="senha" required minlength="8" placeholder="Digite sua senha" class="input_cadastro">
+                        </div>
+
+                        <div class="campos_input">
+                            <label for="isenha" class="label_input">Confirme </label>
+                            <br>
+                            <label for="isenha" class="label_input">sua senha:</label>
+                            <input type="password" name="senha" id="isenha" required minlength="8" class="input_cadastro_2">
+                        </div>
+
+                    </fieldset>
+
+                        <div class="concorde_termos">
+                            <input type="checkbox" name="termo_ok" id="termo_ok" value="aceite_ok" required>
+                            <label for="aceite_ok" id="texto_termo_ok">Li e concordo com a Política de Privacidade </label>
+                            <br>
+                            <label for="aceite_ok" id="texto_termo_ok_2">e Termos de Uso do Tô Grávida.</label>
+                        </div>
+                    
+                    <div>
+                        <input type="submit" value="Cadastrar agora" class="submit">
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </main>
     <footer>
-        <div>
-            <h2 class="titulo_blue">Acesse nossas redes sociais</h2>
+        <div class="redes_sociais">
+            <h2>Acesse nossas redes sociais</h2>
             <a href="http://www.facebook.com"><img src="./img/logo_facebook.png" class="logo_redes_sociais"></a>
             <a href="http://www.instagram.com"><img src="./img/logo_instagram.png" class="logo_redes_sociais"></a>
             <a href="http://www.youtube.com/"><img src="./img/logo_youtube.png" class="logo_redes_sociais"></a>
         </div>
-        <div>
-            <h2 class="titulo_footer">Sobre o Tô Grávida</h2>   
-            <button class="item_footer"><a href="quem_somos.html"><strong>Quem somos</strong></a></button>
-            <button class="item_footer"><a href="politica_privacidade_termos_uso.html"><strong>Política de Privacidade / Termos de Uso</strong></a></button>
-            <button class="item_footer"><a href="duvidas_fale_conosco.html"><strong>Dúvidas / Fale Conosco</strong></a></button>
+        <div class="footer_sobre">
+            <h2>Sobre o Tô Grávida</h2>
+            <nav>
+                <ul>   
+                    <li><a href="quem_somos.html"><strong>Quem somos</strong></a></li>
+                    <li><a href="politica_privacidade_termos_uso.html"><strong>Política de Privacidade / Termos de Uso</strong></a></li>
+                    <li><a href="duvidas_fale_conosco.html"><strong>Dúvidas / Fale Conosco</strong></a></li>
+                </ul>
+            </nav>
         </div>
     </footer>
 </body>

@@ -62,13 +62,13 @@ h1 {
     h1 {
      font-size: 23px;
     }
- }
+}
 
- @media (max-width: 800px){
+@media (max-width: 800px){
     h1 {
      font-size: 20px;
     }
- }
+}
 
 .borda_rosa {
     border: solid 2px #FF0096;
