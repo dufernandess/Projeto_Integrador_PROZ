@@ -28,6 +28,11 @@ main {
     }
 }
 
+.section_inicial {
+    border-bottom: 1px solid #FF0096;
+    margin-bottom: 20px;
+}
+
 main section div h1 {
     font-size: 30px;
     margin-top: 50px;

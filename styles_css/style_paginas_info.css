@@ -89,22 +89,16 @@ p {
 .conteudo_info_main_2 p{
     margin-left: 30px;
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 16px;
     color: #223885;  
     text-align: justify;  
-}
-
-@media (max-width: 1250px){
-    .conteudo_info_main_2 p{
-        font-size: 16px;    
-    }
 }
 
 @media (max-width: 1080px){
     .conteudo_info_main_2 p{
         margin-left: auto;
         margin-right: auto; 
-        font-size: 14px;    
+        font-size: 13px;    
     }
 }
 
@@ -125,15 +119,9 @@ p {
 .conteudo_info_main_1 p{
     margin-right: 30px;
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 16px;
     color: #223885;   
     text-align: justify; 
-}
-
-@media (max-width: 1250px){
-    .conteudo_info_main_1 p{
-        font-size: 16px;    
-    }
 }
 
 @media (max-width: 1080px){
