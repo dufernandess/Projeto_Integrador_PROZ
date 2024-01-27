@@ -12,8 +12,8 @@ function slide2(){
     document.getElementById('img_id').src="img/carrossel_index_2.jpg";
     CaracteristicasImagem();
     let fig = document.getElementById('fig');
-    fig.innerText = "Econtro de gestantes da HRSP";
-    document.getElementById('aId').href="https://bebe.abril.com.br/gravidez/encontro-de-gestantes-conheca-os-beneficios-desse-momento";
+    fig.innerText = "Econtro de gestantes do Hospital Santa Cruz";
+    document.getElementById('aId').href="https://www.hospitalstacruz.com.br/materno-infantil/encontro-de-gestantes/";
     setTimeout("slide3()", 3000)
 }
 
