@@ -115,7 +115,8 @@ li {
 header nav ul li a {
     color: #223885;
     margin-left: 20px;
-    font-size: 15px;    
+    font-size: 15px; 
+    cursor: pointer;   
 }
 
 @media (max-width: 1370px){
@@ -161,6 +162,10 @@ header nav ul li a:active {
     color: white;
     border-radius: 10px;
     padding: 5px;
+}
+
+header nav ul li a:hover {
+    box-shadow: 0px 1px 0px 0px #223885;
 }
 
 .button_login {
