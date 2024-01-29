@@ -1,0 +1,120 @@
+* {
+    font-family: 'Gabriela', serif;
+    margin: 0;
+    padding: 0;
+}
+
+.posts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+@media(max-width: 1000px) {
+    .posts {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+.posts img {
+    width: 400px;
+    height: 580px;
+}
+
+@media (max-width: 1000px) {
+    .posts img {
+        width: 300px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 800px) {
+    .posts img {
+        width: 200px;
+        height: 300px;
+    }
+}
+
+h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 20px; 
+}
+
+@media (max-width: 1150px){
+    h1 {
+         font-size: 27px;
+         margin-bottom: 30px;           
+    }
+}
+
+@media (max-width: 800px){
+    h1 {
+        font-size: 22px; 
+        margin-bottom: 20px;             
+    }
+}
+
+h2 {
+    padding-bottom: 10px;
+}
+
+/*
+main section {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: solid 1px #FF0096;
+}
+*/
+
+main section {
+    text-align: justify;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sexo-gravidez {
+    margin-top: 20px;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 15px;
+    font-size: 17px;
+    left: 10px;
+    color: white;
+    background-color: rgba(218, 14, 106, 0.7);
+    padding: 5px;
+}
+
+@media (max-width: 1250px){
+    figcaption {
+        font-size: 15px; 
+    }
+}
+
+@media (max-width: 1080px){
+    figcaption {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 800px){
+    figcaption {
+        font-size: 10px; 
+    }
+}
