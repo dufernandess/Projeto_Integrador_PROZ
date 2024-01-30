@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mamãe do mês</title>
-    <link rel="stylesheet" href="./styles_css/style_mamae_do_mes.css">    
+    <link rel="stylesheet" href="./styles_css/style_mamae_do_mes.css">   
+    <link rel="stylesheet" href="./styles_css/style_header.css">
+    <link rel="stylesheet" href="./styles_css/style_footer.css">    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
     </style>
@@ -12,23 +14,35 @@
 <body>
     <header>
         <div>
-            <a href="index.html"><img src="./img/logo_to_gravida.png" class="logo_to_gravida"></a>
+            <a href="index.html"><img src="./img/logo_to_gravida.png"></a>
         </div>
-        <nav class="nav_header">
+        <nav>
             <div>
-                <button class="button_blue"><a href="cadastro_profissional.html" ><strong>É um Profissional? Cadastre-se aqui!</strong></a></button>
-                <button class="button_blue"><a href="profissionais_disponiveis.html" ><strong>Confira os profissionais parceiros</strong></a></button>
-                <button class="button_blue"><a href="login.html"><strong>Login / Cadastre-se</strong></a></button>
+                <button class="button_login"><a href="login.html"><strong>Login / Cadastre-se</strong></a></button>
             </div>
-            <br>
-            <div>
-                <button class="button_blue_header"><a href="seu_acompanhamento_gravida.html"><strong>Seu acompanhamento</strong></a></button>
-                <button class="button_blue_header"><a href="seu_acompanhamento_planejamento.html"><strong>Planejando a sua gravidez</strong></a></button>
-                <button class="button_blue_header"><a href="nossa_comunidade.html"><strong>Nossa comunidade</strong></a></button>
-                <button class="button_blue_header"><a href="dicas_e_informacoes.html"><strong>Dicas e Informações</strong></a></button>
-                <button class="button_blue_header"><a href="central_de_apoio.html"><strong>Central de Apoio</strong></a></button>
-                <button class="button_blue_header"><a href="mini_cursos.html"><strong>Mini Cursos</strong></a></button>
+            <div class="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
             </div>
+            <nav class="nav">
+                <ul>
+                <li>
+                    <a href="semana_1_a_4.html"><strong>Seu acompanhamento</strong></a>
+                </li>
+                <li>
+                    <a href="seu_acompanhamento_planejamento.html"><strong>Planejando a sua gravidez</strong></a>
+                </li>
+                <li>
+                    <a href="nossa_comunidade.html"><strong>Nossa comunidade</strong></a>
+                </li>
+                <li>
+                    <a href="dicas_e_informacoes.html"><strong>Dicas e Informações</strong></a>
+                </li>
+                <li>
+                    <a href="central_de_apoio.html"><strong>Central de Apoio</strong></a>
+                </li>
+            </ul>
         </nav>
     </header>
 
@@ -43,9 +57,9 @@
                         <img id="imagem-da-sorteada" src="https://source.unsplash.com/random/500x500/?mamãe" alt="Imagem da mãe sorteada">
                     </figure>
                         <span>
-                            <h3 class="titulo_blue">Conheça um pouco de sua história:
+                            <h3 class="titulo_blue">Conheça um pouco da minha história:
                             </h3>
-                            <p class="texto-sorteada">"Olá a todos, meu nome é Ana e estou aqui hoje para compartilhar minha história. <br>Estou grávida e este é um momento de grande alegria e expectativa para mim. No entanto, também é um momento de incertezas e desafios.
+                            <p>"Olá a todos, meu nome é Ana e estou aqui hoje para compartilhar minha história.Estou grávida e este é um momento de grande alegria e expectativa para mim. No entanto, também é um momento de incertezas e desafios.
 
                                 A gravidez traz consigo muitas despesas, desde cuidados médicos até a preparação do quarto do bebê. Infelizmente, estou passando por dificuldades financeiras e preciso de ajuda para garantir que meu bebê tenha um começo de vida saudável e seguro.
                                 
@@ -53,33 +67,38 @@
                                 
                                 Agradeço a todos que puderem contribuir. Sua generosidade significa o mundo para mim e para o meu bebê. Muito obrigada."
                             </p>
-                        </span>
-                
+                        </span>               
                 
             </section>
         <br>
-        <section>
-            <div>
-                <h2 class="titulo_blue">Como ajudar:
-                </h2>
-                <p> TEXTO DESCREVENDO COMO AS OUTRAS USUÁRIAS PODEM AJUDÁ-LA, CONTENDO O CONTATO, DADOS BANCÁRIOS, ENDEREÇO DE RECEBIMENTO DE DOAÇÕES ETC.
-                </p>
-            </div>
+        <section class="ajudar">
+                <h2 class="titulo_blue">Como ajudar:</h2>
+                <p class="texto-como-ajudar"> Você pode ajudar a Ana doando roupas novas ou usadas, acesórios de bebê, fraldas, ou ajuda financeira.
+                <br>
+                O endereço de correspondência de Ana é: rua da Ana, número 00, São Paulo-SP.
+                <br>
+                Seu telefone é: 010203023322
+                <br>Seu pix é: 010203023322</p>
+          
         </section>
     </main>
 
     <footer>
-        <div>
-            <h2 class="titulo_blue" tabindex="5">Acesse nossas redes sociais</h2>
-            <a href="http://www.facebook.com" tabindex="6"><img src="./img/logo_facebook.png" class="logo_redes_sociais"></a>
-            <a href="http://www.instagram.com" tabindex="7"><img src="./img/logo_instagram.png" class="logo_redes_sociais"></a>
-            <a href="http://www.youtube.com/" tabindex="8"><img src="./img/logo_youtube.png" class="logo_redes_sociais"></a>
+        <div class="redes_sociais">
+            <h2>Acesse nossas redes sociais</h2>
+            <a href="http://www.facebook.com"><img src="./img/logo_facebook.png" class="logo_redes_sociais"></a>
+            <a href="http://www.instagram.com"><img src="./img/logo_instagram.png" class="logo_redes_sociais"></a>
+            <a href="http://www.youtube.com/"><img src="./img/logo_youtube.png" class="logo_redes_sociais"></a>
         </div>
-        <div>
-            <h2 class="titulo_footer" tabindex="9">Sobre o Tô Grávida</h2>   
-            <button class="item_footer" tabindex="10"><a href="quem_somos.html"><strong>Quem somos</strong></a></button>
-            <button class="item_footer" tabindex="11"><a href="politica_privacidade_termos_uso.html"><strong>Política de Privacidade / Termos de Uso</strong></a></button>
-            <button class="item_footer" tabindex="12"><a href="duvidas_fale_conosco.html"><strong>Dúvidas / Fale Conosco</strong></a></button>
+        <div class="footer_sobre">
+            <h2>Sobre o Tô Grávida</h2>
+            <nav>
+                <ul>   
+                    <li><a href="quem_somos.html"><strong>Quem somos</strong></a></li>
+                    <li><a href="politica_privacidade_termos_uso.html"><strong>Política de Privacidade / Termos de Uso</strong></a></li>
+                    <li><a href="duvidas_fale_conosco.html"><strong>Dúvidas / Fale Conosco</strong></a></li>
+                </ul>
+            </nav>
         </div>
     </footer>
 </body>
