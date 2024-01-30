@@ -90,7 +90,8 @@ footer div h2 {
 footer nav ul li {
     text-align: center;
     color:#FF0096;
-    align-items: center;  
+    align-items: center;
+    margin-top: 5px;  
 }
 
 footer nav ul li a{

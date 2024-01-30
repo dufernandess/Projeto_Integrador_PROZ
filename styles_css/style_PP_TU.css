@@ -41,25 +41,25 @@ main section {
     margin-top: 50px;
 }
 
-p {
+main p {
     color:#223885;
     font-size: 17px;
     margin-bottom: 8px;
 }
 
 @media (max-width: 1150px){
-    p {
+    main p {
         font-size: 15px;       
     }
 }
 
 @media (max-width: 1080px){
-    p {
+    main p {
         font-size: 13px;       
     }
 }
 
-h1 {
+main h1 {
     font-size: 32px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -67,18 +67,18 @@ h1 {
 }
 
 @media (max-width: 1150px){
-    h1 {
+    main h1 {
          font-size: 27px;             
     }
 }
 
 @media (max-width: 800px){
-    h1 {
+    main h1 {
         font-size: 22px;             
     }
 } 
 
-h2 {
+main h2 {
     color: #223885;
     font-size: 22px;
     margin-top: 20px;
@@ -86,13 +86,13 @@ h2 {
 }
 
 @media (max-width: 1150px){
-    h2 {
+    main h2 {
          font-size: 18px;             
     }
 }
 
 @media (max-width: 800px){
-    h2 {
+    main h2 {
         font-size: 13px;             
     }
 } 

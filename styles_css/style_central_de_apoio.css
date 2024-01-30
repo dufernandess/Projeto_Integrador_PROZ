@@ -54,14 +54,14 @@ h1 {
 }
 
 @media (max-width: 1150px){
-  h1 {
+  main h1 {
        font-size: 27px;
        margin-bottom: 30px;             
   }
 }
 
 @media (max-width: 800px){
-  h1 {
+  main h1 {
       font-size: 20px; 
       margin-bottom: 0px;
   }
@@ -122,6 +122,19 @@ main div h2 {
   list-style-type: none;
   border-radius: 5px;
 }
+
+@media (max-width: 1080px){
+  .box_itens li a{
+      font-size: 13px;          
+   }
+}
+
+@media (max-width: 800px){
+  .box_itens li a{
+      font-size: 10px;          
+   }
+}
+
 .box_itens li:hover {
   background-color:rgba(325, 138, 211, 0.2);
 }
