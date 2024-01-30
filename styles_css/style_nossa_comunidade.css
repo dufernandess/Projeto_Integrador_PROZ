@@ -158,7 +158,7 @@ main section {
     align-items: center;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1250px) {
     .post_index_1 {
         flex-direction: column;
         align-items: center;
@@ -210,7 +210,7 @@ main section {
     align-items: center;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1250px) {
     .post_index_2 {
         flex-direction: column-reverse; 
         align-items: center;
@@ -355,3 +355,18 @@ main section {
     font-family: 'Gabriela', serif;
     font-size: 16px;
 }
+
+.nav-item {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+.nav-item {
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .nav-item {
+    width: 100%;
+  }

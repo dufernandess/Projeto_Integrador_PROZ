@@ -41,6 +41,13 @@ main section {
     padding-bottom: 50px;
 }
 
+@media (max-width: 800px){
+    main section {
+        flex-direction: column;  
+        align-items: center;            
+     }
+}
+
 h1 {
     font-size: 32px;
     color: #FF0096;
@@ -62,8 +69,17 @@ h1 {
     }
 }
 
-main h2 {
+main div h2 {
     display: none;
+}
+
+@media (max-width: 800px){
+    main div h2 {
+        display: block;            
+        color: #223885;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 800px){
@@ -82,7 +98,7 @@ main h2 {
 }
 
 .formulario {
-    display: flex;
+    display: block;
     justify-content: center;
 }
 
@@ -91,6 +107,20 @@ fieldset {
     border-radius: 8px;
     color:  #223885;
     padding-top: 20px;
+}
+
+@media (max-width: 800px) {
+    fieldset {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 500px) {
+    fieldset {
+        width: 300px;
+        height: 330px;
+    }
 }
 
 form {
@@ -113,17 +143,10 @@ legend {
 
 @media (max-width: 800px){
     legend{
-        font-size: 16px;         
+        display: none;        
      }
 }
 
-@media (max-width: 500px){
-    legend{
-        font-size: 16px; 
-        padding: 0;
-        margin: 0 auto;
-     }
-}
 .submit {
     background: none;
     border: none;
@@ -142,6 +165,12 @@ legend {
         padding: 0;
         
     }
+}
+
+@media (max-width: 800px){
+    .submit{
+        font-size: 18px;          
+     }
 }
 
 .submit:active {
@@ -172,8 +201,6 @@ legend {
         margin-left: 30px;      
     }
 }
-
-
 
 .label_texto {
     display: flex;
