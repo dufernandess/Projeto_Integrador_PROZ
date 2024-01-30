@@ -1,3 +1,16 @@
+:root {
+    --rosa-figcaption: #da0e6ab3;
+    --rosa-header-claro: #ffedf7;
+    --rosa-header-medio: #fcc5e5;
+    --rosa-escuro: #FF0096;
+    --rosa-claro: #FFE9F6;
+    --rosa-claro-box: #fdf2f9;
+    --azul-escuro: #223885;
+    --azul-medio: #758ad3;
+    --azul-claro: #f4f7ff;
+    --cinza-header: #d0d3e0;
+}
+
 footer {
     height: 120px;
     display: flex;

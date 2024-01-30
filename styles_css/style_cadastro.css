@@ -1,3 +1,16 @@
+:root {
+    --rosa-figcaption: #da0e6ab3;
+    --rosa-header-claro: #ffedf7;
+    --rosa-header-medio: #fcc5e5;
+    --rosa-escuro: #FF0096;
+    --rosa-claro: #FFE9F6;
+    --rosa-claro-box: #fdf2f9;
+    --azul-escuro: #223885;
+    --azul-medio: #758ad3;
+    --azul-claro: #f4f7ff;
+    --cinza-header: #d0d3e0;
+}
+
 * {
     font-family: 'Gabriela', serif;
     margin: 0;
@@ -40,6 +53,7 @@ main div h2 {
 }
 
 .formulario {
+    margin-top: 75px;    
     display: flex;
     justify-content: center;  
 }

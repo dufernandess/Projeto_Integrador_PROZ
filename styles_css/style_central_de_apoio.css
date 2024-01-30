@@ -1,0 +1,290 @@
+:root {
+  --rosa-figcaption: #da0e6ab3;
+  --rosa-header-claro: #ffedf7;
+  --rosa-header-medio: #fcc5e5;
+  --rosa-escuro: #FF0096;
+  --rosa-claro: #FFE9F6;
+  --rosa-claro-box: #fdf2f9;
+  --azul-escuro: #223885;
+  --azul-medio: #758ad3;
+  --azul-claro: #f4f7ff;
+  --cinza-header: #d0d3e0;
+}
+
+* {
+  font-family: 'Gabriela', serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f7ff;
+}
+
+main {
+  min-width: 300px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1250px){
+  main{
+      padding-left: 50px;
+      padding-right: 50px;               
+   }
+}
+
+main section {
+  text-align: justify;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 800px){
+  main section {
+    margin-bottom: 20px;               
+   }
+}
+
+h1 {
+  font-size: 32px;
+  margin-top:50px;
+  margin-bottom: 40px;
+  color: #FF0096;
+}
+
+@media (max-width: 1150px){
+  h1 {
+       font-size: 27px;
+       margin-bottom: 30px;             
+  }
+}
+
+@media (max-width: 800px){
+  h1 {
+      font-size: 20px; 
+      margin-bottom: 0px;
+  }
+}
+
+main div h2 {
+  font-size: 20px;
+  color: #223885;
+}
+
+.menu_inicial {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+@media (max-width: 800px){
+  .menu_inicial {
+      flex-direction: column; 
+      align-items: center;             
+  }
+}
+
+.box {
+  border: solid 2px #FF0096;
+  box-shadow: 0px 0px 3px 1px #FF0096;
+  border-radius: 8px;
+  background-color: #fdf2f9;
+  width: 40%;
+}
+
+@media (max-width: 800px){
+  .box {
+      margin-top: 30px; 
+      width: 80%;           
+  }
+}
+
+.box_titulo {
+  color: #FF0096;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.box_itens a {  
+  text-decoration: none;
+  color: #223885;
+  font-weight: bold;
+} 
+
+.box_itens li {
+  margin-bottom: 15px;
+  border: solid 2px #223885;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding:5px;
+}
+
+.borda_rosa {
+  border: solid 2px #FF0096;
+  box-shadow: 0px 0px 3px 1px #FF0096;
+  padding: 5px;
+}
+
+.segunda_parte{
+  margin-top: 75px;
+}
+
+.titulo_mobile {
+  text-align: center;  
+  display: none;
+}
+
+.titulo_mobile h2{
+  font-size: 18px;
+}
+
+@media (max-width: 800px){
+  .titulo_mobile{
+      display: block;        
+      margin-bottom: 20px;           
+   }
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 75px;
+}
+
+fieldset {
+  border: solid 4px #FF0096;
+  border-radius: 8px;
+  color:  #223885;
+  padding-top: 20px;
+}
+
+main form {
+  width: 100%;
+}
+
+main form p {
+  color:  #FF0096;
+  font-size: 25px;
+  margin-left: 25px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+@media (max-width: 1080px){
+    main form p{
+      font-size: 20px;           
+    }
+}
+
+@media (max-width: 800px){
+  main form p{
+    font-size: 15px;           
+  }
+}
+
+legend {
+  margin-left: 50px;
+  margin-right: auto;
+  font-size: 25px;
+  padding: 15px;
+}
+
+@media (max-width: 1080px){
+  legend{
+      font-size: 20px;     
+      margin-left: 30px;        
+   }
+}
+
+@media (max-width: 800px){
+  legend{
+      font-size: 15px;
+      display: none;              
+   }
+}
+
+.submit {
+  background: none;
+  border: none;
+  margin-left: 25px;
+  margin-bottom: 20px;
+  color: #FF0096;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+@media (max-width: 1080px){
+  .submit{
+      font-size: 18px;          
+   }
+}
+
+
+@media (max-width: 800px){
+  .submit{
+      font-size: 15px;          
+   }
+}
+
+.submit:active {
+  background-color: #758ad3;
+  transition: background 0.15s;
+  color: white; 
+}
+
+.input_usuario {
+  border: none;
+  background: none;
+  border-bottom: 1px solid #FF0096;
+  outline: none;
+  font-size: 15px;
+  margin-left: 5px;
+  width: 60%;
+}
+
+@media (max-width: 800px){
+  .input_usuario {
+      font-size: 10px;        
+  }
+}
+
+.label_texto {
+  display: flex;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px){
+  .label_texto b{
+      font-size: 12px;        
+  }
+}
+
+.label_input{
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px){
+  .label_input{
+      font-size: 12px;        
+  }
+}
+
+textarea {
+  border: solid 2px #FF0096;
+  margin-left: 25px;
+  margin-right: 25px;
+  width: 90%;
+  height: 200px;
+  outline: none;
+}
+
+@media (max-width: 800px){
+  textarea {
+      width: 80%; 
+      height: 300px;           
+  }
+}

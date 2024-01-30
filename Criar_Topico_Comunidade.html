@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criar tópico comunidade</title>
-    <link rel="stylesheet" href="./style-css/style_index.css">
-    <link rel="stylesheet" href="./style-css/style_header.css">
-    <link rel="stylesheet" href="./style-css/style_footer.css">
-    <link rel="stylesheet" href="./style-css/style-criar-topico.css">
+    <link rel="stylesheet" href="./styles_css/style_index.css">
+    <link rel="stylesheet" href="./styles_css/style_header.css">
+    <link rel="stylesheet" href="./styles_css/style_footer.css">
+    <link rel="stylesheet" href="./styles_css/style_criar_topico.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
     </style>
@@ -19,11 +19,17 @@
         </div>
         <nav>
             <div>
-                <button class="button_login"><a href="login.html"><strong>Login / Cadastre-se</strong></a></button>
+                <button class="button_login"><a href="login.html">Login / Cadastre-se</a></button>
             </div>
-            <ul>
+            <div class="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+            </div>
+            <nav class="nav">
+                <ul>
                 <li>
-                    <a href="seu_acompanhamento_gravida.html"><strong>Seu acompanhamento</strong></a>
+                    <a href="semana_1_a_4.html"><strong>Seu acompanhamento</strong></a>
                 </li>
                 <li>
                     <a href="seu_acompanhamento_planejamento.html"><strong>Planejando a sua gravidez</strong></a>
@@ -39,6 +45,7 @@
                 </li>
             </ul>
         </nav>
+       
     </header>
 
     <main>
@@ -49,14 +56,14 @@
             <div class="formulario">
                 <form action="" autocomplete="on">
                     <fieldset>
-                        <legend><b>Preencha todas as informações abaixo: </b></legend>
-                        <div>
+                        <legend id="titulo-formulario"><b>Preencha todas as informações: </b></legend>
+                        <div class="primeiro-input">
                             <label for="nome" class="label_input"><b>Titulo da postagem: </b></label>
                             <input type="text" name="Nome" id="nome" required placeholder="Digite o titulo da postagem" required class="input_usuario">
                         </div>
                         <br>
                         <div>
-                            <label for="necessidade" class="label_texto"><b>Digite aqui abaixo uma descrição detalhada da sua dúvida: </b></label>
+                            <label for="necessidade" class="label_texto"><b>Descrição da sua dúvida: </b></label>
                             <textarea name="necessidade" id="necessidade"></textarea>
                         </div>
                         <br>

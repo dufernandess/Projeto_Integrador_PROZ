@@ -1,3 +1,16 @@
+:root {
+    --rosa-figcaption: #da0e6ab3;
+    --rosa-header-claro: #ffedf7;
+    --rosa-header-medio: #fcc5e5;
+    --rosa-escuro: #FF0096;
+    --rosa-claro: #FFE9F6;
+    --rosa-claro-box: #fdf2f9;
+    --azul-escuro: #223885;
+    --azul-medio: #758ad3;
+    --azul-claro: #f4f7ff;
+    --cinza-header: #d0d3e0;
+}
+
 * {
     font-family: 'Gabriela', serif;
     margin: 0;
@@ -23,15 +36,16 @@ main {
 }
 
 main section {
-    text-align: justify;
     margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 h1 {
     font-size: 32px;
-    margin-top:50px;
-    margin-bottom: 40px;
     color: #FF0096;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 @media (max-width: 1150px){
@@ -69,7 +83,7 @@ main h2 {
 
 .formulario {
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 
 fieldset {
@@ -85,24 +99,31 @@ form {
 
 legend {
     margin-left: 50px;
-    margin-right: auto;
+    margin-right: 50px;
     font-size: 25px;
     padding: 15px;
 }
 
 @media (max-width: 1080px){
     legend{
-        font-size: 20px;     
-        margin-left: 30px;        
+        font-size: 20px;
+               
      }
 }
 
 @media (max-width: 800px){
     legend{
-        display: none;              
+        font-size: 16px;         
      }
 }
 
+@media (max-width: 500px){
+    legend{
+        font-size: 16px; 
+        padding: 0;
+        margin: 0 auto;
+     }
+}
 .submit {
     background: none;
     border: none;
@@ -111,12 +132,16 @@ legend {
     color: #FF0096;
     font-weight: bold;
     font-size: 22px;
+    padding-left: 160px;
 }
 
-@media (max-width: 800px){
-    .submit{
-        font-size: 18px;          
-     }
+@media (max-width: 1080px) {
+    .submit {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        
+    }
 }
 
 .submit:active {
@@ -131,36 +156,51 @@ legend {
     border-bottom: 1px solid #FF0096;
     outline: none;
     font-size: 15px;
-    margin-left: 5px;
+    margin-left: 10px;
     width: 60%;
+}
+
+@media (max-width: 1080px){
+    .input_usuario {
+        margin-left: 25px;        
+    }
 }
 
 @media (max-width: 800px){
     .input_usuario {
-        font-size: 10px;        
+        font-size: 10px;  
+        margin-left: 30px;      
     }
 }
+
+
 
 .label_texto {
     display: flex;
     margin-left: 25px;
+    margin-right: 25px;
     margin-bottom: 10px;
 }
 
 @media (max-width: 800px){
     .label_texto b{
-        font-size: 12px;        
+        font-size: 12px; 
+        margin-left: 0; 
+        padding: 0;  
+        padding-left: 10px;   
     }
 }
 
 .label_input{
-    margin-left: 25px;
+    padding: 5px;
     margin-bottom: 10px;
+    margin-left: 20px;
 }
 
 @media (max-width: 800px){
     .label_input{
-        font-size: 12px;        
+        font-size: 12px;  
+        padding: 10px;   
     }
 }
 
@@ -176,6 +216,11 @@ textarea {
 @media (max-width: 800px){
     textarea {
         width: 80%; 
-        height: 300px;           
+        height: 170px; 
+        margin-left: 30px;          
     }
+}
+
+.primeiro-input {
+    flex-direction: column;
 }

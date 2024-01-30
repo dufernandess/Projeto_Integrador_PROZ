@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dicas e Informações</title>
-    <link rel="stylesheet" href="./style-css/style_index.css">
-    <link rel="stylesheet" href="./style-css/style_header.css">
-    <link rel="stylesheet" href="./style-css/style_footer.css">
-    <link rel="stylesheet" href="./style-css/style-dicas-informacoes.css">
+    <link rel="stylesheet" href="./styles_css/style_index.css">
+    <link rel="stylesheet" href="./styles_css/style_header.css">
+    <link rel="stylesheet" href="./styles_css/style_footer.css">
+    <link rel="stylesheet" href="./styles_css/style_dicas_informacoes.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
     </style>
@@ -19,11 +19,17 @@
         </div>
         <nav>
             <div>
-                <button class="button_login"><a href="login.html"><strong>Login / Cadastre-se</strong></a></button>
+                <button class="button_login"><a href="login.html">Login / Cadastre-se</a></button>
             </div>
-            <ul>
+            <div class="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+            </div>
+            <nav class="nav">
+                <ul>
                 <li>
-                    <a href="seu_acompanhamento_gravida.html"><strong>Seu acompanhamento</strong></a>
+                    <a href="semana_1_a_4.html"><strong>Seu acompanhamento</strong></a>
                 </li>
                 <li>
                     <a href="seu_acompanhamento_planejamento.html"><strong>Planejando a sua gravidez</strong></a>
@@ -39,6 +45,7 @@
                 </li>
             </ul>
         </nav>
+       
     </header>
 <main>
     <div class="cabecalho"> 
