@@ -7,10 +7,16 @@
     <link rel="stylesheet" href="./styles_css/style_index.css">
     <link rel="stylesheet" href="./styles_css/style_header.css">
     <link rel="stylesheet" href="./styles_css/style_footer.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="script_js/script_carrossel.js" defer></script>
+    <script src="./script_js/script_carrossel.js" defer></script>
+    
 
 </head>
 <body>
@@ -52,15 +58,33 @@
         <div> 
             <h1>É muito bom te encontrar por aqui!</h1>
         </div>
-        <section class="main_inicial">
-            <div class="section_carrossel">
-                <body onLoad="slide1()">
-                    <figure>
-                        <a id="aId"><img id="img_id" class="borda_rosa"></a>
-                        <figcaption id="fig">
-                    </figure>
+        <section>
+        <div class="swiper mySwiper borda_rosa">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="./dicas_e_informacoes.html"> <img src="img/carrossel_index_1.jpg"></a>
+                <a href="./dicas_e_informacoes.html"><figcaption id="texto_mamae_do_mes">Tô grávida! E agora?</figcaption></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://www.hospitalstacruz.com.br/materno-infantil/encontro-de-gestantes/" target="_blank"> <img src="img/carrossel_index_2.jpg"></a>
+                <a href="https://www.hospitalstacruz.com.br/materno-infantil/encontro-de-gestantes/" target="_blank"><figcaption id="texto_mamae_do_mes">Econtro de gestantes do Hospital Santa Cruz</figcaption></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="./login.html"> <img src="img/carrossel_index_3.jpg"></a>
+                <a href="./login.html"><figcaption id="texto_mamae_do_mes">Receba conteúdos exclusivos sobre a sua gravidez!</figcaption></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="./central_de_apoio.html"> <img src="img/carrossel_index_4.jpg"></a>
+                <a href="./central_de_apoio.html"><figcaption id="texto_mamae_do_mes">Precisa de algum tipo de ajuda?</figcaption></a>
+              </div>
             </div>
-            
+            <div class="swiper-button-next" style="color: #FF0096"></div>
+            <div class="swiper-button-prev" style="color: #FF0096"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+
+        <section class="main_inicial">
             <div class="mamae_do_mes">
                 <figure>
                 <a href="mamae_do_mes.html"><img src="./img/mamae_do_mes.jpg" class="borda_rosa"></a>
@@ -68,10 +92,13 @@
                 </figure>
             </div>
         </section>
-        
+               
         <a href="./info_dieta_gravidez.html"><section class="post_index_1">
             <div>
+                <figure>
                 <img src="./img/dieta_gravidez.jpg" class="borda_rosa">
+                <figcaption id="figcaption_index">Mantendo uma dieta mais saudável e controlando o ganho de peso.</figcaption>
+                </figure>
             </div>
             <div id="conteudo_post_1">
                 <h3 class="titulo_post_main_1">Mantendo uma dieta mais saudável e controlando o ganho de peso.</h3>
@@ -89,13 +116,19 @@
                 <p class="conteudo_post_main_2">Vamos direto ao ponto (ou aos pontos): é seguro, é saudável, e pode ser uma experiência ainda mais incrível para os futuros papais.(...)</p>
             </div>
             <div>
+                <figure>
                 <img src="./img/sexo_gravidez.jpg" class="borda_rosa">
+                <figcaption id="figcaption_index">Como fica a vida sexual durante a gravidez?</figcaption>
+                </figure>
             </div>            
         </section></a>
 
         <a href="./info_exercicios_gravidez.html"><section class="post_index_1">
             <div>
+                <figure>
                 <img src="./img/exercicio_gravida.jpg" class="borda_rosa">
+                <figcaption id="figcaption_index">Quais exercícios posso fazer no durante a gravidez?</figcaption>
+                </figure>
             </div>
             <div id="conteudo_post_1">
                 <h3 class="titulo_post_main_1">Quais exercícios posso fazer no durante a gravidez?</h3>
@@ -119,6 +152,9 @@
             </div>
             <div>
                 <img src="./img/preocupacao_gravida.jpg" class="borda_rosa">
+                <figure>
+                <figcaption id="figcaption_index">Gravidez e suas preocupações</figcaption>
+                </figure>
             </div>
         </section></a>
     </main>
@@ -140,5 +176,6 @@
             </nav>
         </div>
     </footer>
+    
 </body>
 </html>
