@@ -111,9 +111,9 @@ h3 {
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
     h3 {
-        font-size: 15px;             
+        display: none;             
     }
 } 
 
@@ -124,8 +124,33 @@ main section div img {
 
 @media (max-width: 900px){
     main section div img {
-        margin-bottom: 20px;             
+        margin-bottom: 20px; 
+        width: 300px;            
     }
+}
+
+figure {
+    position: relative;
+}
+
+#figcaption_quem_somos {
+    display: none;    
+}
+
+@media (max-width: 900px){
+    #figcaption_quem_somos {
+        display: block;
+    }
+}
+
+figcaption {
+    position: absolute;
+    bottom: 35px;
+    font-size: 17px;
+    left: 10px;
+    color: white;
+    background-color: rgba(218, 14, 106, 0.7);
+    padding: 5px;
 }
 
 .borda_rosa {

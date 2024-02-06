@@ -22,7 +22,7 @@ header {
     box-shadow: 0px 0px 5px 2px #d0d3e0;
 }
 
-@media (max-width: 1060px){
+@media (max-width: 1080px){
     header {
         height: 110px;
     }

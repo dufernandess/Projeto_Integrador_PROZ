@@ -10,6 +10,8 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
     </style>
+    <script src="./script_js/fale_conosco.js" defer></script>
+    
 </head>
 <body>
     <header>
@@ -53,25 +55,36 @@
         </section>
         <section>
             <div>
-                <h2>Entre em contato conosco preenchendo as informações abaixo:</h2>
+                <h2>Preencha as informações abaixo:</h2>
             </div>
             <div class="formulario">
-                <form action="" autocomplete="on">
+                <form action="" autocomplete="">
                     <fieldset>
                         <legend><b>Entre em contato conosco preenchendo as informações abaixo: </b></legend>
                         <div>
-                            <label for="nome" class="label_input"><b>Nome:</b></label>
-                            <input type="text" name="Nome" id="nome" required placeholder="Digite seu nome" required class="input_usuario">
+                            <label for="nome" class="label_input">Nome:</label>
+                            <br id="pula_linha">
+                            <input type="text" name="Nome" id="nome" required placeholder="Digite seu nome" class="input_usuario">
+                            <br id="pula_linha">
+                            <span type="popup_nome" ></span>
+                            <p id="nome_helper" class="helper_text">Mensagem de ajuda</p>
                         </div>
                         <br>
                         <div>
-                            <label for="email" class="label_input"><b>E-mail:</b></label>
+                            <label for="email" class="label_input">E-mail:</label>
+                            <br id="pula_linha">
                             <input type="email" name="Email" id="email" required placeholder="Digite seu e-mail" size="auto" class="input_usuario">
+                            <br id="pula_linha">
+                            <span type="popup_email" ></span>
+                            <p id="email_helper" class="helper_text">Mensagem de ajuda</p>
                         </div>
                         <br>
                         <div>
-                            <label for="necessidade" class="label_texto"><b>Digite sua Necessidade aqui:</b></label>
+                            <label for="necessidade" class="label_input">Digite sua Necessidade aqui:</label>
                             <textarea name="necessidade" id="necessidade"></textarea>
+                            <br>
+                            <span type="popup_textarea" ></span>
+                            <p id="textarea_helper" class="helper_text_textarea">Mensagem de ajuda</p>
                         </div>
                         <br>
                         <div>
