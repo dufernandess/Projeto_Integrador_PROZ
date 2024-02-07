@@ -229,6 +229,7 @@ textarea {
 }
 
 .helper_text {
+    display: none;
     margin-left: 80px;
     font-size: 11px;
     color: #FF0096;
@@ -243,6 +244,7 @@ textarea {
 }
 
 .helper_text_textarea {
+    display: none;
     margin-left: 25px;
     font-size: 11px;
     color: #FF0096;
@@ -253,4 +255,8 @@ textarea {
     .helper_text_textarea {
         font-size: 8px;    
     }
+}
+
+.visivel {
+    display: block;
 }
