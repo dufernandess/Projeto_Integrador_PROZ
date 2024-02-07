@@ -10,6 +10,8 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
     </style>
+    <script src="./script_js/cadastro.js" defer></script>
+
 </head>
 <body>
     <header>
@@ -56,24 +58,34 @@
                         <legend><b>Vamos fazer o seu cadastro!</b></legend>
                         <div class="campos_input">
                             <label for="nome" class="label_input">Nome:</label>
+                            <br id="pula_linha">
                             <input type="text" name="Nome" id="nome" required placeholder="Nome Completo" autocomplete="nome" class="input_cadastro">
+                            <br id="pula_linha">
+                            <span type="popup_nome"></span>
+                            <p id="nome_helper" class="helper_text">Mensagem de ajuda</p>
                         </div>
 
                         <div class="campos_input">
                             <label for="email" class="label_input">E-mail:</label>
+                            <br id="pula_linha">
                             <input type="email" name="email" id="email" autocomplete="email" required placeholder="Seu Email" class="input_cadastro">
+                            <br id="pula_linha">
+                            <span type="popup_email"></span>
+                            <p id="email_helper" class="helper_text">Mensagem de ajuda</p>
                         </div>
 
                         <div class="campos_input">
                             <label for="gravida_sn" class="label_input">Você está grávida?</label>
+                            <br id="pula_linha">
                             <input type="radio" name="gravida_sn" id="gravida_sn" value="sim">
                             <label for="sim" id="sim_nao">Sim</label>
-                            <input type="radio" name="gravida_sn" id="gravida_sn" value="não">
+                            <input type="radio" name="gravida_sn" id="gravida_sn_2" value="não">
                             <label for="não" id="sim_nao">Não</label>
                         </div>
 
                         <div class="campos_input">
                             <label for="DPP" class="label_input">DPP:</label>
+                            <br id="pula_linha">
                             <input type="date" name="DPP" id="DPP">
                             <div class="texto_auxiliar">
                                 <label>(Data Prevista do Parto)</label>
@@ -81,25 +93,33 @@
                         </div>                        
 
                         <div class="opcao_auxiliar"> 
-                            <div>                   
-                                <label>*Caso ainda não esteja grávida, deixe em branco</label>
+                            <div class="label_auxiliar">    
+                                <label >*Caso ainda não esteja grávida, deixe em branco</label>
                             </div>
-
-                            <div>                   
+                            
+                            <div class="label_auxiliar">  
                                 <label>*Não sabe a sua data provável do parto? <a href=""><span>Clique aqui!</span></a></label>
                             </div>
                         </div>
 
                         <div class="campos_input">
                             <label for="senha" class="label_input">Senha:</label>
+                            <br id="pula_linha">
                             <input type="password" name="senha" id="senha" required minlength="8" placeholder="Digite sua senha" class="input_cadastro">
+                            <br id="pula_linha">
+                            <span type="popup_senha"></span>
+                            <p id="senha_helper" class="helper_text">Mensagem de ajuda</p>
                         </div>
 
                         <div class="campos_input">
                             <label for="isenha" class="label_input">Confirme </label>
                             <br>
                             <label for="isenha" class="label_input">sua senha:</label>
+                            <br id="pula_linha">
                             <input type="password" name="senha" id="isenha" required minlength="8" class="input_cadastro_2">
+                            <br id="pula_linha">
+                            <span type="popup_senha_2"></span>
+                            <p id="senha_2_helper" class="helper_text">Mensagem de ajuda</p>
                         </div>
 
                     </fieldset>
@@ -107,7 +127,7 @@
                         <div class="concorde_termos">
                             <input type="checkbox" name="termo_ok" id="termo_ok" value="aceite_ok" required>
                             <label for="aceite_ok" id="texto_termo_ok">Li e concordo com a Política de Privacidade </label>
-                            <br>
+                            <br id="pula_linha">
                             <label for="aceite_ok" id="texto_termo_ok_2">e Termos de Uso do Tô Grávida.</label>
                         </div>
                     

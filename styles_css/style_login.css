@@ -36,7 +36,7 @@ main div h2 {
     display: none;
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
     main div h2 {
         display: block;            
         color: #223885;
@@ -60,7 +60,7 @@ main div h2 {
     justify-content: center
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
     .formulario {
         margin-top: 30px;
     }
@@ -74,7 +74,7 @@ fieldset {
 }
 
 form {
-    width: 40%;
+    width: 50%;
 }
 
 legend {
@@ -90,7 +90,7 @@ legend {
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
     legend{
         display: none;              
      }
@@ -103,7 +103,7 @@ legend {
     outline: none;
     font-size: 13px;
     margin-left: 5px;
-    width: 70%;
+    width: 60%;
 }
 
 @media (max-width: 1080px){
@@ -112,7 +112,7 @@ legend {
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
     .input_login {
         font-size: 8px; 
         margin-left: 25px;  
@@ -124,7 +124,7 @@ legend {
     display: none;
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
     #pula_linha {
         display: block;       
     }
@@ -132,7 +132,7 @@ legend {
 
 .campos_input {
     margin-bottom: 10px;
-    display: block;
+    display: block
 }
 
 .label_input{
@@ -148,6 +148,7 @@ legend {
 }
 
 .opcao_auxiliar {
+    font-weight: bold;
     margin-left: 25px;
     margin-top: 20px;
     font-size: 15px;
@@ -159,7 +160,7 @@ legend {
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
     .opcao_auxiliar{
         font-size: 10px;      
     }
@@ -187,7 +188,7 @@ legend {
     font-size: 22px;
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
     .submit{
         font-size: 14px;          
      }
@@ -197,4 +198,46 @@ legend {
     background-color: #758ad3;
     transition: background 0.15s;
     color: white; 
+}
+
+.popup_obrigatorio::after {
+    content: "*Campo obrigatório";
+    color: #DFDFDF;
+    font-size: 11px;
+    padding: 3px;  
+    width: 110px;  
+    background-color: #223885;
+}
+
+@media (max-width: 1080px){
+    .popup_obrigatorio::after {
+        font-size: 9px; 
+    }
+}
+
+@media (max-width: 900px){
+    .popup_obrigatorio::after {
+        margin-left: 25px;
+        padding: 2px;
+        font-size: 8px;      
+    }
+}
+
+.helper_text {
+    display: none;
+    margin-left: 80px;
+    font-size: 11px;
+    color: #FF0096;
+    font-weight: bold;
+}
+
+@media (max-width: 900px){
+    .helper_text {
+        margin-left: 25px;
+        font-size: 8px;    
+    }
+}
+
+.visivel {
+    display: block;
 }

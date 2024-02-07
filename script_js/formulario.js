@@ -13,6 +13,7 @@ let emailInput = document.getElementById("email");
 let nomeInput = document.getElementById("nome");
 let textareaInput = document.getElementById("necessidade");
 
+
 //Função genérica para adicionar e retirar classe Popup
 function manutencaoPopup(input, span) {
 
@@ -49,6 +50,7 @@ nomeInput.addEventListener("change", (e) => {
     let nome = e.target.value;
     if (nome.length > 5) {
         nomeSpan.innerHTML = "✓";
+        nomeHelper.innerHTML = "";
         nomeSpan.style.color = "#FF0096";
         nomeSpan.style.fontSize = "20px";
     } else if (nome.length == 0){
@@ -66,6 +68,7 @@ emailInput.addEventListener("change", (e) => {
     let email = e.target.value;
     if (email.includes("@") && email.includes(".com")) {
         emailSpan.innerHTML = "✓";
+        emailHelper.innerHTML = "";
         emailSpan.style.color = "#FF0096";
         emailSpan.style.fontSize = "20px";
     } else if (email.length == 0){
@@ -83,6 +86,7 @@ textareaInput.addEventListener("change", (e) => {
     let textarea = e.target.value;
     if (textarea.length > 15) {
         textareaSpan.innerHTML = "✓";
+        textareaHelper.innerHTML = "";
         textareaSpan.style.color = "#FF0096";
         textareaSpan.style.fontSize = "20px";
         textareaSpan.style.marginLeft = "25px";
