@@ -35,12 +35,19 @@ main {
     }
  }
 
- @media (max-width: 1100px){
+ @media (max-width: 1080px){
     main {
         padding-left: 50px;
         padding-right: 50px; 
     }
- }
+ } 
+
+ @media (max-width: 800px){
+    main {
+        padding-left: 50px;
+        padding-right: 50px; 
+    }
+ } 
 
 main section {
     display: flex;
@@ -52,9 +59,9 @@ main section {
 
 @media (max-width: 800px){
     main section {       
+        
         padding-top: 40px;
         padding-bottom: 40px;
-        
     }
 }
 
@@ -227,7 +234,7 @@ figcaption {
 
 @media (max-width: 800px){
     .post_index_1 img {
-        width: 450px;
+        width: 450px;        
     }
 }
 
@@ -427,3 +434,6 @@ body {
   display: block;
   width: 100%;
 }
+
+
+
