@@ -1,7 +1,7 @@
 
-  //verifica o periodo gestacional para indicação correta da página
-  let seuAcompanhamento = document.getElementById("navegacao");
-  seuAcompanhamento.addEventListener("click", (e) => {
+    //verifica o periodo gestacional para indicação correta da página
+    let seuAcompanhamento = document.getElementById("navegacao");
+    seuAcompanhamento.addEventListener("click", (e) => {
     let semanas = prompt("De quantas semanas você está?");   
     
     if(semanas >= 1 && semanas <= 4) {

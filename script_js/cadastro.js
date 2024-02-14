@@ -35,6 +35,25 @@ manutencaoPopup(senhaInput, senhaSpan);
 manutencaoPopup(senha2Input, senha2Span);
 manutencaoPopup(nomeInput, nomeSpan);
 
+
+//validando campo nome:
+nomeInput.addEventListener("change", (e) => {
+    let nome = e.target.value;
+    if (nome.length > 5) {
+        nomeSpan.innerHTML = "✓";
+        nomeHelper.innerHTML = "";
+        nomeSpan.style.color = "#FF0096";
+        nomeSpan.style.fontSize = "20px";
+    } else if (nome.length == 0){
+        nomeHelper.classList.remove("visivel");
+        nomeSpan.innerHTML = "";
+    } else {
+        nomeHelper.classList.add("visivel");
+        nomeHelper.innerHTML = "Você deve inserir, no mínimo, 5 caracteres";
+        nomeSpan.innerHTML = "";
+    }
+})
+
 //validando campo email:
 emailInput.addEventListener("change", (e) => {
     let email = e.target.value;
@@ -92,35 +111,55 @@ let valorSenha2 = e.target.value;
     }
 })
 
-//Cálculo de DPP
-let DPP = document.getElementById("calculo_dpp");
-let dataDPP = document.getElementById("DPP");
+//capturanto elementos utilizados para o formulário adicional que auxilia o cálculo de DPP
+let dpp = document.getElementById("calculo_dpp");
+let sectionForm = document.querySelector(".divisao_form");
+let formDPP = document.querySelector(".formulario_dpp"); 
+let dppFinal = document.getElementById("DPP_3");
+let dppPrincipal = document.getElementById("DPP");
 
-DPP.addEventListener("click", (e) => {
-    let data = prompt("Insira a data da sua última menstruação: (dia/mês/ano - dd/mm/aaaa)");
+//Abrindo o assistente de cálculo de DPP
+dpp.addEventListener("click", (e) => {
+    e.preventDefault(); 
+    sectionForm.style.justifyContent = "space-between";
+    formDPP.style.display = "block";
+    formDPP.scrollIntoView();     
+});
+
+//realizando o calculo de DPP
+let calcular = document.querySelector(".button_calcular");
+let resultadoDPP = document.querySelector(".resultado_dpp");
+
+calcular.addEventListener("click", (e) => {
+e.preventDefault();
+
+let data = document.querySelector("#DPP_2").value
+
+//dividindo string em dia, mês e ano
+let parteData = data.split("-");
     
-    //dividindo string em dia, mês e ano
-    let parteData = data.split("/");
-    
-    //convertendo as partes da data para numeros inteiros
-    let dia = parseInt(parteData[0]);
-    let mes = parseInt(parteData[1]);
-    let ano = parseInt(parteData[2]);
-    
-    //convertendo objeto Date em string para impressão
-    let base = new Date(ano, mes, dia);
-    base.setDate(base.getDate() + 280);
-    let diaCalculado = base.getDate();
-    if(diaCalculado < 10) {
-        diaCalculado = "0" + diaCalculado
-    }
-    let mesCalculado = base.getMonth();
-    if(mesCalculado < 10) {
-        mesCalculado = "0" + mesCalculado
-    }
-    let anoCalculado = base.getFullYear();
-    
-    let dataComp = "A sua data prevista do parto é: " + diaCalculado + "/" + mesCalculado + "/" + anoCalculado + " " + "(Lembrando que essa data é uma estimativa. Sempre é recomendado consultar um profissional de saúde para uma avaliação precisa da data prevista do parto.)";
-    
-    alert(dataComp);    
-})
+//convertendo as partes da data para numeros inteiros
+let dia = parseInt(parteData[2]);
+let mes = parseInt(parteData[1]);
+let ano = parseInt(parteData[0]);
+
+//convertendo objeto Date em string para impressão
+let base = new Date(ano, mes, dia);
+base.setDate(base.getDate() + 280);
+let diaCalculado = base.getDate();
+if(diaCalculado < 10) {
+    diaCalculado = "0" + diaCalculado
+}
+let mesCalculado = base.getMonth();
+if(mesCalculado < 10) {
+    mesCalculado = "0" + mesCalculado
+}
+let anoCalculado = base.getFullYear();
+
+let dataComp = anoCalculado + "-" + mesCalculado + "-" + diaCalculado 
+
+dppFinal.value = dataComp;
+resultadoDPP.style.display = "block";
+dppPrincipal.value = dataComp;
+
+});

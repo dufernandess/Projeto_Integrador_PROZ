@@ -11,9 +11,9 @@
         @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
     </style>
     <script src="./script_js/cadastro.js" defer></script>
-    <script src="./script_js/seu_acompanhamento.js" defer></script>
-    <script src="./script_js/seu_acompanhamento.js" defer></script>
+    <script src="./script_js/seu_acompanhamento.js" defer></script>    
     <script src="./script_js/menu_web.js" defer></script>
+    <script src="./script_js/calculo_dpp.js" defer></script>
 
 </head>
 <body>
@@ -66,11 +66,8 @@
         </div>
 
     </header>
-    <main>
-        <div>
-            <h2>Vamos fazer o seu cadastro!</h2>
-        </div>
-        <section>
+    <main>       
+        <section class="divisao_form">
             <div class="formulario">
                 <form action="">
                     <fieldset>
@@ -78,7 +75,7 @@
                         <div class="campos_input">
                             <label for="nome" class="label_input">Nome:</label>
                             <br id="pula_linha">
-                            <input type="text" name="Nome" id="nome" required placeholder="Nome Completo" autocomplete="nome" class="input_cadastro">
+                            <input type="text" name="Nome" id="nome" placeholder="Nome Completo" class="input_cadastro">
                             <br id="pula_linha">
                             <span type="popup_nome"></span>
                             <p id="nome_helper" class="helper_text">Mensagem de ajuda</p>
@@ -87,7 +84,7 @@
                         <div class="campos_input">
                             <label for="email" class="label_input">E-mail:</label>
                             <br id="pula_linha">
-                            <input type="email" name="email" id="email" autocomplete="email" required placeholder="Seu Email" class="input_cadastro">
+                            <input type="email" name="email" id="email" placeholder="Seu Email" class="input_cadastro">
                             <br id="pula_linha">
                             <span type="popup_email"></span>
                             <p id="email_helper" class="helper_text">Mensagem de ajuda</p>
@@ -117,14 +114,16 @@
                             </div>
                             
                             <div class="label_auxiliar">  
-                                <label>*Não sabe a sua data prevista do parto? <a href="" id="calculo_dpp"><span>Clique aqui!</span></a></label>
+                                <label>*Não sabe a sua data prevista do parto?</label>
+                                <br id="pula_linha_2">
+                                <label><a href="" id="calculo_dpp"><span>Clique aqui!</span></a></label>
                             </div>
                         </div>
 
                         <div class="campos_input">
                             <label for="senha" class="label_input">Senha:</label>
                             <br id="pula_linha">
-                            <input type="password" name="senha" id="senha" required minlength="8" placeholder="Digite sua senha" class="input_cadastro">
+                            <input type="password" name="senha" id="senha" placeholder="Digite sua senha" class="input_cadastro">
                             <br id="pula_linha">
                             <span type="popup_senha"></span>
                             <p id="senha_helper" class="helper_text">Mensagem de ajuda</p>
@@ -135,7 +134,7 @@
                             <br>
                             <label for="isenha" class="label_input">sua senha:</label>
                             <br id="pula_linha">
-                            <input type="password" name="senha" id="isenha" required minlength="8" class="input_cadastro_2">
+                            <input type="password" name="senha" id="isenha" class="input_cadastro_2" placeholder="Repita a sua senha" >
                             <br id="pula_linha">
                             <span type="popup_senha_2"></span>
                             <p id="senha_2_helper" class="helper_text">Mensagem de ajuda</p>
@@ -156,6 +155,40 @@
 
                 </form>
             </div>
+
+            <div>
+                <h2>Vamos fazer o seu cadastro!</h2>
+            </div>
+            
+            <div class="formulario_dpp">
+                <div>
+                <legend class="legend_dpp"><b>Calcule a sua DPP:</b></legend>
+                </div>
+                <div class="div_dpp">
+                <form action="" class="form_dpp">
+                    <fieldset>                        
+                        <div class="campos_input">
+                            <label for="DPP" class="label_input_DPP">Insira a data da sua última menstruação: </label>
+                            <br>
+                            <input type="date" name="DPP" id="DPP_2">         
+                        </div>
+
+                        <div class="resultado_dpp">
+                            <label for="DPP" class="label_input_DPP">A sua DPP* é: </label>
+                            <br id="pula_linha_2">
+                            <input type="date" name="DPP" id="DPP_3">
+                            <br> 
+                            <label for="DPP" class="label_input_DPP_final">*Lembrando que essa data é uma estimativa. Sempre é recomendado consultar um profissional de saúde para uma avaliação precisa da data prevista do parto.</label> 
+                        </div>
+                    </fieldset>
+
+                    <div>
+                        <input type="submit" value="Calcular DPP" class="button_calcular">
+                    </div>
+                </form>
+            </div>
+            </div>
+
         </section>
     </main>
     <footer>
