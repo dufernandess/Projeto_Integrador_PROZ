@@ -158,19 +158,19 @@ figcaption {
 }
 
 .mamae_do_mes img {
-    width: 700px;
+    width: 650px;
     margin-left: 30px;
 }
 
 @media (max-width: 1300px){
     .mamae_do_mes img {
-        width: 650px;
+        width: 600px;
     }
 }
 
 @media (max-width: 1180px){
     .mamae_do_mes img {
-        width: 550px;
+        width: 500px;
     }
 }
 
@@ -414,8 +414,8 @@ body {
 }
 
 .swiper {
-  width: 70%;
-  height: 70%;
+  width: 60%;
+  height: 60%;
 }
 
 @media (max-width: 500px){

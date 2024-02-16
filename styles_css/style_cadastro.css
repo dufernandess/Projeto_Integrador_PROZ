@@ -82,7 +82,7 @@ form {
 
 @media (max-width: 900px){
     form {
-        width: 70%;        
+        width: 72%;        
     }
 }
 
@@ -106,13 +106,14 @@ legend {
 }
 
 .input_cadastro {
+    color:#223885;
     border: none;
     background: none;
     border-bottom: 1px solid #FF0096;
     outline: none;
     font-size: 13px;
     margin-left: 5px;
-    width: 60%;
+    width: 55%;
 }
 
 @media (max-width: 1080px){
@@ -136,7 +137,7 @@ legend {
     outline: none;
     font-size: 13px;
     margin-left: 5px;
-    width: 55%;
+    width: 51%;
 }
 
 @media (max-width: 900px){

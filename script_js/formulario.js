@@ -13,6 +13,49 @@ let emailInput = document.getElementById("email");
 let nomeInput = document.getElementById("nome");
 let textareaInput = document.getElementById("necessidade");
 
+//Capurando elementos para ativação do botão submit
+let cadastrar = document.querySelector(".submit");
+let confirmarEmail = false;
+let confirmarSenha = false;
+let confirmarTextarea = false;
+
+
+//inserindo efeitos de backgroud nos campos de input
+//efeito campo nome
+nomeInput.addEventListener("mouseover", () => {
+    nomeInput.style.boxShadow = "0 0 15px 5px rgba(255, 0, 150, 0.2)";   
+    nomeInput.style.backgroundColor = "rgb(255, 233, 246)";    
+})
+
+nomeInput.addEventListener("mouseout", () => {
+    nomeInput.style.boxShadow = "none";   
+    nomeInput.style.backgroundColor = "rgb(244, 247, 255)";
+    
+})
+
+//efeito campo email
+emailInput.addEventListener("mouseover", () => {
+    emailInput.style.boxShadow = "0 0 15px 5px rgba(255, 0, 150, 0.2)";   
+    emailInput.style.backgroundColor = "rgb(255, 233, 246)";    
+})
+
+emailInput.addEventListener("mouseout", () => {
+    emailInput.style.boxShadow = "none";   
+    emailInput.style.backgroundColor = "rgb(244, 247, 255)";
+    
+})
+
+//efeito campo senha
+textareaInput.addEventListener("mouseover", () => {
+    textareaInput.style.boxShadow = "0 0 15px 5px rgba(255, 0, 150, 0.2)";   
+    textareaInput.style.backgroundColor = "rgb(255, 233, 246)";    
+})
+
+textareaInput.addEventListener("mouseout", () => {
+    textareaInput.style.boxShadow = "none";   
+    textareaInput.style.backgroundColor = "rgb(244, 247, 255)";
+    
+})
 
 //Função genérica para adicionar e retirar classe Popup
 function manutencaoPopup(input, span) {
@@ -49,17 +92,20 @@ manutencaoPopup(textareaInput, textareaSpan);
 nomeInput.addEventListener("change", (e) => {
     let nome = e.target.value;
     if (nome.length > 5) {
-        nomeSpan.innerHTML = "✓";
-        nomeHelper.innerHTML = "";
+        confirmarNome = true;
+        nomeSpan.innerText = "✓";
+        nomeHelper.innerText = "";
         nomeSpan.style.color = "#FF0096";
         nomeSpan.style.fontSize = "20px";
     } else if (nome.length == 0){
         nomeHelper.classList.remove("visivel");
-        nomeSpan.innerHTML = "";
+        nomeSpan.innerText = "";
+        confirmarNome = false;
     } else {
         nomeHelper.classList.add("visivel");
-        nomeHelper.innerHTML = "Você deve inserir, no mínimo, 5 caracteres";
-        nomeSpan.innerHTML = "";
+        nomeHelper.innerText = "Você deve inserir, no mínimo, 5 caracteres";
+        nomeSpan.innerText = "";
+        confirmarNome = false;
     }
 })
 
@@ -67,17 +113,20 @@ nomeInput.addEventListener("change", (e) => {
 emailInput.addEventListener("change", (e) => {
     let email = e.target.value;
     if (email.includes("@") && email.includes(".com")) {
-        emailSpan.innerHTML = "✓";
-        emailHelper.innerHTML = "";
+        confirmarEmail = true;
+        emailSpan.innerText = "✓";
+        emailHelper.innerText = "";
         emailSpan.style.color = "#FF0096";
         emailSpan.style.fontSize = "20px";
     } else if (email.length == 0){
         emailHelper.classList.remove("visivel");
-        emailSpan.innerHTML = "";
+        emailSpan.innerText = "";
+        confirmarEmail = false;
     }else {
         emailHelper.classList.add("visivel");
-        emailHelper.innerHTML = "Digite um e-mail válido (deve conter @ e .com)";
-        emailSpan.innerHTML = "";
+        emailHelper.innerText = "Digite um e-mail válido (deve conter @ e .com)";
+        emailSpan.innerText = "";
+        confirmarEmail = false;
     }
 })
 
@@ -85,18 +134,27 @@ emailInput.addEventListener("change", (e) => {
 textareaInput.addEventListener("change", (e) => {
     let textarea = e.target.value;
     if (textarea.length > 15) {
-        textareaSpan.innerHTML = "✓";
-        textareaHelper.innerHTML = "";
+        confirmarTextarea = true;
+        textareaSpan.innerText = "✓";
+        textareaHelper.innerText = "";
         textareaSpan.style.color = "#FF0096";
         textareaSpan.style.fontSize = "20px";
         textareaSpan.style.marginLeft = "25px";
     } else if (textarea.length == 0){
         textareaHelper.classList.remove("visivel");
-        textareaSpan.innerHTML = "";
+        textareaSpan.innerText = "";
+        confirmarTextarea = false;
     } else {
         textareaHelper.classList.add("visivel");
-        textareaHelper.innerHTML = "Você deve inserir, no mínimo, 15 caracteres";
-        textareaSpan.innerHTML = "";
+        textareaHelper.innerText = "Você deve inserir, no mínimo, 15 caracteres";
+        textareaSpan.innerText = "";
+        confirmarTextarea = false;
     }
 })
 
+//Manutenção da ativação do botão submit
+cadastrar.addEventListener("click", (e) => {
+    if(confirmarEmail == false || confirmarNome == false || confirmarTextarea == false) {
+        e.preventDefault();
+    }
+})

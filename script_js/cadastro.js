@@ -9,6 +9,10 @@ let emailSpan = document.querySelector('span[type="popup_email"]');
 let senhaSpan = document.querySelector('span[type="popup_senha"]');
 let senha2Span = document.querySelector('span[type="popup_senha_2"]');
 let nomeSpan = document.querySelector('span[type="popup_nome"]');
+let corretoSpanNome = document.querySelector('span[type="correct"]');
+let corretoSpanEmail = document.querySelector('span[type="correct2"]');
+let corretoSpanSenha = document.querySelector('span[type="correct3"]');
+let corretoSpanConfSenha = document.querySelector('span[type="correct4"]');
 
 //Capturando os elementos de input
 let emailInput = document.getElementById("email");
@@ -16,7 +20,64 @@ let senhaInput = document.getElementById("senha");
 let senha2Input = document.getElementById("isenha");
 let nomeInput = document.getElementById("nome");
 
-//Função genérica para adicionar e retirar classe Popup
+//Capurando elementos para ativação do botão submit
+let cadastrar = document.querySelector(".submit");
+let confirmarNome = false;
+let confirmarEmail = false;
+let confirmarSenha = false;
+let confirmarSenha2 = false;
+
+//inserindo efeitos de backgroud nos campos de input
+//efeito campo nome
+nomeInput.addEventListener("mouseover", () => {
+    nomeInput.style.boxShadow = "0 0 15px 5px rgba(255, 0, 150, 0.2)";   
+    nomeInput.style.backgroundColor = "rgb(255, 233, 246)";    
+})
+
+nomeInput.addEventListener("mouseout", () => {
+    nomeInput.style.boxShadow = "none";   
+    nomeInput.style.backgroundColor = "rgb(244, 247, 255)";
+    
+})
+
+//efeito campo email
+emailInput.addEventListener("mouseover", () => {
+    emailInput.style.boxShadow = "0 0 15px 5px rgba(255, 0, 150, 0.2)";   
+    emailInput.style.backgroundColor = "rgb(255, 233, 246)";    
+})
+
+emailInput.addEventListener("mouseout", () => {
+    emailInput.style.boxShadow = "none";   
+    emailInput.style.backgroundColor = "rgb(244, 247, 255)";
+    
+})
+
+//efeito campo senha
+senhaInput.addEventListener("mouseover", () => {
+    senhaInput.style.boxShadow = "0 0 15px 5px rgba(255, 0, 150, 0.2)";   
+    senhaInput.style.backgroundColor = "rgb(255, 233, 246)";    
+})
+
+senhaInput.addEventListener("mouseout", () => {
+    senhaInput.style.boxShadow = "none";   
+    senhaInput.style.backgroundColor = "rgb(244, 247, 255)";
+    
+})
+
+//efeito campo confirmar senha
+senha2Input.addEventListener("mouseover", () => {
+    senha2Input.style.boxShadow = "0 0 15px 5px rgba(255, 0, 150, 0.2)";   
+    senha2Input.style.backgroundColor = "rgb(255, 233, 246)";    
+})
+
+senha2Input.addEventListener("mouseout", () => {
+    senha2Input.style.boxShadow = "none";   
+    senha2Input.style.backgroundColor = "rgb(244, 247, 255)";
+    
+})
+
+
+//Função genérica para adicionar e retirar classe Popup obrigatório
 function manutencaoPopup(input, span) {
 
     // Mostrar popup de campo obrigatório
@@ -29,7 +90,7 @@ function manutencaoPopup(input, span) {
         span.classList.remove("popup_obrigatorio");
     })
 }
-
+//manutenção da classe popup obrigatório
 manutencaoPopup(emailInput, emailSpan);
 manutencaoPopup(senhaInput, senhaSpan);
 manutencaoPopup(senha2Input, senha2Span);
@@ -38,77 +99,91 @@ manutencaoPopup(nomeInput, nomeSpan);
 
 //validando campo nome:
 nomeInput.addEventListener("change", (e) => {
-    let nome = e.target.value;
+    let nome = e.target.value;    
     if (nome.length > 5) {
-        nomeSpan.innerHTML = "✓";
-        nomeHelper.innerHTML = "";
+        confirmarNome = true;
+        nomeSpan.classList.remove("popup_obrigatorio");       
+        corretoSpanNome.innerText = "✓";
+        nomeHelper.innerText = "";
         nomeSpan.style.color = "#FF0096";
         nomeSpan.style.fontSize = "20px";
     } else if (nome.length == 0){
         nomeHelper.classList.remove("visivel");
-        nomeSpan.innerHTML = "";
+        confirmarNome = false;
+        nomeSpan.innerText = "";
     } else {
         nomeHelper.classList.add("visivel");
-        nomeHelper.innerHTML = "Você deve inserir, no mínimo, 5 caracteres";
-        nomeSpan.innerHTML = "";
+        confirmarNome = false;
+        nomeHelper.innerText = "Você deve inserir, no mínimo, 5 caracteres";
+        nomeSpan.innerText = "";
     }
 })
 
 //validando campo email:
-emailInput.addEventListener("change", (e) => {
-    let email = e.target.value;
+emailInput.addEventListener("change", (e) => { 
+    let email = e.target.value;     
     if (email.includes("@") && email.includes(".com")) {
-        senhaSpan.classList.remove("popup_obrigatorio")
-        emailSpan.innerHTML = "✓";
-        emailHelper.innerHTML = "";
+        confirmarEmail = true;
+        senhaSpan.classList.remove("popup_obrigatorio");
+        corretoSpanEmail.innerText = "✓";
+        emailHelper.innerText = "";
         emailSpan.style.color = "#FF0096";
         emailSpan.style.fontSize = "20px";
     } else if (email.length == 0){
         emailHelper.classList.remove("visivel");
-        emailSpan.innerHTML = "";
+        emailSpan.innerText = "";
+        confirmarEmail = false;
     }else {
         emailHelper.classList.add("visivel");
-        emailHelper.innerHTML = "Digite um e-mail válido (deve conter @ e .com)";
-        emailSpan.innerHTML = "";
+        emailHelper.innerText = "Digite um e-mail válido (deve conter @ e .com)";
+        emailSpan.innerText = "";
+        confirmarEmail = false;
     }
 })
 
 //validando campo senha:
 senhaInput.addEventListener("change", (e) => {
-    let senha = e.target.value;
+    let senha = e.target.value;    
     if (senha.length >= 6) {
-        senhaSpan.classList.remove("popup_obrigatorio")
-        senhaSpan.innerHTML = "✓";
-        senhaHelper.innerHTML = "";
+        senhaSpan.classList.remove("popup_obrigatorio");
+        confirmarSenha = true;
+        corretoSpanSenha.innerText = "✓";
+        senhaHelper.innerText = "";
         senhaSpan.style.color = "#FF0096";
         senhaSpan.style.fontSize = "20px";
     } else if (senha.length == 0){
         senhaHelper.classList.remove("visivel");
-        senhaSpan.innerHTML = "";
+        senhaSpan.innerText = "";
+        confirmarSenha = false;
     }else {
         senhaHelper.classList.add("visivel");
-        senhaHelper.innerHTML = "Sua senha deve conter, no mínimo, 6 caracteres";
-        senhaSpan.innerHTML = "";
+        senhaHelper.innerText = "Sua senha deve conter, no mínimo, 6 caracteres";
+        senhaSpan.innerText = "";
+        confirmarSenha = false;
     }
 })
-
+//validando campo de confirmar senha:
 senha2Input.addEventListener("change", (e) => {
 let valorSenha = senhaInput.value;
 let valorSenha2 = e.target.value;
     if (valorSenha === valorSenha2){
-        senha2Span.classList.remove("popup_obrigatorio")
-        senha2Span.innerHTML = "✓";
-        senha2Helper.innerHTML = "";
+        senha2Span.classList.remove("popup_obrigatorio");
+        confirmarSenha2 = true;
+        corretoSpanConfSenha.innerText = "✓";
+        senha2Helper.innerText = "";
         senha2Span.style.color = "#FF0096";
         senha2Span.style.fontSize = "20px";
     } else if (valorSenha2.length == 0){
         senha2Helper.classList.remove("visivel");
-        senha2Span.innerHTML = "";
+        senha2Span.innerText = "";
+        confirmarSenha2 = false;
     }else {
         senha2Helper.classList.add("visivel");
-        senha2Helper.innerHTML = "As senhas devem ser idênticas";
-        senha2Span.innerHTML = "";
+        senha2Helper.innerText = "As senhas devem ser idênticas";
+        senha2Span.innerText = "";
+        confirmarSenha2 = false;
     }
+    cadastrar();
 })
 
 //capturanto elementos utilizados para o formulário adicional que auxilia o cálculo de DPP
@@ -162,4 +237,15 @@ dppFinal.value = dataComp;
 resultadoDPP.style.display = "block";
 dppPrincipal.value = dataComp;
 
-});
+})
+
+//Manutenção da ativação do botão submit
+cadastrar.addEventListener("click", (e) => {
+    if(confirmarSenha2 == false || confirmarSenha == false || confirmarEmail == false || confirmarNome == false) {
+        e.preventDefault();
+    }
+})
+    
+
+
+
