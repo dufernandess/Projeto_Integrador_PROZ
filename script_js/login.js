@@ -82,7 +82,7 @@ emailInput.addEventListener("change", (e) => {
 //validando campo senha:
 senhaInput.addEventListener("change", (e) => {
     let senha = e.target.value;
-    if (senha.length > 6) {
+    if (senha.length >= 6) {
         confirmarSenha = true;
         senhaSpan.classList.remove("popup_obrigatorio");
         senhaSpan.innerText = "✓";
@@ -115,5 +115,8 @@ esqueciSenha.addEventListener("click", (e) => {
 cadastrar.addEventListener("click", (e) => {
     if(confirmarSenha == false || confirmarEmail == false) {
         e.preventDefault();
+        alert("Preencha todos os campos obrigatórios corretamente!");
+    }else {
+        alert("Login efetuado com sucesso!");
     }
 })

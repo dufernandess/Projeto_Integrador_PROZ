@@ -105,8 +105,8 @@ nomeInput.addEventListener("change", (e) => {
         nomeSpan.classList.remove("popup_obrigatorio");       
         corretoSpanNome.innerText = "✓";
         nomeHelper.innerText = "";
-        nomeSpan.style.color = "#FF0096";
-        nomeSpan.style.fontSize = "20px";
+        corretoSpanNome.style.color = "#FF0096";
+        corretoSpanNome.style.fontSize = "20px";
     } else if (nome.length == 0){
         nomeHelper.classList.remove("visivel");
         confirmarNome = false;
@@ -127,8 +127,8 @@ emailInput.addEventListener("change", (e) => {
         senhaSpan.classList.remove("popup_obrigatorio");
         corretoSpanEmail.innerText = "✓";
         emailHelper.innerText = "";
-        emailSpan.style.color = "#FF0096";
-        emailSpan.style.fontSize = "20px";
+        corretoSpanEmail.style.color = "#FF0096";
+        corretoSpanEmail.style.fontSize = "20px";
     } else if (email.length == 0){
         emailHelper.classList.remove("visivel");
         emailSpan.innerText = "";
@@ -149,8 +149,8 @@ senhaInput.addEventListener("change", (e) => {
         confirmarSenha = true;
         corretoSpanSenha.innerText = "✓";
         senhaHelper.innerText = "";
-        senhaSpan.style.color = "#FF0096";
-        senhaSpan.style.fontSize = "20px";
+        corretoSpanSenha.style.color = "#FF0096";
+        corretoSpanSenha.style.fontSize = "20px";
     } else if (senha.length == 0){
         senhaHelper.classList.remove("visivel");
         senhaSpan.innerText = "";
@@ -171,8 +171,8 @@ let valorSenha2 = e.target.value;
         confirmarSenha2 = true;
         corretoSpanConfSenha.innerText = "✓";
         senha2Helper.innerText = "";
-        senha2Span.style.color = "#FF0096";
-        senha2Span.style.fontSize = "20px";
+        corretoSpanConfSenha.style.color = "#FF0096";
+        corretoSpanConfSenha.style.fontSize = "20px";
     } else if (valorSenha2.length == 0){
         senha2Helper.classList.remove("visivel");
         senha2Span.innerText = "";
@@ -241,8 +241,12 @@ dppPrincipal.value = dataComp;
 
 //Manutenção da ativação do botão submit
 cadastrar.addEventListener("click", (e) => {
-    if(confirmarSenha2 == false || confirmarSenha == false || confirmarEmail == false || confirmarNome == false) {
+    let checkbox = document.querySelector("#termo_ok")    
+    if(confirmarSenha2 == false || confirmarSenha == false || confirmarEmail == false || confirmarNome == false || checkbox.checked == false) {
         e.preventDefault();
+        alert("Preencha todos os campos obrigatórios corretamente e esteja de acordo com a nossa Política de Privacidade e Termos de Uso");
+    }else {
+        alert("Cadastro realizado com sucesso!");
     }
 })
     

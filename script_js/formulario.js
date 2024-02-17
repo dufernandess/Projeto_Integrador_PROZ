@@ -156,5 +156,8 @@ textareaInput.addEventListener("change", (e) => {
 cadastrar.addEventListener("click", (e) => {
     if(confirmarEmail == false || confirmarNome == false || confirmarTextarea == false) {
         e.preventDefault();
+        alert("Preencha todos os campos obrigatórios corretamente!");
+    }else {
+        alert("Formulário enviado com sucesso!");
     }
 })
