@@ -11,6 +11,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
     </style>
+    <script src="script_js/script_lista_suspensa.js" defer></script>
 </head>
 <body>
     <header>
@@ -34,9 +35,17 @@
                 <li>
                     <a href="seu_acompanhamento_planejamento.html"><strong>Planejando a sua gravidez</strong></a>
                 </li>
-                <li>
-                    <a href="nossa_comunidade.html"><strong>Nossa comunidade</strong></a>
-                </li>
+                <div class="container" id="dropdownContainer">
+                    <li class="dropdown">
+                        <button href="nossa_comunidade.html" class="dropdown-toggle"><strong>Nossa comunidade▼</strong></button>
+                        <ul class="dropdown-menu" id="dropdownMenu">
+                            <li class="item">Nova gravidez</li>
+                            <li class="item">Puerpério</li>
+                            <li class="item">Alimentação</li>
+                            <li class="item">Psicológico</li>
+                        </ul> 
+                    </li>
+                </div>
                 <li>
                     <a href="dicas_e_informacoes.html"><strong>Dicas e Informações</strong></a>
                 </li>
