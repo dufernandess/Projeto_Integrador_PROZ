@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar tópico comunidade</title>
+    <link rel="stylesheet" href="./styles_css/style_index.css">
+    <link rel="stylesheet" href="./styles_css/style_header.css">
+    <link rel="stylesheet" href="./styles_css/style_footer.css">
+    <link rel="stylesheet" href="./styles_css/style_criar_topico.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+    </style>
+    <script src="./script_js/criar_topico.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img src="./img/logo_to_gravida.png"></a>
+        </div>
+        <nav>
+            <div>
+                <button class="button_login"><a href="login.html">Login / Cadastre-se</a></button>
+            </div>
+            <div class="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+            </div>
+            <nav class="nav">
+                <ul>
+                <li>
+                    <a href="semana_1_a_4.html"><strong>Seu acompanhamento</strong></a>
+                </li>
+                <li>
+                    <a href="seu_acompanhamento_planejamento.html"><strong>Planejando a sua gravidez</strong></a>
+                </li>
+                <li>
+                    <a href="nossa_comunidade.html"><strong>Nossa comunidade</strong></a>
+                </li>
+                <li>
+                    <a href="dicas_e_informacoes.html"><strong>Dicas e Informações</strong></a>
+                </li>
+                <li>
+                    <a href="central_de_apoio.html"><strong>Central de Apoio</strong></a>
+                </li>
+            </ul>
+        </nav>
+       
+    </header>
+
+    <main>
+        <div>
+            <h1>Criar tópico na Comunidade</h1>
+        </div>
+        <section>
+            <div>
+                <h2>Preencha todas as informações:</h2>
+            </div>
+            <div class="formulario">
+                <form action="">
+                    <fieldset>
+                        <legend id="titulo-formulario"><b>Preencha todas as informações: </b></legend>
+                        <div class="primeiro-input">
+                            <label for="nome" class="label_input"><b>Titulo da postagem: </b></label>
+                            <input type="text" name="nome" id="nome" placeholder="Digite o titulo da postagem">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="necessidade" class="label_texto"><b>Descrição da sua dúvida: </b></label>
+                            <textarea name="necessidade" id="necessidade"></textarea>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="submit" value="Criar Postagem" class="submit">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="redes_sociais">
+            <h2>Acesse nossas redes sociais</h2>
+            <a href="http://www.facebook.com"><img src="./img/logo_facebook.png" class="logo_redes_sociais"></a>
+            <a href="http://www.instagram.com"><img src="./img/logo_instagram.png" class="logo_redes_sociais"></a>
+            <a href="http://www.youtube.com/"><img src="./img/logo_youtube.png" class="logo_redes_sociais"></a>
+        </div>
+        <div class="footer_sobre">
+            <h2>Sobre o Tô Grávida</h2>
+            <nav>
+                <ul>   
+                    <li><a href="quem_somos.html"><strong>Quem somos</strong></a></li>
+                    <li><a href="politica_privacidade_termos_uso.html"><strong>Política de Privacidade / Termos de Uso</strong></a></li>
+                    <li><a href="duvidas_fale_conosco.html"><strong>Dúvidas / Fale Conosco</strong></a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

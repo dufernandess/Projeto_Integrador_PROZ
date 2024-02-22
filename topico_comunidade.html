@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./script_js/teste.js" defer></script>
-    <title>Criar tópico</title>
-    <link rel="stylesheet" href="./styles_css/style_index.css">
-    <link rel="stylesheet" href="./styles_css/style_header.css">
-    <link rel="stylesheet" href="./styles_css/style_footer.css">
-    <link rel="stylesheet" href="./styles_css/style_criar_topico.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
-    </style>
-    <script src="script_js/script_lista_suspensa.js" defer></script>
-    <script src="./script_js/menu_web.js" defer></script>
-    <script src="./script_js/criar_topico.js" defer></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nossa Comunidade</title>
+        <link rel="stylesheet" href="./styles_css/style_index.css">
+        <link rel="stylesheet" href="./styles_css/style_header.css">
+        <link rel="stylesheet" href="./styles_css/style_footer.css">
+        <link rel="stylesheet" href="./styles_css/style_topico_comunidade.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+        </style>
+        <script src="script_js/script_lista_suspensa.js" defer></script>
+        <script src="./script_js/menu_web.js" defer></script>
+    </head>
 <body>
+    <!-- Cabeçalho-->
     <header>
         <div class="menu-toggle">
             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -75,32 +74,38 @@
         </div>
 
     </header>
+
     <main>
-        <div>
-            <h1>Criar tópico na Comunidade</h1>
-        </div>
         <section>
-            <div>
-                <h2>Preencha todas as informações:</h2>
+            <h1>Nossa Comunidade</h1>
+        </section>
+          
+        <section class="conteudo">
+            <h2>Titulo do tópico</h2>
+            <div class="topico">
+                <h4>Qual a sua dificuldade de engravidar?</h4> 
+                <p class="borda_rosa">Lorem ipsum dolor sit amet.</p>
+                <h6>Comentários: </h6>
             </div>
-            <form action="">
-                <fieldset>
-                    <legend><b>Preencha todas as informações: </b></legend>
-                    <div>
-                        <label for="titulo">Titulo da postagem:</label>
-                        <input type="titulo" id="titulo" name="titulo" placeholder="Digite o titulo da postagem">
-                    </div>
-                   <div>
-                    <label for="descricao">Descrição da sua dúvida:</label>
-                    <textarea type="descricao" id="descricao" name="descricao"></textarea>
-                   </div>
-                   <div>
-                    <button type="submit">Criar postagem</button>
-                   </div>
-                </fieldset>
-            </form>
+            <div class="topico">
+                <h4>Quais os seus suplementos para a fertilidade?</h4>
+                <p class="borda_rosa">Lorem ipsum dolor sit amet.</p>
+                <h6>Comentários: </h6>
+            </div>
+            <div class="topico">
+                <h4>Como lidar com os sentimentos negativos?</h4>
+                <p class="borda_rosa">Lorem ipsum dolor sit amet.</p>
+                <h6>Comentários: </h6>
+            </div>
+            <div class="topico">
+                <h4>Há quanto tempo você está tentando?</h4>
+                <p class="borda_rosa">Lorem ipsum dolor sit amet.</p>
+                <h6>Comentários: </h6>
+            </div>
         </section>
     </main>
+
+    <!-- Rodapé-->
     <footer>
         <div class="redes_sociais">
             <h2>Acesse nossas redes sociais</h2>

@@ -12,6 +12,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
     </style>
     <script src="script_js/script_lista_suspensa.js" defer></script>
+    <script src="./script_js/menu_web.js" defer></script>
 </head>
 <body>
     <header>
@@ -36,14 +37,15 @@
                     </li>
                     <li>
                         <a href="seu_acompanhamento_planejamento.html"><strong>Planejando a sua gravidez</strong></a>
-                    </li> <div class="container" id="dropdownContainer">
-                        <li class="dropdown">
+                    </li> 
+                    <div class="container" id="dropdownContainer">
+                        <li class="dropdown" id="dropdown">
                             <button href="nossa_comunidade.html" class="dropdown-toggle"><strong>Nossa comunidade</strong></button>
                             <ul class="dropdown-menu" id="dropdownMenu">
-                                <li class="item">Nova gravidez</li>
-                                <li class="item">Puerpério</li>
-                                <li class="item">Alimentação</li>
-                                <li class="item">Psicológico</li>
+                                <li class="item"><a>Nova gravidez</a></li>
+                                <li class="item"><a>Puerpério</a></li>
+                                <li class="item"><a>Alimentação</a></li>
+                                <li class="item"><a>Psicológico</a></li>
                             </ul> 
                         </li>
                     </div>
@@ -65,6 +67,7 @@
             <a href="semana_1_a_4.html" id="navegacao_2"><strong>- Seu acompanhamento</strong></a>
             <a href="seu_acompanhamento_planejamento.html"><strong>- Planejando a sua gravidez</strong></a>
             <a href="nossa_comunidade.html"><strong>- Nossa comunidade</strong></a>
+            <a id="dropdown-web"></a>
             <a href="dicas_e_informacoes.html"><strong>- Dicas e Informações</strong></a>
             <a href="central_de_apoio.html"><strong>- Central de Apoio</strong></a>
         </div>

@@ -371,45 +371,4 @@ main section {
     width: 100%;
   }
 
-  /*
-  Lista suspensa
-  */
-  .container {
-    padding: 0;
-  }
   
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    padding-left: 18px;
-  }
-  
-  .dropdown-toggle {
-    border: none;
-    cursor: pointer;
-    color:#223885;
-    background-color: transparent;
-  }
-  
-  .dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: var(--rosa-header-medio);
-    border: 1px solid #ccc;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    z-index: 1;
-  }
-  
-  .dropdown-menu li {
-    padding: 10px;
-  }
-  
-  .dropdown-menu li:hover {
-    background-color: #f9f9f9;
-  }
-
-  .item {
-    color: var(--azul-escuro);
-  }

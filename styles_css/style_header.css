@@ -336,8 +336,9 @@ header nav ul li a:hover {
     z-index: 1;
 }
   
-.dropdown-menu li {
-    padding: 0px 4px;
+li .item{
+    padding: 2px;
+    margin: 0;
 }
 
 @media (max-width: 1370px){
