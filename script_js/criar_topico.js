@@ -45,7 +45,7 @@ manutencaoPopup(inputDescricao, descricaoSpan);
 let criar = document.querySelector(".submit");
 let confirmarTitulo = false;
 let confirmarDescricao = false;
-
+console.log(criar)
 
 //validando campo titulo:
 inputTitulo.addEventListener("change", (e) => {
@@ -61,10 +61,12 @@ inputTitulo.addEventListener("change", (e) => {
         tituloHelper.innerText = "";
         confirmarTitulo = false;
         tituloSpan.innerText = "";
+        corretoSpanTitulo.innerText = "";
     } else {
         confirmarTitulo = false;
         tituloHelper.innerText = "Você deve inserir, no mínimo, 5 caracteres";
         tituloSpan.innerText = "";
+        corretoSpanTitulo.innerText = "";
     }
 })
 
@@ -82,19 +84,25 @@ inputDescricao.addEventListener("change", (e) => {
         descricaoHelper.classList.remove("visivel");
         confirmarDescricao = false;
         descricaoSpan.innerText = "";
+        corretoSpanDescricao.innerText = "";
     } else {
         confirmarDescricao = false;
         descricaoHelper.innerText = "Você deve inserir, no mínimo, 5 caracteres";
         descricaoSpan.innerText = "";
+        corretoSpanDescricao.innerText = "";
     }
+    criar();
 })
 
+
+console.log(confirmarTitulo);
+console.log(confirmarDescricao);
+
 //Manutenção da ativação do botão submit
-cadastrar.addEventListener("click", (e) => {
-    let checkbox = document.querySelector("#termo_ok")    
-    if(confirmarSenha2 == false || confirmarSenha == false || confirmarEmail == false || confirmarNome == false || checkbox.checked == false) {
+criar.addEventListener("click", (e) => {  
+    if(confirmarTitulo == false || confirmarDescricao == false) {
         e.preventDefault();
-        alert("Preencha todos os campos obrigatórios corretamente e esteja de acordo com a nossa Política de Privacidade e Termos de Uso");
+        alert("Preencha todos os campos obrigatórios corretamente.");
     }else {
         alert("Cadastro realizado com sucesso!");
     }
