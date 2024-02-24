@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./script_js/teste.js" defer></script>
     <title>Criar tópico</title>
     <link rel="stylesheet" href="./styles_css/style_index.css">
     <link rel="stylesheet" href="./styles_css/style_header.css">
@@ -12,8 +11,6 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
     </style>
-    <script src="script_js/script_lista_suspensa.js" defer></script>
-    <script src="./script_js/menu_web.js" defer></script>
     <script src="./script_js/criar_topico.js" defer></script>
 </head>
 <body>
@@ -40,17 +37,9 @@
                     <li>
                         <a href="seu_acompanhamento_planejamento.html"><strong>Planejando a sua gravidez</strong></a>
                     </li> 
-                    <div class="container" id="dropdownContainer">
-                        <li class="dropdown" id="dropdown">
-                            <button href="nossa_comunidade.html" class="dropdown-toggle"><strong>Nossa comunidade</strong></button>
-                            <ul class="dropdown-menu" id="dropdownMenu">
-                                <li class="item"><a>Nova gravidez</a></li>
-                                <li class="item"><a>Puerpério</a></li>
-                                <li class="item"><a>Alimentação</a></li>
-                                <li class="item"><a>Psicológico</a></li>
-                            </ul> 
-                        </li>
-                    </div>
+                    <li>
+                        <a href="nossa_comunidade.html"><strong>Nossa comunidade</strong></a>
+                    </li> 
                     <li>
                         <a href="dicas_e_informacoes.html"><strong>Dicas e Informações</strong></a>
                     </li>
@@ -69,7 +58,6 @@
             <a href="semana_1_a_4.html" id="navegacao_2"><strong>- Seu acompanhamento</strong></a>
             <a href="seu_acompanhamento_planejamento.html"><strong>- Planejando a sua gravidez</strong></a>
             <a href="nossa_comunidade.html"><strong>- Nossa comunidade</strong></a>
-            <a id="dropdown-web"></a>
             <a href="dicas_e_informacoes.html"><strong>- Dicas e Informações</strong></a>
             <a href="central_de_apoio.html"><strong>- Central de Apoio</strong></a>
         </div>
@@ -89,11 +77,21 @@
                     <div>
                         <label for="titulo">Titulo da postagem:</label>
                         <input type="titulo" id="titulo" name="titulo" placeholder="Digite o titulo da postagem">
+                        <span type="correct"></span>
+                        <br id="pula_linha">
+                        <span type="popup_titulo"></span></div>
+                        <p id="titulo_helper" class="helper_text"></p>
+                        <br id="pula_linha">
                     </div>
-                   <div>
-                    <label for="descricao">Descrição da sua dúvida:</label>
-                    <textarea type="descricao" id="descricao" name="descricao"></textarea>
-                   </div>
+                    <div>
+                        <label for="descricao">Descrição da sua dúvida:</label>
+                        <textarea type="descricao" id="descricao" name="descricao"></textarea>
+                        <span type="correct2"></span>
+                        <br id="pula_linha">
+                        <span type="popup_descricao"></span>
+                        <p id="descricao_helper" class="helper_text"></p>
+                        <br id="pula_linha">
+                    </div>
                    <div>
                     <button type="submit">Criar postagem</button>
                    </div>

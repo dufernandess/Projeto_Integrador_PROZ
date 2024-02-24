@@ -113,8 +113,7 @@ legend {
 
 label {
     display: inline-block;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 40px;
     margin-bottom: 10px;
     font-weight: bold;  
 }
@@ -131,12 +130,10 @@ label {
 
 input{
     border: solid 2px #FF0096;
-    box-shadow: 0px 0px 3px 1px #FF0096;
     padding: 5px 3px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 40px;
     margin-bottom: 10px;
-    width: 88%;
+    width: 80%;
 }
 
 @media (max-width: 800px){
@@ -150,10 +147,9 @@ input{
 
 textarea {
     border: solid 2px #FF0096;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 40px;
     padding: 5px 3px;
-    width: 88%;
+    width: 80%;
     height: 200px;
     outline: none;
 }
@@ -175,7 +171,7 @@ button {
     color: #FF0096;
     font-weight: bold;
     font-size: 22px;
-    padding-left: 160px;
+    padding-left: 140px;
 }
 
 @media (max-width: 1080px) {
@@ -192,3 +188,58 @@ button {
         font-size: 18px;          
      }
 }
+
+#pula_linha {
+    display: none;
+}
+
+@media (max-width: 900px){
+    #pula_linha {
+        display: block;       
+    }
+}
+
+.popup_obrigatorio::after {
+    content: "*Campo obrigatório";
+    color: #DFDFDF;
+    font-size: 11px;
+    padding: 3px;
+    margin-left: 40px;  
+    width: 110px;  
+    background-color: #223885;
+}
+
+@media (max-width: 1080px){
+    .popup_obrigatorio::after {
+        font-size: 9px; 
+    }
+}
+
+@media (max-width: 900px){
+    .popup_obrigatorio::after {
+        margin-left: 25px;
+        padding: 2px;
+        font-size: 8px;      
+    }
+}
+
+.helper_text {
+    display: block;
+    margin-left: 40px;
+    font-size: 11px;
+    color: #FF0096;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 900px){
+    .helper_text {
+        margin-left: 25px;
+        font-size: 8px;    
+    }
+}
+
+.visivel {
+    display: none;
+}
+
