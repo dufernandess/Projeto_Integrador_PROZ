@@ -332,47 +332,31 @@ header nav ul li a:hover {
     border: 1px solid #ccc;
     list-style-type: none;
     padding: 0;
+    padding-right: 12px;
     margin: 0;
     z-index: 1;
 }
   
 li .item{
-    padding: 2px;
+    padding: 3px;
     margin: 0;
 }
 
 @media (max-width: 1370px){
-    .item {
+    li .item {
         font-size: 13px;
-        padding: 0px 2px;
     }
 }
 
 @media (max-width: 1170px){
-    .item{
+    li .item{
         font-size: 12px;
-        padding: 0px 2px;
     }
 }
 
 @media (max-width: 1060px){
-    .item {
-        font-size: 11px;
-        padding: 0px 2px;
-    }
-}
-
-@media (max-width: 970px){
     li .item {
         font-size: 9px;
-        padding: 0px 2px;
-    }
-}
-
-@media (max-width: 850px){
-    .item {
-        font-size: 8px;
-        padding: 0px 2px;
     }
 }
   
@@ -383,3 +367,4 @@ li .item{
 .item {
     color: var(--azul-escuro);
 }
+
