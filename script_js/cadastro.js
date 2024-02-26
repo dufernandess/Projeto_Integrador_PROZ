@@ -212,6 +212,10 @@ e.preventDefault();
 
 let data = document.querySelector("#DPP_2").value
 
+if(data == "" || data == null) {
+    alert("Você deve preencher a data da sua última menstruação!")
+} else{
+
 //dividindo string em dia, mês e ano
 let parteData = data.split("-");
     
@@ -238,7 +242,7 @@ let dataComp = anoCalculado + "-" + mesCalculado + "-" + diaCalculado
 dppFinal.value = dataComp;
 resultadoDPP.style.display = "block";
 dppPrincipal.value = dataComp;
-
+}
 })
 
 //Manutenção da ativação do botão submit
