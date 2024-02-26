@@ -6,6 +6,11 @@ let senhaHelper = document.getElementById("senha_helper")
 let emailSpan = document.querySelector('span[type="popup_email"]');
 let senhaSpan = document.querySelector('span[type="popup_senha"]');
 
+//Capturando dos campos para sinalização do correct
+let corretoSpanEmail = document.querySelector('span[type="correct2"]');
+let corretoSpanSenha = document.querySelector('span[type="correct3"]');
+
+
 //Capturando os elementos de input
 let emailInput = document.getElementById("email");
 let senhaInput = document.getElementById("senha");
@@ -63,18 +68,18 @@ emailInput.addEventListener("change", (e) => {
     if (email.includes("@") && email.includes(".com")) {
         confirmarEmail = true;
         senhaSpan.classList.remove("popup_obrigatorio");
-        emailSpan.innerText = "✓";
+        corretoSpanEmail.innerText = "✓";
         emailHelper.innerText = "";
-        emailSpan.style.color = "#FF0096";
-        emailSpan.style.fontSize = "20px";
+        corretoSpanEmail.style.color = "#FF0096";
+        corretoSpanEmail.style.fontSize = "20px";
     } else if (email.length == 0){
         emailHelper.classList.remove("visivel");
-        emailSpan.innerText = "";
+        corretoSpanEmail.innerText = "";
         confirmarEmail = false;
     }else {
         emailHelper.classList.add("visivel");
         emailHelper.innerText = "Digite um e-mail válido (deve conter @ e .com)";
-        emailSpan.innerText = "";
+        corretoSpanEmail.innerText = "";
         confirmarEmail = false;
     }
 })
@@ -85,18 +90,18 @@ senhaInput.addEventListener("change", (e) => {
     if (senha.length >= 6) {
         confirmarSenha = true;
         senhaSpan.classList.remove("popup_obrigatorio");
-        senhaSpan.innerText = "✓";
+        corretoSpanSenha.innerText = "✓";
         senhaHelper.innerText = "";
-        senhaSpan.style.color = "#FF0096";
-        senhaSpan.style.fontSize = "20px";
+        corretoSpanSenha.style.color = "#FF0096";
+        corretoSpanSenha.style.fontSize = "20px";
     } else if (senha.length == 0){
         senhaHelper.classList.remove("visivel");
-        senhaSpan.innerText = "";
+        corretoSpanSenha.innerText = "";
         confirmarSenha = false;
     }else {
         senhaHelper.classList.add("visivel");
         senhaHelper.innerText = "Sua senha deve conter, no mínimo, 6 caracteres";
-        senhaSpan.innerText = "";
+        corretoSpanSenha.innerText = "";
         confirmarSenha = false;
     }
 })

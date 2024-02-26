@@ -9,6 +9,8 @@ let emailSpan = document.querySelector('span[type="popup_email"]');
 let senhaSpan = document.querySelector('span[type="popup_senha"]');
 let senha2Span = document.querySelector('span[type="popup_senha_2"]');
 let nomeSpan = document.querySelector('span[type="popup_nome"]');
+
+//Capturando dos campos para sinalização do correct
 let corretoSpanNome = document.querySelector('span[type="correct"]');
 let corretoSpanEmail = document.querySelector('span[type="correct2"]');
 let corretoSpanSenha = document.querySelector('span[type="correct3"]');

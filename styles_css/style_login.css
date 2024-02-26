@@ -77,6 +77,10 @@ form {
     width: 50%;
 }
 
+@media (max-width: 900px){
+   
+}
+
 legend {
     margin-left: auto;
     margin-right: auto;
@@ -103,7 +107,7 @@ legend {
     outline: none;
     font-size: 13px;
     margin-left: 5px;
-    width: 60%;
+    width: 55%;
 }
 
 @media (max-width: 1080px){
@@ -116,7 +120,13 @@ legend {
     .input_login {
         font-size: 8px; 
         margin-left: 25px;  
-        width: 80%;     
+        width: 70%;     
+    }
+}
+
+@media (max-width: 400px){
+    .input_login {      
+        width: 65%;     
     }
 }
 

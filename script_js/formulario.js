@@ -8,6 +8,10 @@ let emailSpan = document.querySelector('span[type="popup_email"]');
 let nomeSpan = document.querySelector('span[type="popup_nome"]');
 let textareaSpan = document.querySelector('span[type="popup_textarea"]');
 
+//Capturando dos campos para sinalização do correct
+let corretoSpanNome = document.querySelector('span[type="correct"]');
+let corretoSpanEmail = document.querySelector('span[type="correct2"]');
+
 //Capturando os elementos de input
 let emailInput = document.getElementById("email");
 let nomeInput = document.getElementById("nome");
@@ -93,18 +97,18 @@ nomeInput.addEventListener("change", (e) => {
     let nome = e.target.value;
     if (nome.length > 5) {
         confirmarNome = true;
-        nomeSpan.innerText = "✓";
+        corretoSpanNome.innerText = "✓";
         nomeHelper.innerText = "";
-        nomeSpan.style.color = "#FF0096";
-        nomeSpan.style.fontSize = "20px";
+        corretoSpanNome.style.color = "#FF0096";
+        corretoSpanNome.style.fontSize = "20px";
     } else if (nome.length == 0){
         nomeHelper.classList.remove("visivel");
-        nomeSpan.innerText = "";
+        corretoSpanNome.innerText = "";
         confirmarNome = false;
     } else {
         nomeHelper.classList.add("visivel");
         nomeHelper.innerText = "Você deve inserir, no mínimo, 5 caracteres";
-        nomeSpan.innerText = "";
+        corretoSpanNome.innerText = "";
         confirmarNome = false;
     }
 })
@@ -114,18 +118,18 @@ emailInput.addEventListener("change", (e) => {
     let email = e.target.value;
     if (email.includes("@") && email.includes(".com")) {
         confirmarEmail = true;
-        emailSpan.innerText = "✓";
+        corretoSpanEmail.innerText = "✓";
         emailHelper.innerText = "";
-        emailSpan.style.color = "#FF0096";
-        emailSpan.style.fontSize = "20px";
+        corretoSpanEmail.style.color = "#FF0096";
+        corretoSpanEmail.style.fontSize = "20px";
     } else if (email.length == 0){
         emailHelper.classList.remove("visivel");
-        emailSpan.innerText = "";
+        corretoSpanEmail.innerText = "";
         confirmarEmail = false;
     }else {
         emailHelper.classList.add("visivel");
         emailHelper.innerText = "Digite um e-mail válido (deve conter @ e .com)";
-        emailSpan.innerText = "";
+        corretoSpanEmail.innerText = "";
         confirmarEmail = false;
     }
 })
