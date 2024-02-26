@@ -28,11 +28,24 @@ main {
   margin-right: auto;
 }
 
+
 @media (max-width: 1250px){
   main{
-      padding-left: 50px;
-      padding-right: 50px;               
+    padding-left: 50px;
+    padding-right: 50px;               
    }
+}
+
+@media (max-width: 570px){
+  main{
+   text-align: center;
+}
+}
+
+@media (max-width: 400px){
+  main{
+   width: 300px;            
+  }
 }
 
 main section {
@@ -41,8 +54,8 @@ main section {
 }
 
 @media (max-width: 800px){
-  main section {
-    margin-bottom: 20px;               
+main section {
+  margin-bottom: 20px;               
    }
 }
 
@@ -55,8 +68,8 @@ h1 {
 
 @media (max-width: 1150px){
   main h1 {
-       font-size: 27px;
-       margin-bottom: 30px;             
+    font-size: 27px;
+    margin-bottom: 30px;             
   }
 }
 
@@ -67,9 +80,22 @@ h1 {
   }
 }
 
+@media (max-width: 570px){
+  main h1 {
+   text-align: center;
+  }
+}
+
 main div h2 {
   font-size: 20px;
   color: #223885;
+}
+
+@media (max-width: 400px){
+  main .titulo_mobile h2 {
+    font-size: medium;
+    width:260px;
+  }
 }
 
 .menu_inicial {
@@ -79,9 +105,15 @@ main div h2 {
 }
 
 @media (max-width: 800px){
-  .menu_inicial {
-      flex-direction: column; 
-      align-items: center;             
+ .menu_inicial {
+  flex-direction: column; 
+  align-items: center;             
+  }
+}
+
+@media (max-width: 400px){
+ .menu_inicial {
+  width: 280px;            
   }
 }
 
@@ -146,12 +178,21 @@ main div h2 {
 }
 
 .segunda_parte{
-  margin-top: 75px;
+margin-top: 75px;
+display: flex;
+align-items: center;
+}
+
+@media (max-width: 800px){
+  .segunda_parte{
+  display: flex;
+  flex-direction: column;     
+  }
 }
 
 .titulo_mobile {
-  text-align: center;  
-  display: none;
+text-align: center;  
+display: none;
 }
 
 .titulo_mobile h2{
@@ -165,22 +206,62 @@ main div h2 {
    }
 }
 
-.formulario {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 75px;
-}
-
 fieldset {
   border: solid 4px #FF0096;
   border-radius: 8px;
   color:  #223885;
   padding-top: 20px;
   background-color: #fdf2f9;
+  width: 700px;
 }
 
-main form {
-  width: 100%;
+@media (max-width: 800px){
+fieldset { 
+  width:500px;
+  margin-right: auto; 
+  margin-left: auto;       
+ }
+}
+
+@media (max-width: 570px){
+ fieldset{
+    width:300px; 
+    margin:0px;
+    padding: 0px;;        
+   }
+}
+
+@media (max-width: 400px){
+  fieldset{
+      width: 280px;            
+  }
+}
+
+form {
+  width: 708px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 800px){
+  main form {     
+  width:500px; 
+  display: flex;
+  justify-content: center;      
+  }
+}
+
+@media (max-width: 570px){
+  main form {    
+  width:350px;  
+     
+ }
+}
+
+@media (max-width: 400px){
+  main form {
+  width:260px;  
+ }
 }
 
 main form p {
@@ -192,15 +273,9 @@ main form p {
 }
 
 @media (max-width: 1080px){
-    main form p{
-      font-size: 20px;           
-    }
-}
-
-@media (max-width: 800px){
   main form p{
-    font-size: 15px;           
-  }
+  font-size: 20px;           
+    }
 }
 
 legend {
@@ -212,15 +287,15 @@ legend {
 
 @media (max-width: 1080px){
   legend{
-      font-size: 20px;     
-      margin-left: 30px;        
+  font-size: 20px;     
+  margin-left: 30px;        
    }
 }
 
 @media (max-width: 800px){
   legend{
-      font-size: 15px;
-      display: none;              
+  font-size: 15px;
+  display: none;              
    }
 }
 
@@ -236,14 +311,14 @@ legend {
 
 @media (max-width: 1080px){
   .submit{
-      font-size: 18px;          
+  font-size: 18px;          
    }
 }
 
 
 @media (max-width: 800px){
   .submit{
-      font-size: 15px;          
+  font-size: 15px;          
    }
 }
 
@@ -253,7 +328,7 @@ legend {
   color: white; 
 }
 
-.input_usuario {
+#nome, #email {
   border: none;
   background: none;
   border-bottom: 1px solid #FF0096;
@@ -261,6 +336,7 @@ legend {
   font-size: 15px;
   margin-left: 5px;
   width: 60%;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 800px){
@@ -296,7 +372,7 @@ textarea {
   border: solid 2px #FF0096;
   margin-left: 25px;
   margin-right: 25px;
-  width: 90%;
+  width: 85%;
   height: 200px;
   outline: none;
 }
@@ -309,4 +385,63 @@ textarea {
 }
 button:hover {
   background-color:rgba(325, 138, 211, 0.5);
+}
+
+.helper_text {
+  display: block;
+  margin-left: 40px;
+  font-size: 11px;
+  color: #FF0096;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 900px){
+  .helper_text {
+      margin-left: 25px;
+      font-size: 8px;    
+  }
+}
+
+#pula_linha {
+  display: none;
+}
+
+@media (max-width: 900px){
+  #pula_linha {
+      display: block;       
+  }
+}
+
+.popup_obrigatorio::after {
+  content: "*Campo obrigatório";
+  color: #DFDFDF;
+  font-size: 11px;
+  padding: 3px; 
+  width: 110px;  
+  background-color: #223885;
+}
+
+span[type="popup_necessidade"].popup_obrigatorio::after {
+  margin-left: 40px; 
+}
+
+
+
+@media (max-width: 1080px){
+  .popup_obrigatorio::after {
+      font-size: 9px; 
+  }
+}
+
+@media (max-width: 900px){
+  .popup_obrigatorio::after {
+      margin-left: 25px;
+      padding: 2px;
+      font-size: 8px;      
+  }
+}
+
+.visivel {
+  display: none;
 }

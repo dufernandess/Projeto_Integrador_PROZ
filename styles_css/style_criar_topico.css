@@ -128,13 +128,17 @@ label {
     }
 }
 
+/*mexi aqui*/
 input{
-    border: solid 2px #FF0096;
+    border: none;
+    border-bottom: 1px solid #FF0096;
+    outline: none;
     padding: 5px 3px;
     margin-left: 40px;
     margin-bottom: 10px;
     width: 80%;
 }
+
 
 @media (max-width: 800px){
     input{

@@ -1,4 +1,4 @@
-const arrayPostagens = [
+const arrayGravida = [
     {
         titulo: "Teste Clear blue 6 dias antes",
         autor: "gabriela",
@@ -12,7 +12,7 @@ const arrayPostagens = [
         data: "12 de fevereiro de 2024"
     },
     {
-        titulo: "Testante novamente",
+        titulo: "Tentante novamente",
         autor: "socorro2019",
         conteudo: "Tenho 44 anos, mãe de dois meninos. Casei novamente, e quero muito ser mamãe. Quero compartilhar com vcs, a felicidade em ter o nosso pacotinho de amor...",
         data: "26 de março de 2024"
@@ -33,7 +33,7 @@ for(let i=0; i<arrayPostagens.length; i++) {
     // Capturar o elemento pai
     let section = document.getElementById("conteudo");
     article.innerHTML = `
-    <h4 class="titulo">${arrayPostagens[i].titulo}</h4> 
+    <h4>${arrayPostagens[i].titulo}</h4> 
     <div class="autor">
         <img src="./img/autor.png" class="img-autor">
         <h5>${arrayPostagens[i].autor}</h5>

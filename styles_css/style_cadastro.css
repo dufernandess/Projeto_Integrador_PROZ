@@ -36,12 +36,12 @@ main div h2 {
     display: none;
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
     main div h2 {
         display: block;            
         color: #223885;
-        font-size: 18px;
-        margin-bottom: 20px;
+        font-size: 20px;
+        margin-top: 40px;
         text-align: center;
     }
 }
@@ -53,12 +53,22 @@ main div h2 {
 }
 
 .formulario {
+    margin-left: 15px;
     margin-top: 75px;    
     display: flex;
     justify-content: center;  
 }
 
+@media (max-width: 900px){
+    .formulario {
+        margin-top: 30px; 
+              
+    }
+}
+
 fieldset {
+    padding-left: 5px;
+    padding-right: 5px;
     border: solid 4px #FF0096;
     border-radius: 8px;
     color:  #223885;
@@ -67,7 +77,13 @@ fieldset {
 }
 
 form {
-    width: 70%;    
+    width: 100%;    
+}
+
+@media (max-width: 900px){
+    form {
+        width: 72%;        
+    }
 }
 
 legend {
@@ -83,13 +99,14 @@ legend {
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
     legend{
         display: none;              
      }
 }
 
 .input_cadastro {
+    color:#223885;
     border: none;
     background: none;
     border-bottom: 1px solid #FF0096;
@@ -105,9 +122,11 @@ legend {
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
     .input_cadastro {
-        font-size: 8px;        
+        font-size: 8px;   
+        margin-left: 25px; 
+        width: 70%;    
     }
 }
 
@@ -118,17 +137,34 @@ legend {
     outline: none;
     font-size: 13px;
     margin-left: 5px;
-    width: 52%;
+    width: 51%;
 }
 
+@media (max-width: 900px){
+    .input_cadastro_2 {
+        font-size: 8px;   
+        margin-left: 25px; 
+        width: 70%;    
+    }
+}
+
+
 .campos_input {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+label{
+    font-weight: bold;
+}
+
+.label_auxiliar {
+    margin-bottom: 5px;
 }
 
 .label_input{
     margin-left: 25px;
     margin-bottom: 10px;
-    font-size: 17px; 
+    font-size: 17px;
 }
 
 @media (max-width: 1080px){
@@ -137,18 +173,18 @@ legend {
     }
 }
 
-@media (max-width: 800px){
-    .label_input{
-        font-size: 12px;        
-    }
-}
-
 #gravida_sn {
     margin-left: 5px;
 }
 
+@media (max-width: 900px){
+    #gravida_sn{
+        margin-left: 25px;        
+    }
+}
+
 #termo_ok {
-    margin-left: 25px;
+    margin-left: 10px;
     margin-top: 10px;
 }
 
@@ -163,7 +199,7 @@ legend {
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
     #texto_termo_ok{
         font-size: 10px;        
     }
@@ -172,7 +208,6 @@ legend {
 #texto_termo_ok_2 {
     color: #FF0096;
     font-size: 15px;
-    margin-left: 25px;
 }
 
 @media (max-width: 1080px){
@@ -181,9 +216,10 @@ legend {
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
     #texto_termo_ok_2{
-        font-size: 10px;        
+        font-size: 10px;
+        margin-left: 25px;        
     }
 }
 
@@ -198,7 +234,7 @@ legend {
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
     #sim_nao{
         font-size: 11px;      
     }
@@ -215,13 +251,14 @@ legend {
 
 @media (max-width: 1080px){
     #DPP{
-        font-size: 13px;      
+        font-size: 15px;      
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
     #DPP{
-        font-size: 11px;      
+        font-size: 13px;  
+        margin-left: 25px;    
     }
 }
 
@@ -237,6 +274,7 @@ legend {
 }
 
 .opcao_auxiliar {
+    font-weight: bold;
     margin-left: 25px;
     margin-bottom: 10px;
     font-size: 13px;
@@ -248,9 +286,9 @@ legend {
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
     .opcao_auxiliar{
-        font-size: 8px;              
+        font-size: 10px;              
     }
 }
 
@@ -276,7 +314,7 @@ legend {
     font-size: 22px;
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
     .submit{
         font-size: 14px;          
      }
@@ -286,4 +324,220 @@ legend {
     background-color: #758ad3;
     transition: background 0.15s;
     color: white; 
+}
+
+#pula_linha {
+    display: none;
+}
+
+@media (max-width: 900px){
+    #pula_linha {
+        display: block;       
+    }
+}
+
+#pula_linha_2 {
+    display: none;
+}
+
+@media (max-width: 650px){
+    #pula_linha_2 {
+        display: block;       
+    }
+}
+
+.popup_obrigatorio::after {
+    content: "*Campo obrigatório";
+    color: #DFDFDF;
+    font-size: 11px;
+    padding: 3px;  
+    width: 110px;  
+    background-color: #223885;
+}
+
+@media (max-width: 1080px){
+    .popup_obrigatorio::after {
+        font-size: 9px; 
+    }
+}
+
+@media (max-width: 900px){
+    .popup_obrigatorio::after {
+        margin-left: 25px;
+        padding: 2px;
+        font-size: 8px;      
+    }
+}
+
+.helper_text {
+    display: none;
+    margin-left: 80px;
+    font-size: 11px;
+    color: #FF0096;
+    font-weight: bold;
+}
+
+@media (max-width: 900px){
+    .helper_text {
+        margin-left: 25px;
+        font-size: 8px;    
+    }
+}
+
+.visivel {
+    display: block;
+}
+
+.divisao_form {
+    display: flex;
+    justify-content: center;  
+}
+
+@media (max-width: 900px){
+    .divisao_form {
+        flex-direction: column-reverse;  
+    }
+}
+
+.form_dpp{    
+    width: 90%;    
+    text-align: center;
+}
+
+.formulario_dpp {
+    display: none;
+    margin-top: 75px;   
+    align-items: center;  
+    width: 40%; 
+}
+
+@media (max-width: 900px){
+    .formulario_dpp {      
+        margin-left: auto;
+        margin-right: auto;  
+        width: 50%;
+    }
+}
+
+@media (max-width: 650px){
+    .formulario_dpp {      
+        margin-left: auto;
+        margin-right: auto;  
+        width: 70%;
+    }
+}
+
+.div_dpp {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+@media (max-width: 900px){
+    .div_dpp {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.label_input_DPP{
+    margin-left: auto;
+    margin-right: auto;  
+    font-size: 17px;
+}
+
+
+@media (max-width: 1080px){
+    .label_input_DPP{
+        font-size: 14px;        
+    }
+}
+
+.label_input_DPP_final{
+    color: #FF0096;
+    font-size: 13px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+@media (max-width: 1080px){
+    .label_input_DPP_final{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 900px){
+    .label_input_DPP_final{
+        font-size: 11px;
+    }
+}
+
+#DPP_2 {
+    margin-top: 15px;
+    font-size: 15px;
+    background-color: transparent;
+    border: 2px solid #FF0096;
+    color:#223885;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+@media (max-width: 900px){
+    #DPP_2{
+        font-size: 13px;
+    }
+}
+
+#DPP_3 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 15px;
+    background-color: transparent;
+    border: 2px solid #FF0096;
+    color:#223885;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: auto; 
+}
+
+@media (max-width: 900px){
+    #DPP_3{
+        font-size: 13px;
+    }
+}
+
+.legend_dpp {
+    font-size: 20px;
+    color:  #223885;
+    text-align: center;
+}
+
+@media (max-width: 920px){
+    .legend_dpp {
+        display: block;
+    }
+}
+
+.button_calcular {
+    display: block;
+    background: none;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;    
+    color: #FF0096;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media (max-width: 900px){
+    .button_calcular{
+        font-size: 14px;          
+     }
+}
+
+.resultado_dpp {
+    display: none;
 }
