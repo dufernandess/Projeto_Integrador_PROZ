@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mamãe do mês</title>
-    <link rel="stylesheet" href="./styles_css/style_mamae_do_mes.css">   
-    <link rel="stylesheet" href="./styles_css/style_header.css">
-    <link rel="stylesheet" href="./styles_css/style_footer.css">    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
-    </style>
-    <script src="./script_js/lista_suspensa.js" defer></script>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nossa Comunidade</title>
+        <link rel="stylesheet" href="./styles_css/style_index.css">
+        <link rel="stylesheet" href="./styles_css/style_header.css">
+        <link rel="stylesheet" href="./styles_css/style_footer.css">
+        <link rel="stylesheet" href="./styles_css/style_topico_comunidade.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-cvw5AMsfYo0+x92KP5J0WPZYAC24nXCg6b5f8XfB1Rvf2pPFsLDCjCFuV4hOtU+P" crossorigin="anonymous">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+        </style>
+        <script src="script_js/topico_comunidade.js" defer></script>
+        <script src="script_js/script_lista_suspensa.js" defer></script>
+        <script src="./script_js/menu_web.js" defer></script>
+        <script src="./script_js/lista_suspensa.js" defer></script>
 
 </head>
 <body>
@@ -28,7 +33,7 @@
             <div id="button_login">
                 <button class="button_login"><a href="login.html">Login / Cadastre-se</a></button>
             </div>                 
-           
+            
             <nav class="nav">
                 <ul>
                     <li>
@@ -83,46 +88,36 @@
             <a href="dicas_e_informacoes.html"><strong>- Dicas e Informações</strong></a>
             <a href="central_de_apoio.html"><strong>- Central de Apoio</strong></a>       
         </div>
-
     </header>
 
     <main>
-        <h1 class="titulo_rosa" tabindex="1">Ajude a Mamãe Ana Santos</h1>
-            <section class="conteiner1">
-                    <figure>
-                        <figcaption>
-                            <strong>Ana Santos
-                            </strong>
-                        </figcaption>
-                        <img id="imagem-da-sorteada" src="https://source.unsplash.com/random/500x500/?grávida" alt="Imagem da mãe sorteada">
-                    </figure>
-                        <span>
-                            <h3 class="titulo_blue">Conheça um pouco da minha história:
-                            </h3>
-                            <p aria-label="A mamãe do mês se apresenta e conta um pouco como está encarando a gravidez" tabindex="2">"Olá a todos, meu nome é Ana e estou aqui hoje para compartilhar minha história.Estou grávida e este é um momento de grande alegria e expectativa para mim. No entanto, também é um momento de incertezas e desafios.
-
-                                A gravidez traz consigo muitas despesas, desde cuidados médicos até a preparação do quarto do bebê. Infelizmente, estou passando por dificuldades financeiras e preciso de ajuda para garantir que meu bebê tenha um começo de vida saudável e seguro.
-                                
-                                Se você puder, gostaria de pedir sua ajuda.<br> Doações financeiras são muito bem-vindas e farão uma grande diferença na minha vida e na vida do meu bebê. Além disso, se você tiver itens de bebê novos ou usados que não precisa mais, ficarei muito grata se puder doá-los. Fraldas, roupas de bebê, um berço, um carrinho - qualquer coisa será de grande ajuda.
-                                
-                                Agradeço a todos que puderem contribuir. Sua generosidade significa o mundo para mim e para o meu bebê. Muito obrigada."
-                            </p>
-                        </span>               
-                
-            </section>
-        <br>
-        <section class="ajudar">
-                <h2 class="titulo_blue" tabindex="3">Como ajudar:</h2>
-                <p class="texto-como-ajudar"> Você pode ajudar a Ana doando roupas novas ou usadas, acesórios de bebê, fraldas, ou ajuda financeira.
-                <br>
-                O endereço de correspondência de Ana é: rua da Ana, número 00, São Paulo-SP.
-                <br>
-                Seu telefone é: 010203023322
-                <br><strong tabindex="3">Seu pix é: 010203023322</strong></p>
+        <section id="titulo-pagina">
+            <h1>Tópicos da Comunidade</h1>
+        </section>
           
+        <section class="conteudo" id="conteudo">
+            <h2 id="topico">Gravidez</h2>
+            <article id="post-0">
+                <div class="topico">
+                    <h4 class="titulo">Aproveite o nosso espaço de conversas</h4> 
+                    <div class="autor">
+                        <img src="./img/autor.png" class="img-autor">
+                        <h5>Por Tô grávida</h5>
+                    </div>
+                    <p class="duvida">Olá meninas, aproveitem esse espaço para tirar dúvidas com outras mulheres.</p>
+                    <h6 class="time">Há 2 meses</h6>
+                    <div class="interacoes">
+                        <img src="./img/curtida.png" class="curtida">
+                        <h6>54</h6>
+                        <img src="./img/comentario.png" class="comentario">
+                        <h6>25</h6>
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
 
+    <!-- Rodapé-->
     <footer>
         <div class="redes_sociais">
             <h2>Acesse nossas redes sociais</h2>

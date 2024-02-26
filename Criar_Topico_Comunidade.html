@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criar tópico comunidade</title>
+    <title>Criar tópico</title>
     <link rel="stylesheet" href="./styles_css/style_index.css">
     <link rel="stylesheet" href="./styles_css/style_header.css">
     <link rel="stylesheet" href="./styles_css/style_footer.css">
@@ -11,43 +11,81 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
     </style>
-</head>
-<body>
-    <header>
-        <div>
-            <a href="index.html"><img src="./img/logo_to_gravida.png"></a>
-        </div>
-        <nav>
-            <div>
-                <button class="button_login"><a href="login.html">Login / Cadastre-se</a></button>
-            </div>
-            <div class="menu-toggle">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-            </div>
-            <nav class="nav">
-                <ul>
-                <li>
-                    <a href="semana_1_a_4.html" id="navegacao"><strong>Seu acompanhamento</strong></a>
-                </li>
-                <li>
-                    <a href="seu_acompanhamento_planejamento.html"><strong>Planejando a sua gravidez</strong></a>
-                </li>
-                <li>
-                    <a href="nossa_comunidade.html"><strong>Nossa comunidade</strong></a>
-                </li>
-                <li>
-                    <a href="dicas_e_informacoes.html"><strong>Dicas e Informações</strong></a>
-                </li>
-                <li>
-                    <a href="central_de_apoio.html"><strong>Central de Apoio</strong></a>
-                </li>
-            </ul>
-        </nav>
-       
-    </header>
+        <script src="./script_js/lista_suspensa.js" defer></script>
 
+    </head>
+    <body>
+        <header>
+            <div class="menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </div>
+    
+            <div>
+                <a href="index.html" class="logo"><img src="./img/logo_to_gravida.png"></a>
+            </div>
+            <nav>
+                <div id="button_login">
+                    <button class="button_login"><a href="login.html">Login / Cadastre-se</a></button>
+                </div>                 
+               
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <a href="semana_1_a_4.html" id="navegacao"><strong>Seu acompanhamento</strong></a>
+                        </li>
+                        <li>
+                            <a href="seu_acompanhamento_planejamento.html"><strong>Planejando a sua gravidez</strong></a>
+                        </li>
+                        <div class="container" id="dropdownContainer">
+                            <li class="dropdown" id="dropdown">
+                                <button href="" class="dropdown-toggle"><strong>Nossa comunidade</strong></button>
+                                <ul class="dropdown-menu" id="dropdownMenu">
+                                    <li class="item" id="1"><a href="topico_comunidade.html">Gravidez</a></li>
+                                    <li class="item" id="2"><a href="topico_comunidade.html">Tentantes</a></li>
+                                    <li class="item" id="3"><a href="topico_comunidade.html">Tô grávida?</a></li>
+                                    <li class="item" id="4"><a href="topico_comunidade.html">Infertilidade</a></li>
+                                </ul> 
+                            </li>
+                        </div>
+                        <li>
+                            <a href="dicas_e_informacoes.html"><strong>Dicas e Informações</strong></a>
+                        </li>
+                        <li>
+                            <a href="central_de_apoio.html"><strong>Central de Apoio</strong></a>
+                        </li>
+                    </ul>
+                </nav>
+            </nav>
+    
+            <div class="nav_web">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16" id="x">
+                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                </svg>            
+                <a href="semana_1_a_4.html" id="navegacao_2"><strong>- Seu acompanhamento</strong></a>
+                <a href="seu_acompanhamento_planejamento.html"><strong>- Planejando a sua gravidez</strong></a>
+                <div>
+                    <div id="comunidadeWeb">
+                        <a href="nossa_comunidade.html"><strong>- Nossa comunidade:</strong></a>
+                    </div>
+                    
+                    <div id="topicosWeb">
+                        <a href="./topico_comunidade.html"><strong>Nova Gravidez</strong></a>
+                        <br>
+                        <a href="./topico_comunidade.html"><strong>Purpério</strong></a>
+                        <br>
+                        <a href="./topico_comunidade.html"><strong>Alimentação</strong></a>
+                        <br>
+                        <a href="./topico_comunidade.html"><strong>Psicológico</strong></a>
+                    </div>
+                </div>
+                <a href="dicas_e_informacoes.html"><strong>- Dicas e Informações</strong></a>
+                <a href="central_de_apoio.html"><strong>- Central de Apoio</strong></a>       
+            </div>
+    
+        </header>
     <main>
         <div>
             <h1>Criar tópico na Comunidade</h1>
@@ -56,30 +94,34 @@
             <div>
                 <h2>Preencha todas as informações:</h2>
             </div>
-            <div class="formulario">
-                <form action="" autocomplete="on">
-                    <fieldset>
-                        <legend id="titulo-formulario"><b>Preencha todas as informações: </b></legend>
-                        <div class="primeiro-input">
-                            <label for="nome" class="label_input"><b>Titulo da postagem: </b></label>
-                            <input type="text" name="Nome" id="nome" required placeholder="Digite o titulo da postagem" required class="input_usuario">
-                        </div>
-                        <br>
-                        <div>
-                            <label for="necessidade" class="label_texto"><b>Descrição da sua dúvida: </b></label>
-                            <textarea name="necessidade" id="necessidade"></textarea>
-                        </div>
-                        <br>
-                        <div>
-                            <input type="submit" value="Criar Postagem" class="submit">
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
+            <form action="">
+                <fieldset>
+                    <legend><b>Preencha todas as informações: </b></legend>
+                    <div>
+                        <label for="titulo">Titulo da postagem:</label>
+                        <input type="titulo" id="titulo" name="titulo" placeholder="Digite o titulo da postagem">
+                        <span type="correct"></span>
+                        <br id="pula_linha">
+                        <span type="popup_titulo"></span></div>
+                        <p id="titulo_helper" class="helper_text"></p>
+                        <br id="pula_linha">
+                    </div>
+                    <div>
+                        <label for="descricao">Descrição da sua dúvida:</label>
+                        <textarea type="descricao" id="descricao" name="descricao"></textarea>
+                        <span type="correct2"></span>
+                        <br id="pula_linha">
+                        <span type="popup_descricao"></span>
+                        <p id="descricao_helper" class="helper_text"></p>
+                        <br id="pula_linha">
+                    </div>
+                   <div>
+                        <input type="submit" value="Criar" class="submit">
+                   </div>
+                </fieldset>
+            </form>
         </section>
     </main>
-
-
     <footer>
         <div class="redes_sociais">
             <h2>Acesse nossas redes sociais</h2>

@@ -222,7 +222,7 @@ main section {
     width: 500px;
 }
 
-@media (max-width: 1400px){
+@media (max-width: 1250px){
     .post_index_2 div img {
         width: 450px;
         margin-bottom: 10px;
@@ -323,6 +323,10 @@ main section {
     padding: 10px;
 }
 
+.container {
+    text-align: center;
+}
+
 .texto-descritivo{
     border: 2px solid #FF0096;
     padding: 50px;
@@ -359,14 +363,6 @@ main section {
 .nav-item {
     flex: 1 1 auto;
     text-align: center;
-  }
-
-.nav-item {
-    flex-basis: 0;
-    flex-grow: 1;
-    text-align: center;
-  }
-
-  .nav-item {
     width: 100%;
-  }
+}
+  

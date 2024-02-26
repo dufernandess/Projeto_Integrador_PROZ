@@ -13,11 +13,11 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
     </style>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-    <script src="script_js/script_carrossel.js" defer></script>
-    <script src="./script_js/script_carrossel.js" defer></script>   
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>    
+    <script src="./script_js/carrossel.js" defer></script>       
     <script src="./script_js/seu_acompanhamento.js" defer></script>
     <script src="./script_js/menu_web.js" defer></script>
+    <script src="./script_js/lista_suspensa.js" defer></script>
 
 </head>
 <body>
@@ -44,9 +44,17 @@
                     <li>
                         <a href="seu_acompanhamento_planejamento.html"><strong>Planejando a sua gravidez</strong></a>
                     </li>
-                    <li>
-                        <a href="nossa_comunidade.html"><strong>Nossa comunidade</strong></a>
-                    </li>
+                    <div class="container" id="dropdownContainer">
+                        <li class="dropdown" id="dropdown">
+                            <button href="" class="dropdown-toggle"><strong>Nossa comunidade</strong></button>
+                            <ul class="dropdown-menu" id="dropdownMenu">
+                                <li class="item" id="1"><a href="topico_comunidade.html">Gravidez</a></li>
+                                <li class="item" id="2"><a href="topico_comunidade.html">Tentantes</a></li>
+                                <li class="item" id="3"><a href="topico_comunidade.html">Tô grávida?</a></li>
+                                <li class="item" id="4"><a href="topico_comunidade.html">Infertilidade</a></li>
+                            </ul> 
+                        </li>
+                    </div>
                     <li>
                         <a href="dicas_e_informacoes.html"><strong>Dicas e Informações</strong></a>
                     </li>
@@ -70,13 +78,13 @@
                 </div>
                 
                 <div id="topicosWeb">
-                    <a href=""><strong>Nova Gravidez</strong></a>
+                    <a href="./topico_comunidade.html"><strong>Nova Gravidez</strong></a>
                     <br>
-                    <a href=""><strong>Purpério</strong></a>
+                    <a href="./topico_comunidade.html"><strong>Purpério</strong></a>
                     <br>
-                    <a href=""><strong>Alimentação</strong></a>
+                    <a href="./topico_comunidade.html"><strong>Alimentação</strong></a>
                     <br>
-                    <a href=""><strong>Psicológico</strong></a>
+                    <a href="./topico_comunidade.html"><strong>Psicológico</strong></a>
                 </div>
             </div>
             <a href="dicas_e_informacoes.html"><strong>- Dicas e Informações</strong></a>
