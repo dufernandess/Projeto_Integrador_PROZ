@@ -42,8 +42,76 @@ h1 {
     color: var(--rosa-escuro);
 }
 
+@media (max-width: 1250px){
+    h1{
+         font-size: 27px;             
+    }
+}
+
+@media (max-width: 800px){
+    h1{
+            font-size: 20px;             
+    }
+} 
+
 h2 {
     color: var(--azul-escuro);
+}
+
+@media (max-width: 1250px){
+    h2{
+        font-size: 18px;             
+    }
+}
+
+@media (max-width: 800px){
+    h2{
+        font-size: 13px;             
+    }
+}
+
+@media (max-width: 1250px){
+    h4{
+        font-size: 14px;             
+    }
+}
+
+@media (max-width: 800px){
+    h4{
+        font-size: 11px;             
+    }
+}
+
+@media (max-width: 1250px){
+    h5{
+        font-size: 16px;             
+    }
+}
+
+@media (max-width: 800px){
+    h5{
+        font-size: 13px;             
+    }
+}
+
+@media (max-width: 1200px){
+    p {
+       font-size: 14;
+    }
+}
+
+@media (max-width: 1080px){
+    p {
+       font-size: 8;
+    }
+}
+
+@media (max-width: 800px){
+    p {
+       font-size: 8px;
+       margin-left: auto;
+       margin-right: auto;
+    }
 }
 
 .conteudo {
@@ -53,19 +121,48 @@ h2 {
     align-items:flex-start;
     margin-left: 40px;
     border-top: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 1400px) {
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px; 
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px; 
+    }
 }
 
 .topico {
     width: 600px;
     padding: 5px;
     border-top: solid 1px var(--rosa-escuro);
-    border-bottom: solid 1px var(--rosa-escuro);
+}
+
+@media (max-width: 900px) {
+    .topico {
+        width: 400px;
+    }
 }
 
 .duvida {
     width: 600px;
     background-color: var(--rosa-header-medio);
     border-radius: 5px;
+}
+
+@media (max-width: 900px) {
+    .duvida {
+        width: 400px;
+    }
 }
 
 .time {

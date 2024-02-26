@@ -14,10 +14,8 @@ let linkApoio = document.getElementById("navegacao_apoio");
 let elementoJavaScript = document.createElement("li");
 elementoJavaScript.innerText = "Nova gravidez";
 elementoJavaScript.id = "nova-gravidez";
-console.log(elementoJavaScript);
 
 let elementoPai = document.getElementById("dropdown-web");
-console.log(elementoPai);
 
 menuHamb.addEventListener("click", () => {    
     menuWeb.style.marginLeft = "0vw";
