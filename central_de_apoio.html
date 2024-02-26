@@ -6,7 +6,8 @@
     <title>Central de apoio</title>
     <link rel="stylesheet" href="./styles_css/style_central_de_apoio.css">
     <link rel="stylesheet" href="./styles_css/style_header.css">
-    <link rel="stylesheet" href="./styles_css/style_footer.css">  
+    <link rel="stylesheet" href="./styles_css/style_footer.css">
+    <script src="./script_js/central_de_apoio.js" defer></script>  
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
     </style>
@@ -100,7 +101,6 @@
             <div class="titulo_mobile">
                 <h2>Você está precisando de algum apoio?</h2>
             </div>
-            <div class="formulario">
                 
                 <form action="" autocomplete="on">
                     <fieldset>
@@ -108,25 +108,40 @@
                         <p>Nos conte sua história!</p>
                         <div>
                             <label for="nome" class="label_input"><b>Nome:</b></label>
-                            <input type="text" name="Nome" id="nome" required placeholder="Digite seu nome" required class="input_usuario">
+                            <input type="text" name="nome"  id="nome" class="campo" required placeholder="Digite seu nome completo" required class="input_usuario">
+                            <span type="correct"></span>
+                            <br id="pula_linha">
+                            <span type="popup_nome"></span></div>
+                            <p id="nome_helper" class="helper_text"></p>
+                            <br id="pula_linha">
                         </div>
-                        <br>
-                        <div>
+
+                       <div>
                             <label for="email" class="label_input"><b>E-mail:</b></label>
-                            <input type="email" name="Email" id="email" required placeholder="Digite seu e-mail" size="auto" class="input_usuario">
-                        </div>
-                        <br>
-                        <div>
+                            <input type="email"  name="Email" id="email" class="campo" required placeholder="Digite seu e-mail" size="auto" class="input_usuario">
+                            <span type="correct2"></span>
+                            <br id="pula_linha">
+                            <span type="popup_email"></span></div>
+                            <p id="email_helper" class="helper_text"></p>
+                            <br id="pula_linha">
+                       </div>
                             
-                            <textarea name="necessidade" id="necessidade"></textarea>
+                        
+                        <div>
+                            <textarea name="necessidade" id="necessidade" class="campo"></textarea>
+                            <span type="correct3"></span>
+                            <br id="pula_linha">
+                            <span type="popup_necessidade"></span></div>
+                            <p id="necessidade_helper" class="helper_text"></p>
+                            <br id="pula_linha">
                         </div>
-                        <br>
+                        
                         <div>
                             <input type="submit" value="Enviar!" class="submit">
                         </div>
+
                     </fieldset>
                 </form>
-            </div>
         </section>
     </main>
 
