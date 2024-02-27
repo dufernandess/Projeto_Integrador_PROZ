@@ -21,15 +21,17 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 20px;
   max-width: 1200px;
 }
 
 @media (max-width: 574px) {
 main{
-margin: 0px 10px 0px auto;
+margin-right: auto;
+margin-left: auto;
 text-align: center;
 }
 }
@@ -44,86 +46,60 @@ display: flex;
 width:914px;
 height:650px;
 background-color: rgba(325, 138, 211, 0.1);
-margin-right: 50px;
-margin-left: 50px;
-padding: 5px;
+margin-right: auto;
+margin-left: auto;
+padding-top: 20px;
 border: solid 2px #FF0096;
 border-radius: 5px;
 box-shadow: 0px 0px 3px 1px #FF0096;
 }
 
-@media (max-width: 1145px){
-.conteiner1{
-width: 850px;
-}
-}
 
 @media (max-width: 990px){
 .conteiner1{
-width:800px;
-height:680px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 630px;
+  height: 70%;
+  padding-bottom: 20px;
 }
 }
 
-@media (max-width: 834px){
-.conteiner1{
-display: flex;
-flex-direction: column;
-align-items: center;
-width:630px;
-height: 770px;
-}
-}
 
-@media (max-width: 740px) {
-.conteiner1{
-width: 550px;
-}
-}
 
 @media (max-width: 574px) {
 .conteiner1{
 width: 350px;
-height: 640px;
 margin-left: auto;
 margin-right: auto;
-}
-}
-
-/*MOBILE*/
-@media (max-width: 390px) {
-.conteiner1{
-width: 260px;
-height: 550px;
 }
 }
 
 #imagem-da-sorteada{
 margin-top:10px;
 margin:10px;
-width:350px;
-height: 450px;
+width: 350px;
+height: 400px;
 border: solid 2px #FF0096;
 box-shadow: 0px 0px 3px 1px #FF0096;
 border-radius: 5px;
 width: 100%;
-max-width: 265px;
-}
-#imagem-da-sorteada:hover {
-transform: scale(1.1);
+
 }
 
 @media (max-width: 834px){
 #imagem-da-sorteada{
-width: 200px;
-height:190px;
+  width: 300px;
+  height: 350px;
 }
 }
 
 @media (max-width: 574px){
 #imagem-da-sorteada{
-max-width: 140px;
-max-height:120px;
+  width: 200px;
+  height: 300px;
 }
 }
 
@@ -140,16 +116,7 @@ margin-right: 25px;
 
 @media (max-width: 834px){
 figure{
-width: 415px;
-height:290px;
 text-align: center;
-}
-}
-
-@media (max-width: 574px) {
-figure{
-width: 220px;
-height: 190px;
 }
 }
 
@@ -159,7 +126,6 @@ color:#FF0096;
 margin: 10px;
 }
 
-
 p{
 background-color: rgba(325, 138, 211, 0.1);
 font-size:large;
@@ -167,26 +133,23 @@ color: #223885;
 border: solid 2px #FF0096;
 box-shadow: 0px 0px 3px 1px #FF0096;
 border-radius: 5px;
-/*overflow-y: scroll;*/ 
 margin-top: 25px;
+margin-right: 30px;
+margin-left: 30px;
 padding: 10px;
-width:400px;
-height: 400;
+width: 500px;
+height: 65%;
+text-align: justify;
 background: linear-gradient(to bottom,#ffedf7, #fcc5e5 );
 }
-p:hover  {
-transform: scale(1.1);
-}
-/* O nth-child adiciona o estilo apenas no elemento "p" específico*/
-.conteiner1 p:nth-child(n){
-overflow-y: scroll;
-}
+
 
 @media (max-width: 834px){
 p{
 width: 460px;
-max-height: 350px; 
-transition: max-height 0.4s ease; 
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 20px;
 }
 }
 
@@ -194,9 +157,7 @@ transition: max-height 0.4s ease;
 p{
 width: 270px;
 font-size: 12px;
-max-height: 350px; 
-margin-left:auto;
-transition: max-height 0.4s ease; 
+
 }
 }
 
@@ -204,9 +165,6 @@ transition: max-height 0.4s ease;
 @media (max-width: 390px){
 p{
   width:215px;
-  height: 280px;
-  margin-left:4px;
-  margin-top: 5px;
 }
 }
 
@@ -214,6 +172,7 @@ p{
 color: #223885;
 font-size: x-large;
 margin-top: 10px;
+text-align: center;
 }
 
 @media (max-width: 574px){
@@ -231,12 +190,12 @@ width:914px;
 text-align: start;
 }
 
-@media (max-width: 1145px){
+@media (max-width: 990px){
 .titulo_rosa{
-  width: 850px;
+
   }
 }
-@media (max-width: 834px){
+@media (max-width: 990px){
 .titulo_rosa{
   width:639px;
   }
@@ -262,33 +221,17 @@ width: 914px;
 display: flex;
 flex-direction: column;
 justify-content: center;
-margin-right: 50px;
-margin-left: 50px;
-}
-
-@media (max-width: 1145px){
-.ajudar{
-width: 850px;
-}
+margin-right: auto;
+margin-left: auto;
 }
 
 @media (max-width: 990px){
-.ajudar{
-width:800px;
-}
-}
-
-@media (max-width: 834px){
 .ajudar{
 width:630px;
 }
 }
 
-@media (max-width: 740px) {
-.ajudar{
-width: 550px;
-}
-}
+
 
 @media (max-width: 574px) {
 .ajudar{
@@ -317,30 +260,14 @@ margin-right: auto;
 margin-left: auto;
 padding: 3px;
 }
-@media (max-width: 1145px){
-.texto-como-ajudar{
-  width: 850px;
-  }
-}
 
 @media (max-width: 990px){
-.texto-como-ajudar{
-  width:800px;
-  }
-}
-
-@media (max-width: 834px){
 .texto-como-ajudar{
   width:630px;
   height: 150px;
   }
 }
-@media (max-width: 738px){
-.texto-como-ajudar{
-  width:550px;
-  height: 160px;
-  }
-}
+
   
 @media (max-width: 574px){
 .texto-como-ajudar{

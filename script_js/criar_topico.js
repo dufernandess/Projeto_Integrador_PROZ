@@ -18,11 +18,16 @@ function tirarBackground() {
     this.style.backgroundColor = "rgb(244, 247, 255)";
 }
 
+function tirarBackgroundDescricao() {
+    this.style.boxShadow = "none";   
+    this.style.backgroundColor = "white";
+}
+
 inputTitulo.addEventListener("mouseover", colocarBackground);
 inputDescricao.addEventListener("mouseover", colocarBackground);
 
 inputTitulo.addEventListener("mouseout", tirarBackground);
-inputDescricao.addEventListener("mouseout", tirarBackground);
+inputDescricao.addEventListener("mouseout", tirarBackgroundDescricao);
 
 //Função genérica para adicionar e retirar classe Popup obrigatório
 function manutencaoPopup(input, span) {

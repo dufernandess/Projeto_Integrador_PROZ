@@ -130,6 +130,7 @@ label {
 
 /*mexi aqui*/
 input{
+    background: rgb(244, 247, 255);
     border: none;
     border-bottom: 1px solid #FF0096;
     outline: none;

@@ -27,7 +27,7 @@ inputNecessidade.addEventListener("mouseover", colocarBackground);
 
 inputNome.addEventListener("mouseout", tirarBackground);
 inputEmail.addEventListener("mouseout", tirarBackground);
-inputNecessidade.addEventListener("mouseout", tirarBackground);
+inputNecessidade.addEventListener("mouseout", tirarBackgroundNecessidade);
 
 function colocarBackground() {
   this.style.boxShadow = "0 0 15px 5px rgba(255, 0, 150, 0.2)";   
@@ -36,7 +36,12 @@ function colocarBackground() {
 
 function tirarBackground() {
   this.style.boxShadow = "none";   
-  this.style.backgroundColor = "rgb(244, 247, 255)";
+  this.style.backgroundColor = "rgb(253, 242, 249)";
+}
+
+function tirarBackgroundNecessidade() {
+  this.style.boxShadow = "none";   
+  this.style.backgroundColor = "white";
 }
 //Função genérica para adicionar e retirar classe Popup obrigatório
 function manutencaoPopup(input, span) {

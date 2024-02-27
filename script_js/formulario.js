@@ -49,7 +49,7 @@ emailInput.addEventListener("mouseout", () => {
     
 })
 
-//efeito campo senha
+//efeito campo textarea
 textareaInput.addEventListener("mouseover", () => {
     textareaInput.style.boxShadow = "0 0 15px 5px rgba(255, 0, 150, 0.2)";   
     textareaInput.style.backgroundColor = "rgb(255, 233, 246)";    
@@ -57,7 +57,7 @@ textareaInput.addEventListener("mouseover", () => {
 
 textareaInput.addEventListener("mouseout", () => {
     textareaInput.style.boxShadow = "none";   
-    textareaInput.style.backgroundColor = "rgb(244, 247, 255)";
+    textareaInput.style.backgroundColor = "white";
     
 })
 
