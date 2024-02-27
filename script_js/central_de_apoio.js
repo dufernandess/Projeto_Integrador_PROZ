@@ -14,6 +14,12 @@ let corretoSpanNome = document.querySelector('span[type="correct"]');
 let corretoSpanEmail = document.querySelector('span[type="correct2"]');
 let corretoSpanNecessidade = document.querySelector('span[type="correct3"]');
 
+//Capurando elementos para ativação do botão submit
+let enviar = document.querySelector(".submit");
+let confirmarNome = false;
+let confirmarEmail = false;
+let confirmarNecessidade = false;
+console.log(enviar)
 
 inputNome.addEventListener("mouseover", colocarBackground);
 inputEmail.addEventListener("mouseover", colocarBackground);
@@ -21,7 +27,7 @@ inputNecessidade.addEventListener("mouseover", colocarBackground);
 
 inputNome.addEventListener("mouseout", tirarBackground);
 inputEmail.addEventListener("mouseout", tirarBackground);
-inputNecessidade.addEventListener("mouseover", colocarBackground);
+inputNecessidade.addEventListener("mouseout", tirarBackground);
 
 function colocarBackground() {
   this.style.boxShadow = "0 0 15px 5px rgba(255, 0, 150, 0.2)";   
@@ -50,13 +56,6 @@ function manutencaoPopup(input, span) {
 manutencaoPopup(inputNome, nomeSpan);
 manutencaoPopup(inputEmail, emailSpan);
 manutencaoPopup(inputNecessidade, necessidadeSpan);
-
-//Capurando elementos para ativação do botão submit
-let enviar = document.querySelector(".submit");
-let confirmarNome = false;
-let confirmarEmail = false;
-let confirmarNecessidade = false;
-console.log(enviar)
 
 //validando campo nome:
 inputNome.addEventListener("change", (e) => {

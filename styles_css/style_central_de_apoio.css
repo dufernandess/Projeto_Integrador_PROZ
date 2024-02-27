@@ -328,19 +328,24 @@ legend {
   color: white; 
 }
 
-.input_usuario {
+#nome, #email {
   border: none;
-  background: none;
+  background: var(--rosa-claro-box);
   border-bottom: 1px solid #FF0096;
   outline: none;
   font-size: 15px;
   margin-left: 5px;
   width: 60%;
+  margin-bottom: 10px;
+}
+
+.input_usuario {
+  background-color: #fdf2f9; 
 }
 
 @media (max-width: 800px){
   .input_usuario {
-      font-size: 10px;        
+      font-size: 10px;      
   }
 }
 
@@ -416,11 +421,16 @@ button:hover {
   content: "*Campo obrigatório";
   color: #DFDFDF;
   font-size: 11px;
-  padding: 3px;
-  margin-left: 40px;  
+  padding: 3px; 
   width: 110px;  
   background-color: #223885;
 }
+
+span[type="popup_necessidade"].popup_obrigatorio::after {
+  margin-left: 40px; 
+}
+
+
 
 @media (max-width: 1080px){
   .popup_obrigatorio::after {

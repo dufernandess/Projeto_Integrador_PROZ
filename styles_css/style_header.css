@@ -269,14 +269,7 @@ header nav ul li a:hover {
     }
 }
 
-#comunidadeWeb{
-    text-align: center;
-}
-
-#topicosWeb{    
-   font-size: 10px;
-   margin-top: 5px;
-}
+/*Lista suspensa*/
 
 .container {
     padding: 0;
@@ -339,38 +332,41 @@ header nav ul li a:hover {
     border: 1px solid #ccc;
     list-style-type: none;
     padding: 0;
-    padding-right: 12px;
     margin: 0;
     z-index: 1;
 }
   
 li .item{
-    padding: 3px;
+    padding-right: 20px;
+    padding-bottom: 5px;
     margin: 0;
+    color: var(--azul-escuro);
 }
 
-@media (max-width: 1370px){
+@media (max-width: 1200px){
     li .item {
         font-size: 13px;
+        padding-right: 18px;
+        padding-bottom: 4px;
     }
 }
 
-@media (max-width: 1170px){
-    li .item{
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 1060px){
+@media (max-width: 1100px){
     li .item {
-        font-size: 9px;
+        font-size: 12px;
+        padding-right: 16px;
+        padding-bottom: 3px;
     }
 }
-  
-.dropdown-menu li:hover {
-    background-color: #f9f9f9;
+
+@media (max-width: 1000px){
+    li .item {
+        font-size: 11px;
+        padding-right: 12px;
+        padding-bottom: 2px;
+    }
 }
 
-.item {
-    color: var(--azul-escuro);
+.dropdown-menu li:hover {
+    background-color: var(--rosa-escuro);
 }

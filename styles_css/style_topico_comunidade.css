@@ -224,3 +224,42 @@ h5 {
 .img-autor {
     width: 20px;
 }
+
+.button-criar-topico {
+    color: white;
+    background-color: #FF0096;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+}
+
+@media (max-width: 800px) {
+    .button-criar-topico {
+        font-size: 10px;
+    }
+}
+
+.button-criar-topico a {
+    color: white;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botao_cabecalho {
+    padding: 10px;
+    text-align: right;
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+}
