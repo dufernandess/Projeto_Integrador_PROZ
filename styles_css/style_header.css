@@ -243,10 +243,11 @@ header nav ul li a:hover {
     gap: 2rem;
     background-color: #fcc5e5;
     height: 100%;
-    width: 35%;
+    width: 25%;
     margin-left: -100vw;
     z-index: 9999;    
-    align-items: center;
+    align-items: start;
+    padding-left: 30px;
     animation-duration: 1s;
     transition: 1s;
     font-size: 13px;
@@ -260,12 +261,35 @@ header nav ul li a:hover {
 #x {
     color: #223885;
     margin-top: 20px;
+    margin-left: 35%;
+}
+
+
+@media (max-width: 700px){
+    .nav_web {
+       font-size: 12px;
+       width: 30%;
+    }
 }
 
 @media (max-width: 600px){
     .nav_web {
        font-size: 12px;
-       width: 45%;
+       width: 35%;
+    }
+}
+
+@media (max-width: 480px){
+    .nav_web {
+       font-size: 12px;
+       width: 40%;
+    }
+}
+
+@media (max-width: 420px){
+    .nav_web {
+       font-size: 12px;
+       width: 50%;
     }
 }
 
