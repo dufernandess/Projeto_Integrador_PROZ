@@ -112,12 +112,14 @@ nomeInput.addEventListener("change", (e) => {
     } else if (nome.length == 0){
         nomeHelper.classList.remove("visivel");
         confirmarNome = false;
+        corretoSpanNome.innerText = "";
         nomeSpan.innerText = "";
     } else {
         nomeHelper.classList.add("visivel");
         confirmarNome = false;
         nomeHelper.innerText = "Você deve inserir, no mínimo, 5 caracteres";
         nomeSpan.innerText = "";
+        corretoSpanNome.innerText = "";
     }
 })
 
@@ -134,10 +136,12 @@ emailInput.addEventListener("change", (e) => {
     } else if (email.length == 0){
         emailHelper.classList.remove("visivel");
         emailSpan.innerText = "";
+        corretoSpanEmail.innerText = "";
         confirmarEmail = false;
     }else {
         emailHelper.classList.add("visivel");
         emailHelper.innerText = "Digite um e-mail válido (deve conter @ e .com)";
+        corretoSpanEmail.innerText = "";
         emailSpan.innerText = "";
         confirmarEmail = false;
     }
@@ -156,11 +160,13 @@ senhaInput.addEventListener("change", (e) => {
     } else if (senha.length == 0){
         senhaHelper.classList.remove("visivel");
         senhaSpan.innerText = "";
+        corretoSpanSenha.innerText = "";
         confirmarSenha = false;
     }else {
         senhaHelper.classList.add("visivel");
         senhaHelper.innerText = "Sua senha deve conter, no mínimo, 6 caracteres";
         senhaSpan.innerText = "";
+        corretoSpanSenha.innerText = "";
         confirmarSenha = false;
     }
 })
@@ -178,11 +184,13 @@ let valorSenha2 = e.target.value;
     } else if (valorSenha2.length == 0){
         senha2Helper.classList.remove("visivel");
         senha2Span.innerText = "";
+        corretoSpanConfSenha.innerText = "";
         confirmarSenha2 = false;
     }else {
         senha2Helper.classList.add("visivel");
         senha2Helper.innerText = "As senhas devem ser idênticas";
         senha2Span.innerText = "";
+        corretoSpanConfSenha.innerText = "";
         confirmarSenha2 = false;
     }
     cadastrar();

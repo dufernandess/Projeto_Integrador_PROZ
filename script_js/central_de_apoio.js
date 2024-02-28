@@ -99,8 +99,7 @@ inputEmail.addEventListener("change", (e) => {
     emailHelper.innerText = "";
     confirmarNome = false;
     emailSpan.innerText = "";
-    corretoSpanNome.innerText = "";
-
+    corretoSpanEmail.innerText = "";
   }else {
     confirmarEmail = false;
     emailHelper.innerText = "Digite um e-mail válido (deve conter @ e .com)";
